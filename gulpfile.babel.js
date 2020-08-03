@@ -16,6 +16,8 @@ import fileinclude from "gulp-file-include";
 import notify from "gulp-notify";
 import sassdoc from "sassdoc";
 import tailwindcss from "tailwindcss";
+import nunjucksRender from "gulp-nunjucks-render";
+
 
 const server = () => {
   browserSync.init({
@@ -36,14 +38,19 @@ const validateHtml = () => {
 const html = () => {
   return (
     gulp
-      .src("dev/**/*.html")
+      .src("dev/**/*.njk")
       .pipe(plumber())
-      .pipe(
-        fileinclude({
-          prefix: "@@",
-          basepath: "dev",
-        })
-      )
+      // .pipe(
+      //   fileinclude({
+      //     prefix: "@@",
+      //     basepath: "dev",
+      //   })
+      // )
+
+      .pipe(nunjucksRender({
+        path: 'dev',
+        ext: '.html',
+      }))
       // html 벨리데이션 체크를 뺼경우 아래 주석처리
       // .pipe(validateHtml())
       .pipe(gulp.dest("dist"))
