@@ -1,0 +1,130 @@
+.header {
+  @apply fixed left-0 top-0 w-full bg-white;
+
+  .header__top {
+    @apply border-b;
+    border-color:#e2e2e2;
+    .wrap {
+      @apply flex justify-between items-center;
+    }
+
+    div {
+      @apply flex items-center;
+    }
+
+    a {
+      @apply text-sm px-4;
+      color:#666666;
+      line-height: 40px;
+      transition: all .3s;
+
+      &:hover {
+        @apply bg-gray-200;
+      }
+    }
+  }
+}
+
+
+
+.header__container {
+  @apply border-b border-black;
+
+  .wrap {
+    @apply flex justify-between items-center relative;
+    height: 150px;
+
+  }
+
+  .logo {
+    @include positionCenter;
+  }
+
+  .header__banner {
+    width: 225px;
+    height: 75px;
+    background:#eee;
+  }
+
+  .header__links {
+    @apply flex items-center;
+    a {
+      @apply ml-4 text-center;
+      width: 55px;
+    }
+    i {
+      @apply relative;
+      display: block;
+      img {
+        @apply mx-auto;
+        height: 20px;
+      }
+    }
+    p {
+      @apply font-light mt-1;
+      font-size: 11px;
+    }
+
+    .cart-count {
+      @apply absolute text-white bg-theme-red right-0 ;
+      top: -10px;
+      margin-right: 5px;
+      font-size: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-style: normal;
+    }
+  }
+}
+
+.header__nav {
+  @apply border-b;
+  border-color:#e2e2e2;
+
+  .wrap {
+    @apply flex items-center;
+  }
+
+  .hamburger {
+    @apply border-l border-r;
+    border-color:#e2e2e2;
+    width: 55px;
+    height: 55px;
+    @include hideText;
+    background: url('../images/icons/hamburger.png') no-repeat center;
+  }
+
+  .header__searchform {
+    margin-left: auto;
+
+    .form__wrap {
+      @apply flex border border-black;
+      height: 40px;
+
+      button {
+        width: 40px;
+        @include hideText;
+        background: url('../images/icons/search.png') no-repeat center;
+      }
+      input {
+        @apply text-sm;
+        width: 220px;
+        flex: none;
+        padding:0 10px;
+      }
+    }
+  }
+}
+
+.header__gnb {
+  @apply flex flex-1 justify-around items-center;
+
+  a {
+    @apply text-sm duration-300;
+
+    &:hover {
+      @apply text-theme-green;
+    }
+  }
+}

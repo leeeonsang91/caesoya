@@ -10,12 +10,21 @@ body {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
     "Sans-serif";
+  font-weight: 400;
+  min-width: 1220px;
 }
 .wrap {
   @apply flex w-full mx-auto;
-  max-width: 1200px;
+  max-width: 1220px;
+  padding:0 10px;
 }
 
 .font-roboto {
   font-family: 'Roboto', sans-serif !important;
+  font-weight: 400;
+}
+
+input, textarea, button, select {
+  appearance: none;
+  outline-width: 0;
 }

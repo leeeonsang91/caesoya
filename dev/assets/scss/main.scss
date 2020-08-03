@@ -1,8 +1,12 @@
 @import "base/base";
 
+@import 'helper/transform';
+@import 'helper/text';
+
 // components [
 @import "components/header";
 @import "components/footer";
+@import "components/container";
 
 // pages
 @import "pages/index";
