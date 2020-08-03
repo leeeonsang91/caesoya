@@ -28,31 +28,15 @@ const server = () => {
   });
 };
 
-const validateHtml = () => {
-  return gulp
-    .src(["dev/**/*.html", "!dev/include/**/*.html"])
-    .pipe(htmlValidator())
-    .pipe(htmlValidator.reporter());
-};
-
 const html = () => {
   return (
     gulp
       .src("dev/**/*.njk")
       .pipe(plumber())
-      // .pipe(
-      //   fileinclude({
-      //     prefix: "@@",
-      //     basepath: "dev",
-      //   })
-      // )
-
       .pipe(nunjucksRender({
-        path: 'dev',
+        path: ['dev', 'dev/layout'],
         ext: '.html',
       }))
-      // html 벨리데이션 체크를 뺼경우 아래 주석처리
-      // .pipe(validateHtml())
       .pipe(gulp.dest("dist"))
   );
 };
@@ -126,7 +110,7 @@ const minImg = () => {
 };
 
 const watchTask = () => {
-  gulp.watch("dev/**/*.html", html).on("change", browserSync.reload);
+  gulp.watch("dev/**/*.njk", html).on("change", browserSync.reload);
   gulp.watch("dev/**/*.scss", scss).on("change", browserSync.reload);
   gulp.watch("dev/**/*.js", js).on("change", browserSync.reload);
   gulp
