@@ -1,0 +1,72 @@
+.form-row {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .row {
+    @apply flex;
+  }
+  .input {
+    @apply flex-1 border flex;
+    border-color: #999999;
+
+    input {
+      @apply flex-1;
+      height: 100%;
+      width: 100%;
+      padding: 0 15px;
+      font-size: 14px;
+    }
+  }
+
+  .select {
+    @apply flex-1 border;
+    border-color: #999999;
+    select {
+      height: 100%;
+      width: 100%;
+      padding: 0 15px;
+      font-size: 14px;
+      background: url("../images/icons/select-arrow.png ") no-repeat 95px center;
+    }
+  }
+}
+
+.checkbox {
+  @apply flex flex-none items-center cursor-pointer mr-2;
+  input {
+    display: none;
+
+    &:checked + span {
+      @apply bg-theme-green;
+    }
+  }
+  span {
+    @apply flex-none w-4 h-4 border border-black duration-300;
+  }
+  p {
+    @apply text-xs ml-1;
+  }
+}
+
+.radio {
+  @apply flex flex-none items-center cursor-pointer mr-3;
+  input {
+    display: none;
+    &:checked + span {
+      @apply border-theme-green;
+
+      &:after {
+        content: "";
+        @apply block w-full h-full rounded-full bg-theme-green;
+      }
+    }
+  }
+  span {
+    @apply flex-none w-4 h-4 border border-black duration-300 rounded-full;
+    padding: 2px;
+  }
+  p {
+    @apply text-xs ml-1;
+  }
+}

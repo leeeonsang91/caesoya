@@ -1,0 +1,43 @@
+.agreement {
+  .agreement__title {
+    line-height: 50px;
+    @apply border-b border-black font-bold mb-4;
+  }
+
+  .agreement__total {
+    @apply flex items-center;
+    height: 40px;
+  }
+
+  .agreement__check {
+    em {
+      font-style: normal;
+      @apply mr-1;
+    }
+    a {
+      opacity: 0.5;
+      text-decoration: underline;
+      background: url("../images/icons/agreement-arrow.png") no-repeat right
+        center;
+      padding-right: 10px;
+    }
+  }
+
+  .agreement__row {
+    @apply mt-8;
+    .agreement__description {
+      @apply mt-4 border p-4 leading-normal text-sm overflow-auto h-40;
+      border-color: #e2e2e2;
+    }
+  }
+
+  .agreement__btnbox {
+    @apply mt-12 text-center;
+
+    .btn {
+      @apply inline-block text-sm border border-black;
+      line-height: 55px;
+      width: 150px;
+    }
+  }
+}

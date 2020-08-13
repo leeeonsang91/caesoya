@@ -1,0 +1,49 @@
+.modal {
+  @apply fixed w-full h-full left-0 top-0 flex items-center justify-center;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+
+  .modal__content {
+    @apply p-10 bg-white;
+    min-width: 600px;
+  }
+
+  .modal__header {
+    padding-bottom: 20px;
+    @apply flex items-center justify-between border-b border-black;
+
+    .modal__title {
+      font-size: 20px;
+      line-height: 1em;
+    }
+    .modal__closer {
+      text-indent: -9999px;
+      overflow: hidden;
+      width: 20px;
+      height: 20px;
+      background: url("../images/icons/modal-x.png") no-repeat center;
+    }
+  }
+
+  .modal__body {
+    @apply py-8 text-center;
+
+    p {
+      @apply leading-normal;
+    }
+  }
+
+  .modal__btnbox {
+    @apply flex items-center justify-center pt-10 border-t;
+    border-color: #e5e5e5;
+    a {
+      @apply bg-white text-black border border-black duration-300 text-center;
+      line-height: 55px;
+      width: 170px;
+
+      &.black {
+        @apply bg-black text-white ml-3;
+      }
+    }
+  }
+}

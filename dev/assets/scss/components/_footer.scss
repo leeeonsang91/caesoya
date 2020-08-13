@@ -1,21 +1,20 @@
 .footer {
-  margin-top: 150px;
   @apply border-t-2 border-black;
 
   .footer__links {
     @apply border-b;
-    border-color:#ebebeb;
+    border-color: #ebebeb;
     .wrap {
       @apply flex items-center justify-start;
       height: 50px;
     }
 
     a {
-      @apply text-sm border-r ;
+      @apply text-sm border-r;
       line-height: 1em;
-      color:#666666;
-      border-color:#ebebeb;
-      padding:0 1.25em;
+      color: #666666;
+      border-color: #ebebeb;
+      padding: 0 1.25em;
 
       &:last-child {
         @apply border-none;
@@ -39,7 +38,7 @@
       }
       .time {
         @apply mt-2 text-xs;
-        color:#666666;
+        color: #666666;
       }
     }
     .footer__info {
@@ -47,11 +46,11 @@
 
       .info {
         @apply leading-6 text-sm;
-        color:#666666;
+        color: #666666;
       }
       .copyright {
         @apply mt-1 text-xs;
-        color:#666666;
+        color: #666666;
       }
     }
   }

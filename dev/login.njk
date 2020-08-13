@@ -1,0 +1,100 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page accounts">
+        <div class="accounts__header">
+            <div class="wrap">
+                <h2 class="accounts__title">로그인</h2>
+            </div>
+        </div>
+        <div class="accounts__body">
+            <div class="wrap">
+                <div class="login">
+                    <div class="login__container">
+                        <div class="col">
+                            <h3 class="login__col-title">
+                                회원 로그인
+                            </h3>
+                            <p class="login__col-desc">
+                                가입하신 아이디와 비밀번호를 입력해 주세요.<br/>
+                                비밀번호는 대소문자를 구분합니다.
+                            </p>
+
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row">
+                                        <div class="row">
+                                            <div class="input">
+                                                <input type="text" placeholder="아이디">
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input">
+                                            <input type="password" placeholder="비밀번호">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__btnbox">
+                                    <button type="submit" class="bg-black text-white hover:text-black hover:bg-white duration-300  btn">로그인</button>
+                                </div>
+                                <div class="login__etc">
+                                    <label for="maintain" class="checkbox">
+                                        <input type="checkbox" id="maintain">
+                                        <span></span>
+                                        <p>로그인 상태 유지</p>
+                                    </label>
+                                    <label for="save" class="checkbox">
+                                        <input type="checkbox" id="save">
+                                        <span></span>
+                                        <p>아이디 저장</p>
+                                    </label>
+                                </div>
+                                <div class="login__links">
+                                    <div class="left">
+                                        <a href="">아이디 찾기</a>
+                                        <a href="">비밀번호 찾기</a>
+                                    </div>
+                                    <div class="right">
+                                        <a href="">회원가입</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <h3 class="login__col-title">
+                                비회원 로그인
+                            </h3>
+                            <p class="login__col-desc">
+                                구매번호는 발송된 이메일에서 확인하실 수 있습니다.<br/>
+                                구매번호가 생각나지 않는 경우, 고객센터로 문의 부탁드립니다.
+                            </p>
+
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row">
+                                        <div class="row">
+                                            <div class="input">
+                                                <input type="text" placeholder="구매번호">
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input">
+                                            <input type="password" placeholder="주문시 사용한 휴대폰 번호">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__btnbox">
+                                    <button type="submit" class="bg-white text-block border border-black hover:text-white hover:bg-black duration-300 btn">로그인</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,266 @@
+.accounts {
+  background: #f6f6f6;
+  height: 100%;
+}
+.accounts__header {
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+  .wrap {
+    @apply block relative;
+  }
+
+  .accounts__title {
+    @apply text-center;
+    font-size: 28px;
+    line-height: 50px;
+  }
+
+  .join-breadcrumb {
+    @apply absolute right-0 flex items-center;
+    bottom: 5px;
+
+    span {
+      padding-right: 25px;
+      opacity: 0.3;
+      margin-right: 20px;
+      background: url("../images/icons/breadcrumb-right.png") no-repeat right
+        center;
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
+        background: none;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.accounts__body {
+  .wrap {
+    @apply block;
+  }
+}
+
+.join__container,
+.login__container {
+  @apply flex bg-white border;
+  padding: 40px 0;
+  border-color: #e9e9e9;
+  border-top-color: #000000;
+
+  .col {
+    flex: 1;
+    padding: 40px 100px;
+    &:first-child {
+      border-right: 1px solid #e9e9e9;
+    }
+  }
+  .col--join {
+    height: 430px;
+    @apply flex items-center justify-center;
+  }
+
+  // 회원가입에 사용
+  .join-item {
+    @apply text-center;
+    .icon {
+      img {
+        display: inline-block;
+      }
+    }
+    h3 {
+      @apply text-lg font-medium mt-4 mb-2;
+    }
+    p {
+      @apply text-sm;
+      color: #999999;
+    }
+
+    .btn {
+      @apply block border border-theme-green text-theme-green mt-10 duration-300;
+      width: 380px;
+      line-height: 55px;
+      &:hover {
+        @apply text-white bg-theme-green;
+      }
+
+      &.bg-fill {
+        @apply text-white bg-theme-green;
+        &:hover {
+          @apply text-theme-green bg-white;
+        }
+      }
+    }
+  }
+
+  .agreement {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+  }
+}
+
+.login__col-title {
+  @apply text-lg font-medium;
+}
+.login__col-desc {
+  @apply text-xs leading-normal mt-2 mb-4;
+  color: #999999;
+}
+
+.login__form {
+  .input {
+    height: 50px;
+  }
+}
+
+.login__btnbox {
+  @apply mt-5;
+  .btn {
+    @apply block w-full text-center;
+    height: 55px;
+  }
+}
+
+.login__etc {
+  @apply flex items-center mt-2;
+}
+
+.login__links {
+  @apply mt-4 pt-2 flex items-center justify-between border-t;
+  border-color: #e2e2e2;
+
+  .left {
+    @apply flex items-center;
+    a {
+      @apply text-xs px-2 leading-none;
+      &:first-child {
+        @apply pl-0;
+        border-right: 1px solid #eaeaea;
+      }
+    }
+  }
+  .right {
+    a {
+      @apply text-xs border border-black block text-center duration-300;
+      width: 70px;
+      line-height: 30px;
+
+      &:hover {
+        @apply bg-black text-white;
+      }
+    }
+  }
+}
+
+.find-case {
+  @apply flex items-center mt-12 mb-2;
+}
+
+.join__form {
+  @apply mx-auto w-full;
+  max-width: 740px;
+  .join__form-header {
+    line-height: 50px;
+    @apply flex items-center justify-between border-b border-black;
+    h3 {
+      @apply font-bold;
+    }
+    p {
+      @apply text-xs;
+      &:before {
+        content: "*";
+        @apply text-theme-red;
+      }
+    }
+  }
+
+  .join__table {
+    table {
+      @apply table-fixed w-full;
+    }
+
+    th,
+    td {
+      @apply border-b text-sm font-normal py-2 px-4 text-left;
+      border-color: #e5e5e5;
+      height: 60px;
+    }
+    th {
+      background: #f6f6f6;
+      span {
+        @apply relative pl-3;
+        &.required {
+          &:after {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 4px;
+            top: 8px;
+            @apply bg-theme-red absolute left-0;
+          }
+        }
+      }
+    }
+
+    td {
+      .select,
+      .input {
+        height: 40px;
+        border-color: #d6d6d6;
+        max-width: 380px;
+
+        &.full {
+          max-width: none;
+        }
+      }
+
+      .form-row {
+        .btn {
+          @apply text-sm border border-black bg-black text-white ml-3;
+          height: 40px;
+          width: 80px;
+
+          &.white {
+            @apply bg-white text-black;
+          }
+        }
+      }
+
+      .row--email {
+        .select {
+          @apply ml-3 flex-none;
+          width: 130px;
+        }
+      }
+
+      .row--address {
+        .input {
+          @apply flex-none;
+          width: 380px;
+        }
+        .btn {
+          width: auto;
+          @apply flex-1;
+        }
+      }
+    }
+  }
+
+  .join__btnbox {
+    @apply flex items-center justify-center mt-10;
+
+    a {
+      @apply bg-white text-black border border-black duration-300 text-center;
+      line-height: 55px;
+      width: 170px;
+
+      &.black {
+        @apply bg-black text-white ml-3;
+      }
+    }
+  }
+}
