@@ -1,9 +1,10 @@
 .header {
   @apply fixed left-0 top-0 w-full bg-white;
+  z-index: 5000;
 
   .header__top {
     @apply border-b;
-    border-color:#e2e2e2;
+    border-color: #e2e2e2;
     .wrap {
       @apply flex justify-between items-center;
     }
@@ -14,9 +15,9 @@
 
     a {
       @apply text-sm px-4;
-      color:#666666;
+      color: #666666;
       line-height: 40px;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &:hover {
         @apply bg-gray-200;
@@ -25,15 +26,12 @@
   }
 }
 
-
-
 .header__container {
   @apply border-b border-black;
 
   .wrap {
     @apply flex justify-between items-center relative;
     height: 150px;
-
   }
 
   .logo {
@@ -43,7 +41,7 @@
   .header__banner {
     width: 225px;
     height: 75px;
-    background:#eee;
+    background: #eee;
   }
 
   .header__links {
@@ -66,7 +64,7 @@
     }
 
     .cart-count {
-      @apply absolute text-white bg-theme-red right-0 ;
+      @apply absolute text-white bg-theme-red right-0;
       top: -10px;
       margin-right: 5px;
       font-size: 10px;
@@ -80,7 +78,7 @@
 
 .header__nav {
   @apply border-b;
-  border-color:#e2e2e2;
+  border-color: #e2e2e2;
 
   .wrap {
     @apply flex items-center;
@@ -88,11 +86,11 @@
 
   .hamburger {
     @apply border-l border-r;
-    border-color:#e2e2e2;
+    border-color: #e2e2e2;
     width: 55px;
     height: 55px;
     @include hideText;
-    background: url('../images/icons/hamburger.png') no-repeat center;
+    background: url("../images/icons/hamburger.png") no-repeat center;
   }
 
   .header__searchform {
@@ -105,13 +103,13 @@
       button {
         width: 40px;
         @include hideText;
-        background: url('../images/icons/search.png') no-repeat center;
+        background: url("../images/icons/search.png") no-repeat center;
       }
       input {
         @apply text-sm;
         width: 220px;
         flex: none;
-        padding:0 10px;
+        padding: 0 10px;
       }
     }
   }
