@@ -1,0 +1,49 @@
+.product-type3 { 
+    @apply flex justify-between;
+
+    .product__link {
+        @apply block;
+        width: 280px;
+
+        .product__img {
+            img {
+                width: 100%;
+            }
+        }
+        .product__info {
+            @apply text-center;
+
+            .product__name {
+                font-size: 14px;
+                color: #202020;
+            }
+            .product__price {
+                .price {
+                    @apply flex items-center justify-center;
+                    font-size: 18px;
+                    color: #202020;
+                    font-weight: 700;
+                    margin: 5px 0;
+
+                    .currency {
+                        font-weight: 400;
+                    }
+                }
+                .price-origin {
+                    font-size: 13px;
+                    color: #666;
+                    text-decoration: line-through;
+                    font-weight: 600;
+                }
+            }
+
+            .score-area {
+                @apply justify-center;
+            }
+            .product__date {
+                @apply justify-center;
+                margin-top: 0;
+            }
+        }
+    }
+}

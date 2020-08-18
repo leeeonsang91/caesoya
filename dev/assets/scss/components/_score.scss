@@ -1,0 +1,22 @@
+.score-area {
+    @apply flex items-center;
+
+    .score {
+        @apply flex items-center;
+        margin-right: 5px;
+
+        i {
+            font-style: normal;
+            font-size: 16px;
+            color: #999;
+
+            &.active {
+                @apply text-theme-green;
+            }
+        }
+    }
+    .comment-cont {
+        font-size: 12px;
+        color: #666;
+    }
+}

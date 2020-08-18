@@ -1,5 +1,11 @@
 $(document).ready(function () {
-  $('.ptable table').basictable({
-    breakpoint: 1023,
+  
+  // main visual slide slick
+  $('.main__visual .slide').slick({
+    infinite : true,
+    autoplay : true,
+    dots : true
   });
+
+
 });

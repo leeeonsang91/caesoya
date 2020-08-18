@@ -1,0 +1,95 @@
+.product-type2 {
+    @apply flex-1;
+    border: 1px solid #e1e1e1;
+
+    form {
+        @apply w-full;
+
+        .form {
+            @apply h-full;
+
+            .scroll {
+                height: 360px;
+                overflow-y: scroll;
+                padding: 20px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #e1e1e1;
+
+                .product__item {
+                    @apply flex items-center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #e1e1e1;
+
+                    .product__info {
+                        width: 100%;
+
+                        .product__link {
+                            @apply flex items-center justify-between;
+
+                            .product__img {
+                                margin-right: 10px;
+                                margin-bottom: 0;
+                            }
+                            .product__tit {
+                                .product__name {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: #202020;
+                                    margin-bottom: 5px;
+                                }
+                                .product__quantity {
+                                    font-size: 15px;
+                                    color: #666;
+                                }
+                            }
+                            .product__price {
+                                .price {
+                                    @apply flex items-center;
+                                    font-size: 16px;
+                                    color: #202020;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .product__select-cart {
+                padding: 20px;
+                box-sizing: border-box;
+                @apply flex flex-col;
+                height: calc(100% - 360px);
+
+                .select {
+                    @apply flex justify-between items-center;
+
+                    .product__price {
+                        @apply flex items-center;
+
+                        .price {
+                            font-size: 20px;
+                            color: #202020;
+                            font-weight: 700;
+
+                            .currency {
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .cart {
+                    margin-top: auto;
+
+                    button {
+                        @apply w-full text-center;
+                        height: 50px;
+                        background: #4d4d4d;
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
