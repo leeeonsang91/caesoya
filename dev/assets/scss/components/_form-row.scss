@@ -19,6 +19,20 @@
     }
   }
 
+  .textarea {
+    @apply flex-1 border flex;
+    border-color: #999999;
+
+    textarea {
+      @apply flex-1;
+      height: 100%;
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
   .select {
     @apply flex-1 border;
     border-color: #999999;
@@ -27,7 +41,12 @@
       width: 100%;
       padding: 0 15px;
       font-size: 14px;
-      background: url("../images/icons/select-arrow.png ") no-repeat 95px center;
+      background: url('../images/icons/select-arrow.png ') no-repeat 95px center;
+
+      &.full {
+        background: url('../images/icons/select-arrow.png ') no-repeat
+          calc(100% - 15px) center;
+      }
     }
   }
 }
@@ -57,7 +76,7 @@
       @apply border-theme-green;
 
       &:after {
-        content: "";
+        content: '';
         @apply block w-full h-full rounded-full bg-theme-green;
       }
     }

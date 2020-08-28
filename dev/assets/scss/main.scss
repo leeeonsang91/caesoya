@@ -4,14 +4,20 @@
 @import 'helper/text';
 
 // components [
+@import 'components/sub';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/container';
 @import 'components/form-row';
 @import 'components/agreement';
 @import 'components/modal';
+@import 'components/form';
+@import 'components/btnbox';
+@import 'components/pagination';
+@import 'components/star';
 
 // pages
 @import 'pages/index';
 @import 'pages/accounts';
 @import 'pages/terms';
+@import 'pages/customer';

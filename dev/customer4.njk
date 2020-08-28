@@ -1,0 +1,156 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page sub customer">
+      <div class="wrap block">
+        <h2 class="sub__title">고객센터</h2>
+        <div class="customer__container">
+          <div class="customer__tabs">
+            <a href="" class="">공지사항</a>
+            <a href="">자주묻는 질문</a>
+            <a href="" class="">1:1 문의하기</a>
+            <a href="">판매자 문의</a>
+            <a href="" class="active">구매후기</a>
+          </div>
+
+          <div class="customer__content">
+            <form action="" class="block">
+              <div class="customer__form">
+                <div class="wrap block">
+                  <h3 class="form__title">구매후기 작성</h3>
+                  <div class="form__table">
+                    <table>
+                      <colgroup>
+                        <col width="185">
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>주문내역</th>
+                          <td>
+                            <div class="form-row">
+                              <div class="select">
+                                <select name="" id="" required class="full">
+                                  <option value="">주문내역을 선택하세요.</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>별점</th>
+                          <td>
+                            <div class="rating">
+                              <div class="rating__container">
+                                <input type="radio" name="rating" value="1" class="active">
+                                <input type="radio" name="rating" value="2" class="active">
+                                <input type="radio" name="rating" value="3" class="active">
+                                <input type="radio" name="rating" value="4" class="active">
+                                <input type="radio" name="rating" value="5" class="active" checked>
+                              </div>
+                            </div>
+
+                            <script>
+                            // 별점 액티브 스크립트
+                            $(function(){
+                              $('.rating input').on('change', function(){
+                                $('.rating input').removeClass('active');
+                                $(this).prevAll().add(this).addClass('active');
+                              })
+                            })
+                            </script>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>제목</th>
+                          <td>
+                            <div class="form-row">
+                              <div class="input">
+                                <input type="text" required>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>문의내용</th>
+                          <td>
+                            <div class="form-row">
+                              <div class="textarea">
+                                <textarea name="" id=""></textarea>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>사진첨부</th>
+                          <td>
+                            <div class="wrap items-center">
+                              <label for="file1" class="custom-file mr-1 ">
+                                <input type="file" id="file1" hidden multiple accept="image/*">
+                                <span class="">사진첨부</span>
+                              </label>
+                              <span class="ml-1"><em id="filelen" style="font-style:normal;">0</em>/10</span>
+                              <p class="required info-text ml-2">
+                                전체 최대용량 20MB, 이미지 파일(jpeg, png, gif) 최대 3개까지 첨부 가능합니다.
+                              </p>
+                            </div>
+
+                            <ul class="review-write-list mt-2" id="review-list">
+                              
+                            </ul>
+                            <script>
+                              function setTextLen(target, val) {
+                                console.log(val.length);
+                                console.log($(target));
+                                $(target).text(val.length);
+                              }
+                              $(function(){
+                                $('.custom-file input').on('change', function(e){
+                                  var length = e.target.files.length;
+                                  $('#filelen').text(length);
+                                  for( var i = 0; i < length; i++ ) {
+                                    (function(file, idx) {
+                                      var html = '';
+                                      var fr = new FileReader();
+                                      fr.onload = function(e) {
+                                        html += '<li class="review-write-item">';
+                                        html += '<div class="thumb">';
+                                        html += '<img src="'+e.target.result+'" alt="">';
+                                        html += '</div>';
+                                        html += '<div class="textarea">';
+                                        html += '<textarea name="" id="" onkeyup="setTextLen(\'#textlen'+idx+'\', this.value);"></textarea>';
+                                        html += '</div>';
+                                        html += '<div class="action">';
+                                        html += '<p><span id="textlen'+idx+'">0</span> / 150</p>';
+                                        html += '<button class="rm">삭제</button>';
+                                        html += '</div>';
+                                        html += '</li>';
+                                        $('#review-list').append(html);
+                                      };
+                                      fr.readAsDataURL(file);
+                                    })(this.files[i], i)
+                                  }
+                                }); 
+                              })
+                            </script>
+                            
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="default-btnbox mt-16">
+                    <div class="wrap">
+                      <a href="" class="btn white">취소</a>
+                      <button class="btn black">등록</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+.pagination {
+  .wrap {
+    @apply justify-center items-center;
+  }
+
+  .pagination__arrow {
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+
+    @include hideText;
+    &.prev {
+      background: url('../images/icons/pagination-arrow-left.png') no-repeat
+        center;
+    }
+    &.next {
+      background: url('../images/icons/pagination-arrow-right.png') no-repeat
+        center;
+    }
+  }
+  .pagination__list {
+    margin: 0 15px;
+    @apply flex items-center;
+  }
+  .pagination__number {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    &.active {
+      font-weight: 600;
+      border-color: #159c65;
+    }
+  }
+}

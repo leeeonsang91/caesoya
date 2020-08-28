@@ -1,0 +1,22 @@
+.default-btnbox {
+  .wrap {
+    @apply justify-center;
+  }
+  .btn {
+    @apply flex-1;
+    max-width: 150px;
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 14px;
+
+    &:nth-child(n + 2) {
+      margin-left: 10px;
+    }
+
+    &.black {
+      background: #000000;
+      color: #fff;
+    }
+  }
+}

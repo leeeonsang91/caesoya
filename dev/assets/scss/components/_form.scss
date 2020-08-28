@@ -1,0 +1,57 @@
+.custom-file {
+  span {
+    display: inline-block;
+    border: 1px solid #000000;
+    font-size: 12px;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 15px;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+      border: none;
+      background: #159c65;
+    }
+  }
+}
+
+.info-text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+
+  &.required {
+    @apply relative;
+    padding-left: 7px;
+    &:before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      background: #ea475c;
+      position: absolute;
+      left: 0;
+      top: 6px;
+    }
+  }
+}
+
+.rating {
+  @apply flex;
+  .rating__container {
+    height: 30px;
+    padding: 5px 0;
+    @apply inline-flex;
+    input {
+      margin-right: 2px;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background: url('../images/icons/star-false.png') no-repeat center;
+
+      &.active {
+        background: url('../images/icons/star-true.png') no-repeat center;
+      }
+    }
+  }
+}
