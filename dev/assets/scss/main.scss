@@ -1,16 +1,17 @@
-@import "base/base";
+@import 'base/base';
 
-@import "helper/transform";
-@import "helper/text";
+@import 'helper/transform';
+@import 'helper/text';
 
 // components [
-@import "components/header";
-@import "components/footer";
-@import "components/container";
-@import "components/form-row";
-@import "components/agreement";
-@import "components/modal";
+@import 'components/header';
+@import 'components/footer';
+@import 'components/container';
+@import 'components/form-row';
+@import 'components/agreement';
+@import 'components/modal';
 
 // pages
-@import "pages/index";
-@import "pages/accounts";
+@import 'pages/index';
+@import 'pages/accounts';
+@import 'pages/terms';
