@@ -1,0 +1,100 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage return">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            <div class="mypage-section ">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h2>반품신청</h2>
+
+                <div class="return__breadcrumb">
+                  <span class=""><strong>01</strong>반품신청</span>
+                  <span class=""><strong>02</strong>수거정보 입력</span>
+                  <span class=""><strong>03</strong>반품비용결제 및 재결제</span>
+                  <span class="active"><strong>04</strong>반품신청완료</span>
+                </div>
+              </header>
+              <div class="mypage-section__body">
+
+                <div class="return__result mb-8">
+                  <h2>
+                    주문상품의 <span class="text-theme-green">반품요청이 완료</span>되었습니다.
+                  </h2>
+
+                  <p>
+                  상품수거가 완료되면 환불처리가 진행되며, 반품처리 현황은 취소/반품/교환 조회에확인하실 수 있습니다.<br/>
+                  단, 반품 수거 완료 후 판매자가 상품확인을 통해 상품 파손등의 특별한 사유가 있는 경우<br/>
+                  배송비 외에 추가 반품 비용이 청구될 수 있습니다.  
+                  </p>
+                </div>
+
+                <div class="ordertable">
+                  <table>
+                    <colgroup>
+                      <col width="150">
+                      <col>
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>주문번호</th>
+                        <th>상품정보</th>
+                        <th>주문금액(수량)</th>
+                        <th>배송비/판매자</th>
+                        <th>진행상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center"><span>202008562354</span></td>
+                        <td>
+                          <a href="" class="ordertable__item">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                              <div class="options">
+                                <strong>옵션</strong>
+                                <ul>
+                                  <li>꿀고구마(중) 2kg / 1개</li>
+                                  <li>꿀고구마(상) 2kg / 1개 (+1,000원)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                          <span>(1개)</span>
+                        </td>
+                        <td class="text-center">
+                          <p><span>2,500원 <br/> (토마토랜드)</span></p>
+                          <a href="" class="btn">판매자 문의</a>
+                        </td>
+                        <td class="text-center">
+                          <p><span>구매확정</span></p>
+                          <a href="" class="btn">배송조회</a>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+               
+                <div class="default-btnbox mt-12">
+                  <div class="wrap">
+                    <button class="btn black">마이페이지</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+{% endblock %}

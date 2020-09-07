@@ -1,0 +1,140 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            {% include "layout/mypage-state.njk" %}
+            
+            
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header">
+                <h2>상태정보</h2>
+              </header>
+              <div class="mypage-section__body">
+                <div class="deliverState">
+                  <div class="deliverState__header">
+                    <h3>운송장번호: <span>363327048163</span></h3>
+                    <p>고객님이 주문하신 상품이 배송완료 되었습니다.</p>
+                  </div>
+
+                  <div class="deliverState__info">
+                    <h3>주문/배송 상태 안내</h3>
+                    <div class="row">
+                      <div class="col state1 active">
+                        <span class="icon">결제완료</span>
+                        <h4>결제완료</h4>
+                        <p>
+                          <span>주문,결제,확인</span>이<br/>
+                          완료되었습니다.
+                        </p>
+                      </div>
+                      <div class="col state2">
+                        <span class="icon">상품준비중</span>
+                        <h4>상품준비중</h4>
+                        <p>
+                          판매자가 발송할<br/> <span>상품을 준비중</span>입니다.
+                        </p>
+                      </div>
+                      <div class="col state3">
+                        <span class="icon">배송시작</span>
+                        <h4>배송시작</h4>
+                        <p>
+                          주문하신 상품이 <br/><span>곧 배송될 예정</span>입니다.
+                        </p>
+                      </div>
+                      <div class="col state4">
+                        <span class="icon">배송중</span>
+                        <h4>배송중</h4>
+                        <p>
+                          상품이 발송되어<br/> 고객님께 <span>배송중</span>입니다.
+                        </p>
+                      </div>
+                      <div class="col state5">
+                        <span class="icon">배송완료</span>
+                        <h4>배송완료</h4>
+                        <p>
+                          상품이 고객님께 <br/><span>배송완료</span>되었습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="deliverState__table mt-16">
+                    <header class="deliverState__table-header">
+                      <div class="row">
+                        <div class="col">처리일시</div>
+                        <div class="col">현재위치</div>
+                        <div class="col">
+                        </div>
+                        <div class="col">배송상태</div>
+                      </div>
+                    </header>
+                    <div class="deliverState__table-body">
+                      <!-- loop -->
+                      <div class="row">
+                        <div class="col">2020-08-07 14:26:17</div>
+                        <div class="col">전남나주금천</div>
+                        <div class="col">
+                          <span class="active"><i></i></span>
+                        </div>
+                        <div class="col">배달완료 하였습니다.</div>
+                      </div>
+                      <!-- end loop -->
+                      <div class="row">
+                        <div class="col">2020-08-07 14:26:17</div>
+                        <div class="col">전남나주금천</div>
+                        <div class="col">
+                          <span><i></i></span>
+                        </div>
+                        <div class="col">배달완료 하였습니다.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header">
+                <h2>조회결과</h2>
+              </header>
+              <div class="mypage-section__body">
+                <div class="mypage-default-table">
+                  <table>
+                    <colgroup>
+                      <col width="190">
+                      <col>
+                      <col width="190">
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>이름</th>
+                        <td>고길동</td>
+                        <th>상품정보</th>
+                        <td>나주 달콤 배 1 BOX</td>
+                      </tr>
+                      <tr>
+                        <th>접수일자</th>
+                        <td>2020-08-05</td>
+                        <th>접수시간</th>
+                        <td>17:15</td>
+                      </tr>
+                      <tr>
+                        <th>택배사</th>
+                        <td>경동택배</td>
+                        <th>운송장번호</th>
+                        <td>36338459</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+{% endblock %}

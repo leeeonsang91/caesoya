@@ -1,0 +1,288 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            <div class="mypage-section ">
+              <header class="mypage-section__header">
+                <h2>주문/배송 상세정보</h2>
+              </header>
+              <div class="mypage-section__body">
+                <div class="ordershort mb-8">
+                  <div class="row">
+                    <div class="col">
+                      <strong>주문일자</strong> 2020.08.26
+                    </div>
+                    <div class="col">
+                      <strong>주문번호</strong> 202008562543 
+
+                      <div>
+                        <a href="">주문내역 삭제</a>
+                        <a href="">재구매</a>
+                      </div>
+                      <a href="">세금계산서 발급</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ordertable">
+                  <table>
+                    <colgroup>
+                      <col width="150">
+                      <col>
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>주문번호</th>
+                        <th>상품정보</th>
+                        <th>주문금액(수량)</th>
+                        <th>배송비/판매자</th>
+                        <th>진행상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center"><span>202008562354</span></td>
+                        <td>
+                          <a href="" class="ordertable__item">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                              <div class="options">
+                                <strong>옵션</strong>
+                                <ul>
+                                  <li>꿀고구마(중) 2kg / 1개</li>
+                                  <li>꿀고구마(상) 2kg / 1개 (+1,000원)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                          <span>(1개)</span>
+                        </td>
+                        <td class="text-center">
+                          <p><span>2,500원 <br/> (토마토랜드)</span></p>
+                          <a href="" class="btn">판매자 문의</a>
+                        </td>
+                        <td class="text-center">
+                          <p><span>구매확정</span></p>
+                          <a href="" class="btn">배송조회</a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center"><span>202008562354</span></td>
+                        <td>
+                          <a href="" class="ordertable__item">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                          <span>(1개)</span>
+                        </td>
+                        <td class="text-center">
+                          <p><span>2,500원 <br/> (토마토랜드)</span></p>
+                          <a href="" class="btn">판매자 문의</a>
+                        </td>
+                        <td class="text-center">
+                          <p><span>구매확정</span></p>
+                          <a href="" class="btn">배송조회</a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center"><span>202008562354</span></td>
+                        <td>
+                          <a href="" class="ordertable__item">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                          <span>(1개)</span>
+                        </td>
+                        <td class="text-center">
+                          <p><span>2,500원 <br/> (토마토랜드)</span></p>
+                          <a href="" class="btn">판매자 문의</a>
+                        </td>
+                        <td class="text-center">
+                          <p><span>구매확정</span></p>
+                          <a href="" class="btn">배송조회</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header">
+                <h3>결제금액정보</h3>
+              </header>
+              <div class="mypage-section__body">
+                <div class="orderpriceInfo">
+                  <div class="row">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="orderpriceInfo__list">
+                            <li>
+                              <strong>상품합계</strong>
+                              <span>36,000원</span>
+                            </li>
+                            <li>
+                              <strong>배송비 합계</strong>
+                              <span>25,000원</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="orderpriceInfo__list">
+                            <li>
+                              <strong>배송비 할인</strong>
+                              <span>0원</span>
+                            </li>
+                            <li>
+                              <strong>충전포인트/적립포인트</strong>
+                              <span>5,000원</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <ul class="orderpriceInfo__list large mt-8">
+                            <li>
+                              <strong>상품금액</strong>
+                              <h3>38,500<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="orderpriceInfo__list large mt-8">
+                            <li>
+                              <strong>할인금액</strong>
+                              <h3>5,000<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="orderpriceInfo__point">
+                        <h3>구매적립금</h3>
+                        <span>
+                          <strong>38</strong>원
+                        </span>
+                      </div>
+
+                      <div class="orderpriceInfo__etc">
+                        <p>
+                          <strong>카드결제</strong> 비씨 (9200-****-****-****) - 일시불 <span>(2020.05.29 13:03)</span>
+                        </p>
+                        법인(개인사업자 법인 포함)카드는 할부/무이자 혜택 적용 불가<br/>
+                        카드에 BC 마크가 없는 경우 무이자 할부 적용 불가<br/>
+                        무이자 적용 여부는 카드사로 문의하시면 정확하게 확인할 수 있습니다.
+                      </div>
+                    </div>
+                    <div class="col flex flex-col">
+                      <ul class="orderpriceInfo__list">
+                        <li>
+                          <strong>상품금액</strong>
+                          <span>38,500원</span>
+                        </li>
+                        <li>
+                          <strong>할인금액</strong>
+                          <span>5,000원</span>
+                        </li>
+                        <li>
+                          <strong>포인트 사용</strong>
+                          <span>0원</span>
+                        </li>
+                      </ul>
+
+                       <ul class="orderpriceInfo__list large mt-auto">
+                          <li>
+                            <strong>결제금액</strong>
+                            <h3>33,500<span>원</span></h3>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header">
+                <h3>배송지정보</h3>
+              </header>
+              <div class="mypage-section__body">
+                <div class="mypage-default-table">
+                  <table>
+                    <colgroup>
+                      <col width="190">
+                      <col>
+                      <col width="190">
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>수령인</th>
+                        <td>고길동</td>
+                        <th>주문자</th>
+                        <td>
+                          고길홍
+                          <a href="" class="btn">회원정보 수정</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>배송지</th>
+                        <td>서울특별시 송파구 양산로2길 38</td>
+                        <th>주문자 연락처</th>
+                        <td>010-1234-1234</td>
+                      </tr>
+                      <tr>
+                        <th>수령인 연락처</th>
+                        <td>010-1234-1234</td>
+                        <th>이메일</th>
+                        <td>2eon****@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <th>배송 요청사항</th>
+                        <td colspan="3">Lorem ipsum dolor sit amet.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+       </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,277 @@
+.mypage {
+  padding-top: 30px;
+}
+.mypage__content {
+  flex: 1;
+}
+
+.mypage-section {
+  .mypage-section__header {
+    @apply relative;
+    margin-bottom: 1rem;
+    h2 {
+      font-size: 25px;
+      line-height: 1em;
+    }
+    h3 {
+      font-size: 16px;
+      line-height: 1em;
+    }
+    p {
+      color: #666666;
+      font-size: 12px;
+    }
+  }
+
+  .mypage-section__body {
+    @apply relative;
+  }
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.2;
+    transform: scale(2.5);
+  }
+}
+
+.mypage-default-table {
+  border-top: 1px solid #222;
+  th,
+  td {
+    height: 60px;
+    font-size: 14px;
+    padding: 0 20px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  th {
+    background: #f6f6f6;
+    font-weight: 400;
+  }
+
+  .btn {
+    line-height: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 1em;
+    margin-left: 2em;
+  }
+}
+
+.like-actions {
+  padding: 0 30px;
+  @apply flex mt-4;
+
+  .actions {
+    @apply flex ml-2;
+
+    .btn {
+      margin-right: 4px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.mypage__check {
+  @apply border-t border-black flex;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 70px 200px;
+
+  th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .input {
+    height: 40px;
+  }
+
+  .intable {
+    margin-right: 20px;
+  }
+
+  button {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    width: 90px;
+    flex: none;
+  }
+}
+
+.secession {
+  .customer__form {
+    padding: 0 !important;
+  }
+
+  .secession__info {
+    border: 5px solid #e5e5e5;
+    background: #f1fef5;
+    .row {
+      padding: 15px 0;
+    }
+    .col {
+      padding: 20px 30px 15px;
+      border-right: 1px solid #e5e5e5;
+
+      &:last-child {
+        @apply border-none;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        @apply flex items-center;
+
+        a {
+          line-height: 24px;
+          margin-left: 5px;
+          font-size: 14px;
+          background: #fff;
+          @apply border border-black px-2;
+        }
+      }
+      p {
+        margin-top: 0.5em;
+
+        font-size: 35px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.secession__desc {
+  padding: 45px 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin-bottom: 20px;
+    li {
+      color: #000;
+    }
+  }
+  ol {
+    padding-left: 17px;
+    list-style: decimal;
+    li {
+      padding-left: 3px;
+    }
+  }
+
+  li {
+    font-size: 14px;
+    color: #666666;
+    line-height: 21px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mypageForm {
+  .customer__form {
+    padding: 0;
+    border: none;
+  }
+
+  .mobile-auth {
+    border: 1px solid #e5e5e5;
+    padding: 20px 30px;
+    max-width: 620px;
+    margin-top: 1em;
+
+    & > p {
+      padding-left: 20px;
+      margin-bottom: 1em;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        @apply absolute bg-black;
+        width: 3px;
+        height: 3px;
+        top: 8px;
+        left: 10px;
+      }
+    }
+  }
+
+  .button {
+    display: inline-block;
+    line-height: 28px;
+    border: 1px solid #000;
+    padding: 0 0.5em;
+  }
+}
+
+.shippingbox {
+  .actions {
+    .btn {
+      padding: 0 10px;
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.shippinglist {
+  .shippingitem {
+    @apply p-4;
+    .top {
+      @apply flex items-baseline;
+      margin-bottom: 0.5em;
+      font-size: 12px;
+
+      .btn {
+        padding: 0 1em;
+      }
+      em {
+        font-style: normal;
+      }
+
+      h3 {
+        color: #666666;
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+
+    .bottom {
+      @apply text-left;
+      .type1 {
+        font-size: 12px;
+        color: #666666;
+        margin-bottom: 5px;
+      }
+      .type2 {
+        @apply flex items-center;
+        color: #999999;
+        font-size: 11px;
+
+        span {
+          background: #b2bbc5;
+          color: #fff;
+          font-size: 12px;
+          padding: 0 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

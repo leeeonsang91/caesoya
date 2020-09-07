@@ -33,6 +33,18 @@
     }
   }
 
+  .w-100 {
+    width: 100px;
+    flex: none !important;
+  }
+  .w-150 {
+    width: 150px;
+    flex: none !important;
+  }
+  .w-200 {
+    width: 200px;
+    flex: none !important;
+  }
   .select {
     @apply flex-1 border;
     border-color: #999999;
@@ -61,7 +73,7 @@
     }
   }
   span {
-    @apply flex-none w-4 h-4 border border-black duration-300;
+    @apply flex-none w-4 h-4 border border-black duration-300 bg-white;
   }
   p {
     @apply text-xs ml-1;

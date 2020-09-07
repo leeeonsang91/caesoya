@@ -1,0 +1,58 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            
+            <div class="mypage-section">
+              <header class="mypage-section__header flex items-baseline">
+                <h2>회원정보 확인</h2>
+                <p class="ml-2">회원님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한번 확인 합니다.</p>
+              </header>
+              <div class="mypage-section__body">
+                <form action="" class="block">
+                  <div class="mypage__check">
+                    <div class="intable">
+                      <table>
+                        <colgroup>
+                          <col width="70">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                          <th>아이디</th>
+                          <td>
+                            <div class="form-row">
+                              <div class="input">
+                                <input type="text">
+                              </div>
+                            </div>
+                          </td>
+                          </tr>
+                          <tr>
+                          <th>비밀번호</th>
+                          <td>
+                            <div class="form-row">
+                              <div class="input">
+                                <input type="password">
+                              </div>
+                            </div>
+                          </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button type="submit">확인</button>
+                  </div>
+                </form>
+
+                <p class="text-right text-xs mt-4">회원님의 개인정보를 신중히 취급하며, 회원님의 동의 없이는 기재하신 회원정보를 공개 및 변경하지 않습니다.</p>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+{% endblock %}

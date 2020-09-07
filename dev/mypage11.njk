@@ -1,0 +1,113 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            
+            <div class="mypage-section">
+              <header class="mypage-section__header">
+                <h2>찜 리스트</h2>
+              </header>
+              <div class="mypage-section__body">
+                <div class="orderlist">
+                  <div class="orderlist__section">
+                    <header class="orderlist__section-header" style="padding-left: 30px;">
+                      <label for="allcheck" class="checkbox">
+                        <input type="checkbox" hidden id="allcheck">
+                        <span></span> <p>전체선택</p>
+                      </label>
+                    </header>
+                    <div class="orderlist__items">
+                      <!-- loop -->
+                      <div class="orderlist__item prod-info">
+                        <label for="allcheck" class="checkbox pr-4">
+                          <input type="checkbox" hidden id="allcheck">
+                          <span></span>
+                        </label>
+                        <div class="wrap">
+                          <div class="thumb">
+                            <img src="//via.placeholder.com/80x80" alt="">
+                          </div>
+                          <div class="info">
+                            <h2>국내산 산지직송 완숙 찰 토마토 고구마 감자 쌀밥 꿀맛...</h2>
+                            <div>
+                              <h3 class="price">36,000원</h3> 
+                              <span>1개</span>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="orderlist__seller">
+                          <h3>판매자</h3>
+                          <p>02-8888-4930</p>
+                        </div>
+                        <div class="actions">
+                          <a href="" class="btn black">장바구니 담기</a>
+                          <a href="" class="btn ">삭제</a>
+                        </div>
+                      </div>
+                      <!-- end loop -->
+                      <div class="orderlist__item prod-info">
+                        <label for="allcheck" class="checkbox pr-4">
+                          <input type="checkbox" hidden id="allcheck">
+                          <span></span>
+                        </label>
+                        <div class="wrap">
+                          <div class="thumb">
+                            <img src="//via.placeholder.com/80x80" alt="">
+                          </div>
+                          <div class="info">
+                            <h2>국내산 산지직송 완숙 찰 토마토 고구마 감자 쌀밥 꿀맛...</h2>
+                            <div>
+                              <h3 class="price">36,000원</h3> 
+                              <span>1개</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderlist__seller">
+                          <h3>판매자</h3>
+                          <p>02-8888-4930</p>
+                        </div>
+                        <div class="actions">
+                          <a href="" class="btn black">장바구니 담기</a>
+                          <a href="" class="btn ">삭제</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="like-actions">
+                  <label for="allcheck" class="checkbox">
+                    <input type="checkbox" hidden id="allcheck">
+                    <span></span>
+                  </label>
+                  <div class="actions">
+                    <a href="" class="btn">선택삭제</a>
+                    <a href="" class="btn ">품절상품 모두 삭제</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagination mt-4">
+                <div class="wrap">
+                  <a class="pagination__arrow prev" href="">이전</a>
+                  <div class="pagination__list">
+                    <a href="" class="pagination__number active">1</a>
+                    <a href="" class="pagination__number ">2</a>
+                    <a href="" class="pagination__number ">3</a>
+                    <a href="" class="pagination__number ">4</a>
+                    <a href="" class="pagination__number ">5</a>
+                  </div>
+                  <a class="pagination__arrow next" href="">다음</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+       </div>
+    </div>
+{% endblock %}

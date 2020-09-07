@@ -1,0 +1,180 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypagePoint mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            <div class="point__state">
+              <table>
+                <colgroup>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>사용가능 포인트 <a href="">충전하기</a></th>
+                    <th>소멸예정 포인트</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="point-total">0<span>p</span></div>
+                      <p>
+                        무료 포인트: 0P<br/>
+                        유료 포인트: 0P
+                      </p>
+                    </td>
+                    <td>
+                      <div class="point-total">0<span>p</span></div>
+                      <p>
+                        30일 이내 소멸예정인<br/>
+                        포인트입니다.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+            
+            <div class="mypage-section mt-8">
+              <header class="mypage-section__header">
+                <h3>포인트 교환권 등록</h3>
+              </header>
+              <div class="mypage-section__body">
+                <form action="" class="block">
+                  <div class="mypagePoint__register">
+                    <div class="select">
+                      <select name="" id="">
+                        <option value="">선택</option>
+                      </select>
+                    </div>
+                    <div class="input"><input type="text"></div>
+                    <button class="btn">등록하기</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="mypage-section mt-8">
+              <header class="mypage-section__header">
+                <h3>포인트 내역</h3>
+              </header>
+              <div class="mypage-section__body">
+                <div class="schedule mb-8">
+                  <form action="">
+                    <div class="wrap">
+                      <h3>조회기간</h3>
+                      <div class="schedule__dates">
+                        <label for="today">
+                          <input type="radio" name="dates" id="today" hidden="" checked="">
+                          <span>오늘</span>
+                        </label>
+                        <label for="1month">
+                          <input type="radio" name="dates" id="1month" hidden="">
+                          <span>1개월</span>
+                        </label>
+                        <label for="3month">
+                          <input type="radio" name="dates" id="3month" hidden="">
+                          <span>3개월</span>
+                        </label>
+                        <label for="6month">
+                          <input type="radio" name="dates" id="6month" hidden="">
+                          <span>6개월</span>
+                        </label>
+                        <label for="1year">
+                          <input type="radio" name="dates" id="1year" hidden="">
+                          <span>1년</span>
+                        </label>
+                        <label for="3year">
+                          <input type="radio" name="dates" id="3year" hidden="">
+                          <span>3년</span>
+                        </label>
+                      </div>
+                      <div class="schedule__search ml-auto">
+                        <div class="date"><input type="text" readonly="" class="datepicker hasDatepicker" id="dp1598941813018"></div>
+                        <span>~</span>
+                        <div class="date"><input type="text" readonly="" class="datepicker hasDatepicker" id="dp1598941813019"></div>
+                      </div>
+                      <div class="select ml-2">
+                        <select name="" id="">
+                          <option value="">전체</option>
+                        </select>
+                      </div>
+                      <button class="submit ml-2">조회</button>
+
+                    </div>
+                  </form>
+                </div>
+
+               
+                <div class="point__histofy">
+                  <div class="form-row">
+                    <div class="select w-150">
+                      <select name="" id="">
+                        <option value="">전체내역</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="table">
+                    <table>
+                      <colgroup>
+                        <col width="150">
+                        <col width="140">
+                        <col width="">
+                        <col width="190">
+                        <col width="160">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>발행일자</th>
+                          <th>유형</th>
+                          <th>내용</th>
+                          <th>포인트</th>
+                          <th>유효기간</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2020-08-07</td>
+                          <td>소멸</td>
+                          <td class="text-left">포인트 유효기간 만료</td>
+                          <td><span class="text-theme-red">-2,000</span></td>
+                          <td>2020-08-17</td>
+                        </tr>
+                        <tr>
+                          <td>2020-08-07</td>
+                          <td>소멸</td>
+                          <td class="text-left">회원가입 기념 포인트 적립</td>
+                          <td><span class="text-theme-green">+2,000</span></td>
+                          <td>2020-08-17</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="pagination mt-4">
+                  <div class="wrap">
+                    <a class="pagination__arrow prev" href="">이전</a>
+                    <div class="pagination__list">
+                      <a href="" class="pagination__number active">1</a>
+                      <a href="" class="pagination__number ">2</a>
+                      <a href="" class="pagination__number ">3</a>
+                      <a href="" class="pagination__number ">4</a>
+                      <a href="" class="pagination__number ">5</a>
+                    </div>
+                    <a class="pagination__arrow next" href="">다음</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+          </div>
+       </div>
+    </div>
+{% endblock %}

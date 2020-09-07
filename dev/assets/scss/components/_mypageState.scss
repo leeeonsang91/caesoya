@@ -1,0 +1,57 @@
+.mypageState {
+  background: #fff;
+  border: 5px solid #e5e5e5;
+
+  .mypageState__header {
+    background: #fff;
+    .row {
+      height: 50px;
+      @apply items-center;
+    }
+    .col {
+      padding: 0 1rem;
+    }
+
+    a {
+      font-size: 12px;
+    }
+    .mypageState__member {
+      background: url('../images/icons/settings.png') no-repeat right center;
+      padding-right: 1.75em;
+    }
+    .mypageState__notice {
+      background: url('../images/icons/notice.png') no-repeat right center;
+      padding-right: 1.75em;
+    }
+    span {
+      text-decoration: underline;
+    }
+  }
+  .mypageState__body {
+    background: #f1fef5;
+    border-top: 1px solid #e5e5e5;
+    padding: 1rem 0;
+
+    .col {
+      text-align: center;
+      border-right: 1px solid #e5e5e5;
+
+      &:last-child {
+        border-right: 0;
+      }
+      a {
+        display: block;
+        padding: 25px 0;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-size: 35px;
+        font-weight: 600;
+        font-weight: 500;
+      }
+    }
+  }
+}

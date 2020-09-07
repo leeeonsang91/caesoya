@@ -1,0 +1,40 @@
+.ordershort {
+  background: #f1fef5;
+  border: 5px solid #e5e5e5;
+
+  .row {
+    padding: 10px 0;
+  }
+  .col {
+    padding: 0 30px;
+    height: 45px;
+    @apply flex items-center;
+    font-size: 16px;
+  }
+  .col:first-child {
+    width: 240px;
+    flex: none;
+    border-right: 1px solid #e5e5e5;
+  }
+
+  strong {
+    font-weight: 500;
+    margin-right: 1em;
+  }
+
+  .col div {
+    @apply flex mr-auto;
+    margin-left: 70px;
+
+    a {
+      margin-right: 0.5em;
+    }
+  }
+  a {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 1em;
+    border: 1px solid #000;
+    background: #fff;
+  }
+}

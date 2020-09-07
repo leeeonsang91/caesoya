@@ -1,0 +1,241 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage return">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            <div class="mypage-section ">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h2>반품신청</h2>
+
+                <div class="return__breadcrumb">
+                  <span class="active"><strong>01</strong>반품신청</span>
+                  <span><strong>02</strong>수거정보 입력</span>
+                  <span><strong>03</strong>반품비용결제 및 재결제</span>
+                  <span><strong>04</strong>반품신청완료</span>
+                </div>
+              </header>
+              <div class="mypage-section__body">
+                <div class="ordertable">
+                  <table>
+                    <colgroup>
+                      <col width="150">
+                      <col>
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>주문번호</th>
+                        <th>상품정보</th>
+                        <th>주문금액(수량)</th>
+                        <th>배송비/판매자</th>
+                        <th>진행상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center"><span>202008562354</span></td>
+                        <td>
+                          <a href="" class="ordertable__item">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                              <div class="options">
+                                <strong>옵션</strong>
+                                <ul>
+                                  <li>꿀고구마(중) 2kg / 1개</li>
+                                  <li>꿀고구마(상) 2kg / 1개 (+1,000원)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                          <span>(1개)</span>
+                        </td>
+                        <td class="text-center">
+                          <p><span>2,500원 <br/> (토마토랜드)</span></p>
+                          <a href="" class="btn">판매자 문의</a>
+                        </td>
+                        <td class="text-center">
+                          <p><span>구매확정</span></p>
+                          <a href="" class="btn">배송조회</a>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <form action="" class="block ">
+                  <div class="customer__form mt-6">
+                    <div class=" ">
+                      <div class="form__table">
+                        <table>
+                          <colgroup>
+                            <col width="185">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th>사유선택</th>
+                              <td>
+                                <div class="form-row">
+                                  <div class="select">
+                                    <select name="" id="" required class="full">
+                                      <option value="">반품사유를 선택하세요.</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>사유입력</th>
+                              <td>
+                                <div class="form-row">
+                                  <div class="textarea">
+                                    <textarea name="" id=""></textarea>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>파일첨부</th>
+                              <td>
+                                <div class="wrap">
+                                  <label for="file1" class="custom-file mr-1 ">
+                                    <input type="file" id="file1" hidden>
+                                    <span class="">파일첨부1</span>
+                                  </label>
+                                  <label for="file2" class="custom-file mr-1">
+                                    <input type="file" id="file2" hidden>
+                                    <span>파일첨부2</span>
+                                  </label>
+                                  <label for="file3" class="custom-file">
+                                    <input type="file" id="file3" hidden>
+                                    <span>파일첨부3</span>
+                                  </label>
+                                </div>
+                                <script>
+                                  $(function(){
+                                    // 수정화면에서는 file value 체크해서 span에 'active' 클래서 추가 필요
+                                    $('.custom-file input').on('change', function(){
+                                      var $span = $(this).parents('.custom-file').find('span');
+                                      if($(this).val()) {
+                                        $span.addClass('active');
+                                      } else {
+                                        $span.removeClass('active');
+                                      }
+                                    });
+                                  })
+                                </script>
+                                <p class="required info-text mt-2">
+                                  전체 최대용량 8MB, 이미지 파일(jpeg, png, gif) 최대 3개까지 첨부 가능합니다.
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="mt-6 return__info">
+                    <div class="row">
+                      <div class="col">
+                        <div class="return__info-total">
+                          <ul class="orderpriceInfo__list large ">
+                            <li>
+                              <strong>주문금액</strong>
+                              <h3>36,500<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="return__info-desc">
+                          <ul class="orderpriceInfo__list">
+                            <li>
+                              <strong>취소상품합계</strong>
+                              <span>36,000원</span>
+                            </li>
+                            <li>
+                              <strong>취소 배송비 합계</strong>
+                              <span>0원</span>
+                            </li>
+                            <li>
+                              <strong>주문할인 취소금액</strong>
+                              <span>0원</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="return__info-total">
+                          <ul class="orderpriceInfo__list large ">
+                            <li>
+                              <strong>환불금액 차감내역</strong>
+                              <h3>0<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="return__info-desc">
+                          <ul class="orderpriceInfo__list">
+                            <li>
+                              <strong>배송비 추가금액</strong>
+                              <span>0원</span>
+                            </li>
+                            <li>
+                              <strong>할인 변동금액</strong>
+                              <span>0원</span>
+                            </li>
+                            <li>
+                              <strong>취소/반품비용 환불금 차감</strong>
+                              <span>0원</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="return__info-total">
+                          <ul class="orderpriceInfo__list large ">
+                            <li>
+                              <strong>환불 예정금액</strong>
+                              <h3>36,000<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="return__info-desc">
+                          <ul class="orderpriceInfo__list">
+                            <li>
+                              <strong>신용카드 환불금액</strong>
+                              <span>36,000원</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="default-btnbox mt-12">
+                    <div class="wrap">
+                      <a href="" class="btn white">취소</a>
+                      <button class="btn black">반품정보 입력</button>
+                    </div>
+                  </div>
+                </form>
+
+                {% include "components/return_info.njk" %}
+
+              </div>
+            </div>
+
+          </div>
+       </div>
+    </div>
+{% endblock %}

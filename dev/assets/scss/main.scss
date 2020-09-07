@@ -15,9 +15,22 @@
 @import 'components/btnbox';
 @import 'components/pagination';
 @import 'components/star';
+@import 'components/lnb';
+@import 'components/mypageState';
+@import 'components/deliverState';
+@import 'components/orderlist';
+@import 'components/likeStore';
+@import 'components/ordershort';
+@import 'components/ordertable';
+@import 'components/orderpriceInfo';
+@import 'components/mypagePoint';
+@import 'components/return';
+@import 'components/intable';
+@import 'components/coupon';
 
 // pages
 @import 'pages/index';
 @import 'pages/accounts';
 @import 'pages/terms';
 @import 'pages/customer';
+@import 'pages/mypage';

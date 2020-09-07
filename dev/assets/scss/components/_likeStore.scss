@@ -1,0 +1,59 @@
+.likeStore {
+  .likeStore__header {
+    @apply border-t border-black flex items-center;
+    height: 50px;
+    background: #f6f6f6;
+    padding: 0 30px;
+
+    a {
+      font-size: 12px;
+      margin-right: 25px;
+      &.active {
+        @apply text-theme-green;
+      }
+    }
+  }
+
+  .likeStore__body {
+    @apply border-t;
+    border-color: #e5e5e5;
+    padding: 1rem 0;
+
+    .likeStore__item {
+      @apply flex items-center;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1.5em;
+
+      .info {
+        flex: 1;
+        margin-left: 1em;
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          color: #666666;
+          font-size: 14px;
+          margin: 3px 0 5px;
+        }
+        .etc {
+          @apply flex items-center;
+          margin: 0 -8px;
+          span {
+            font-size: 12px;
+            border-right: 1px solid #666;
+            line-height: 1em;
+            padding: 0 8px;
+            &:last-child {
+              border-right: 0;
+            }
+          }
+        }
+      }
+      .actions {
+        a {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

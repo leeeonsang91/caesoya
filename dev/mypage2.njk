@@ -1,0 +1,258 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            {% include "layout/mypage-state.njk" %}
+            
+            
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header">
+                <h2>주문/배송 조회</h2>
+              </header>
+              <div class="mypage-section__body">
+                <div class="schedule mb-8">
+                  <form action="">
+                    <div class="wrap">
+                      <h3>조회기간</h3>
+                      <div class="schedule__dates">
+                        <label for="today">
+                          <input type="radio" name="dates" id="today" hidden="" checked="">
+                          <span>오늘</span>
+                        </label>
+                        <label for="1month">
+                          <input type="radio" name="dates" id="1month" hidden="">
+                          <span>1개월</span>
+                        </label>
+                        <label for="3month">
+                          <input type="radio" name="dates" id="3month" hidden="">
+                          <span>3개월</span>
+                        </label>
+                        <label for="6month">
+                          <input type="radio" name="dates" id="6month" hidden="">
+                          <span>6개월</span>
+                        </label>
+                        <label for="1year">
+                          <input type="radio" name="dates" id="1year" hidden="">
+                          <span>1년</span>
+                        </label>
+                        <label for="3year">
+                          <input type="radio" name="dates" id="3year" hidden="">
+                          <span>3년</span>
+                        </label>
+                      </div>
+                      <div class="schedule__search ml-auto">
+                        <div class="date"><input type="text" readonly="" class="datepicker hasDatepicker" id="dp1598941813018"></div>
+                        <span>~</span>
+                        <div class="date"><input type="text" readonly="" class="datepicker hasDatepicker" id="dp1598941813019"></div>
+                      </div>
+                      <div class="select ml-2">
+                        <select name="" id="">
+                          <option value="">전체</option>
+                        </select>
+                      </div>
+                      <button class="submit ml-2">조회</button>
+
+                    </div>
+                  </form>
+                </div>
+
+                <div class="orderlist">
+                  <div class="orderlist__section">
+                    <header class="orderlist__section-header">2020.07</header>
+                    <div class="orderlist__items">
+                      <div class="orderlist__item prod-info">
+                        <div class="wrap">
+                          <div class="thumb">
+                            <img src="//via.placeholder.com/80x80" alt="">
+                          </div>
+                          <div class="info">
+                            <h2>국내산 산지직송 완숙 찰 토마토 고구마 감자 쌀밥 꿀맛...</h2>
+                            <div>
+                              <h3 class="price">36,000원</h3> 
+                              <span>1개</span>
+                            </div>
+
+                            <div class="state">
+                              <span>배송완료</span> 2020.06.25
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderlist__seller">
+                          <h3>판매자</h3>
+                          <p>02-8888-4930</p>
+                          <a href="">문의하기</a>
+                        </div>
+                        <div class="actions">
+                          <a href="" class="btn black">배송조회</a>
+                          <a href="" class="btn ">주문취소</a>
+                          <a href="" class="btn ">반품신청</a>
+                        </div>
+                      </div>
+                      <div class="orderlist__item prod-info">
+                        <div class="wrap">
+                          <div class="thumb">
+                            <img src="//via.placeholder.com/80x80" alt="">
+                          </div>
+                          <div class="info">
+                            <h2>국내산 산지직송 완숙 찰 토마토 고구마 감자 쌀밥 꿀맛...</h2>
+                            <div>
+                              <h3 class="price">36,000원</h3> 
+                              <span>1개</span>
+                            </div>
+
+                            <div class="state">
+                              <span>배송완료</span> 2020.06.25
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderlist__seller">
+                          <h3>판매자</h3>
+                          <p>02-8888-4930</p>
+                          <a href="">문의하기</a>
+                        </div>
+                        <div class="actions">
+                          <a href="" class="btn black">배송조회</a>
+                          <a href="" class="btn ">주문취소</a>
+                          <a href="" class="btn ">반품신청</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- loop -->
+                  <div class="orderlist__section">
+                    <header class="orderlist__section-header">2020.06</header>
+                    <div class="orderlist__items">
+                      <!-- loop -->
+                      <div class="orderlist__item prod-info">
+                        <div class="wrap">
+                          <div class="thumb">
+                            <img src="//via.placeholder.com/80x80" alt="">
+                          </div>
+                          <div class="info">
+                            <h2>국내산 산지직송 완숙 찰 토마토 고구마 감자 쌀밥 꿀맛...</h2>
+                            <div>
+                              <h3 class="price">36,000원</h3> 
+                              <span>1개</span>
+                            </div>
+
+                            <div class="state">
+                              <span>배송완료</span> 2020.06.25
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderlist__seller">
+                          <h3>판매자</h3>
+                          <p>02-8888-4930</p>
+                          <a href="">문의하기</a>
+                        </div>
+                        <div class="actions">
+                          <a href="" class="btn black">배송조회</a>
+                          <a href="" class="btn ">주문취소</a>
+                          <a href="" class="btn ">반품신청</a>
+                        </div>
+                      </div>
+                      <!-- end loop -->
+                      <div class="orderlist__item prod-info">
+                        <div class="wrap">
+                          <div class="thumb">
+                            <img src="//via.placeholder.com/80x80" alt="">
+                          </div>
+                          <div class="info">
+                            <h2>국내산 산지직송 완숙 찰 토마토 고구마 감자 쌀밥 꿀맛...</h2>
+                            <div>
+                              <h3 class="price">36,000원</h3> 
+                              <span>1개</span>
+                            </div>
+
+                            <div class="state">
+                              <span>배송완료</span> 2020.06.25
+                            </div>
+                          </div>
+                        </div>
+                        <div class="orderlist__seller">
+                          <h3>판매자</h3>
+                          <p>02-8888-4930</p>
+                          <a href="">문의하기</a>
+                        </div>
+                        <div class="actions">
+                          <a href="" class="btn black">배송조회</a>
+                          <a href="" class="btn ">주문취소</a>
+                          <a href="" class="btn ">반품신청</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end loop -->
+                </div>
+
+              </div>
+
+              <div class="pagination mt-4">
+                <div class="wrap">
+                  <a class="pagination__arrow prev" href="">이전</a>
+                  <div class="pagination__list">
+                    <a href="" class="pagination__number active">1</a>
+                    <a href="" class="pagination__number ">2</a>
+                    <a href="" class="pagination__number ">3</a>
+                    <a href="" class="pagination__number ">4</a>
+                    <a href="" class="pagination__number ">5</a>
+                  </div>
+                  <a class="pagination__arrow next" href="">다음</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="deliverState bg-type mt-8">
+              <div class="deliverState__info">
+                <h3>주문/배송 상태 안내</h3>
+                <div class="row">
+                  <div class="col state1 ">
+                    <span class="icon">결제완료</span>
+                    <h4>결제완료</h4>
+                    <p>
+                      <span>주문,결제,확인</span>이<br/>
+                      완료되었습니다.
+                    </p>
+                  </div>
+                  <div class="col state2">
+                    <span class="icon">상품준비중</span>
+                    <h4>상품준비중</h4>
+                    <p>
+                      판매자가 발송할<br/> <span>상품을 준비중</span>입니다.
+                    </p>
+                  </div>
+                  <div class="col state3">
+                    <span class="icon">배송시작</span>
+                    <h4>배송시작</h4>
+                    <p>
+                      주문하신 상품이 <br/><span>곧 배송될 예정</span>입니다.
+                    </p>
+                  </div>
+                  <div class="col state4">
+                    <span class="icon">배송중</span>
+                    <h4>배송중</h4>
+                    <p>
+                      상품이 발송되어<br/> 고객님께 <span>배송중</span>입니다.
+                    </p>
+                  </div>
+                  <div class="col state5">
+                    <span class="icon">배송완료</span>
+                    <h4>배송완료</h4>
+                    <p>
+                      상품이 고객님께 <br/><span>배송완료</span>되었습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+       </div>
+    </div>
+{% endblock %}

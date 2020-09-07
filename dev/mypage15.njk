@@ -1,0 +1,322 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage">
+       <div class="wrap">
+          {% include "layout/mypage-lnb.njk" %}
+          <div class="mypage__content">
+            <!-- mypage state -->
+            
+            <div class="mypage-section">
+              <header class="mypage-section__header flex justify-between items-center">
+                <h2>회원정보 수정</h2>
+
+              </header>
+              <div class="mypage-section__body">
+                <div class="mypageForm">
+                  <form action="" class="block">
+                    <div class="customer__form">
+                        <div class="form__table">
+                          <table>
+                            <colgroup>
+                              <col width="185">
+                              <col>
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th>아이디</th>
+                                <td>
+                                  hongildong23
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>이름</th>
+                                <td>
+                                  고길동
+
+                                  <div class="mobile-auth">
+                                    <p>
+                                      <strong>회원님의 변경된 이름을 확인하기 위해서 본인인증이 필요합니다.</strong>
+                                      <br/>
+                                      (개명 이후 실명기관에 등록된 경우 이름 변경이 가능하며, 본인인증 성공 시, 최신정보로 업데이트 됩니다.)
+                                    </p>
+                                    <label for="c0" class="checkbox">
+                                      <input type="checkbox" hidden id="c0">
+                                      <span></span>
+                                      <p>본인인증 후 변경된 정보(이름, 성별, 생년월일, 휴대폰번호, CI, DI)가 있을 경우 회원정보가 업데이트 됩니다.</p>
+                                    </label>
+
+                                    <div class="flex justify-end mt-4">
+                                      <button onclick="$('#authmobile').show();" type="button" class="button">휴대폰 본인인증</button>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>이메일</th>
+                                <td>
+                                  hongil****@gmail.com <a href="" class="button ml-8">이메일 변경</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>이메일</th>
+                                <td>
+                                  010-****-2222 <a href="" class="button ml-8">휴대폰 번호 변경</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>비밀번호 변경</th>
+                                <td>
+                                  <div class="intable">
+                                    <table>
+                                      <colgroup>
+                                        <col width="115">
+                                        <col>
+                                      </colgroup>
+                                      <tbody>
+                                        <tr>
+                                          <th>현재 비밀번호</th>
+                                          <td>
+                                            <div class="form-row">
+                                              <div class="input w-200">
+                                                <input type="password">
+                                              </div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th>새 비밀번호</th>
+                                          <td>
+                                            <div class="form-row">
+                                              <div class="input w-200">
+                                                <input type="password">
+                                              </div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th>비밀번호 다시 입력</th>
+                                          <td>
+                                            <div class="form-row">
+                                              <div class="input w-200">
+                                                <input type="password">
+                                              </div>
+                                            </div>
+                                            <a href="" class="button">비밀번호 변경</a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>배송지 관리</th>
+                                <td>
+                                  고길동
+                                  <div class="shippingbox mt-4">
+                                    <div class="actions flex">
+                                      <button onclick="$('#shipmanage').show();" type="button" class="btn ">배송지 관리</button>
+                                      <button onclick="$('#shipregisterd').show();" type="button" class="btn black">배송지 추가</button>
+                                    </div>
+                                    <p>
+                                      인천광역시 남구 주안서로40 네오빌아파트 1102호<br/>
+                                      010-5626-2358<br/>
+                                      직접 받고 부재 시 문 앞
+                                    </p>
+                                    <a href="" class="button mt-4">수정</a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>수신설정</th>
+                                <td>
+                                  <div class="flex">
+                                    <label for="c1" class="checkbox">
+                                      <input type="checkbox" hidden id="c1">
+                                      <span></span>
+                                      <p >특가상품, 할인쿠폰, 이벤트 소식 수신 동의</p>
+                                    </label>
+                                    <label for="c3" class="checkbox">
+                                      <input type="checkbox" hidden id="c3">
+                                      <span></span>
+                                      <p>이메일</p>
+                                    </label>
+                                    <label for="c2" class="checkbox">
+                                      <input type="checkbox" hidden id="c2">
+                                      <span></span>
+                                      <p>SMS</p>
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p class="info-text mt-2 flex justify-end items-center">
+                          * 탈퇴를 원하시면 우측의 회원탈퇴 버튼을 눌러주세요. <a href="" class="ml-2">회원탈퇴</a>
+                        </p>
+                    </div>
+                    <div class="default-btnbox mt-12">
+                      <div class="wrap">
+                        <a href="" class="btn white">취소</a>
+                        <button class="btn black">수정하기</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+       </div>
+    </div>
+
+
+    <!-- 배송지 목록 -->
+    <div class="modal" id="shipmanage" style="display: none;">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">배송지 관리</h2>
+                <button class="modal__closer">닫기</button>
+            </div>
+            <div class="modal__body" style="padding: 0;">
+                <div class="shippinglist">
+                  <div class="shippingitem">
+                    <div class="top flex">
+                      <h3>고길동</h3>
+                      <span>010-2222-3333</span>
+                      <em class="text-theme-green">(기본배송지)</em>
+
+                      <div class="actions ml-auto">
+                        <a href="" class="btn">수정</a>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <p class="type1">[22136]   인천광역시 남구 주안동 219-4 주안네오빌주상복합 아파트 1102호</p>
+                      <div class="type2">
+                        <span>도로명</span> <p>인천광역시 남구 주안동 219-4 주안네오빌주상복합 아파트 1102호</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal__btnbox">
+                <a class="btn black mr-2"  href="">배송지 추가</a>
+                <a class="btn" href="">닫기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 배송지 추가 -->
+    <div class="modal" id="shipregisterd" style="display: none;">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">배송지 추가</h2>
+                <button class="modal__closer">닫기</button>
+            </div>
+            <div class="modal__body" style="padding: 0; ">
+               <div class="modal__form">
+               <table>
+                <colgroup>
+                  <col width="165">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>배송지명</th>
+                    <td>
+                      <div class="form-row">
+                        <div class="input"><input type="text"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>연락처</th>
+                    <td>
+                      <div class="form-row flex">
+                        <div class="select">
+                          <select name="" id="" class="full">
+                            <option value="">010</option>
+                          </select>
+                        </div>
+                        <span class="mx-2">-</span>
+                        <div class="input"><input type="text"></div>
+                        <span class="mx-2">-</span>
+                        <div class="input"><input type="text"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>주소</th>
+                    <td>
+                      <div class="form-row flex" >
+                        <div class="input"><input type="text" readonly></div>
+                        <div class="btn ml-2">우편번호 검색</div>
+                      </div>
+                      <div class="form-row">
+                        <div class="input"><input type="text" readonly></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="input"><input type="text" placeholder="상세 주소 입력하세요."></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+               </table>
+               </div>
+
+               <label for="default" class="checkbox mt-2">
+                <input type="checkbox" hidden id="default">
+                <span></span>
+                <p>기본배송지 설정</p>
+               </label>
+            </div>
+            <div class="modal__btnbox border-none">
+                <a class="btn black mr-2"  href="">추가</a>
+                <a class="btn" href="">닫기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 휴대폰 본인인증 -->
+    <div class="modal" id="authmobile" style="display: none;">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">휴대폰 본인인증</h2>
+                <button class="modal__closer">닫기</button>
+            </div>
+            <div class="modal__body" style="padding: 0; ">
+              <div class="authmobile">
+                <div class="top">
+                  <div class="text-center">
+                    <img src="./assets/images/icons/mobile-auth.png" class="mx-auto" alt="">
+                    <h3>휴대폰 본인인증</h3>
+                    <p>회원임의 휴대폰번호 변경을 위해 <strong>본인인증</strong>이 필요합니다.</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                    <label for="f1" class="checkbox">
+                      <input type="checkbox" id="f1" hidden>
+                      <span></span>
+                      <p>
+                        본인인증 후 변경된 정보(이름, 성별, 생년월일, 휴대폰번호)가 있을 경우 회원정보가 업데이트 됩니다.
+                      </p>
+                    </label>
+                    <div class="actions flex justify-center">
+                      <a href="" class="btn">휴대폰 본인인증</a>
+                    </div>
+                  </div>
+                  <p>
+                    · 인증 관련 문의사항은 고객센터로 연락주시기 바랍니다.<br/>
+                    · 고객센터 : 1566-0999 (평일 오전 9시 ~ 오후 6시, 토/일 휴무)
+                  </p>
+              </div>
+            </div>
+            <div class="modal__btnbox border-none">
+                <a class="btn" href="">닫기</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

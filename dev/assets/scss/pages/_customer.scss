@@ -161,6 +161,11 @@
     color: #fff;
     font-size: 12px;
   }
+  h3 {
+    font-size: 16px;
+    line-height: 32px;
+    margin-right: 0.5rem;
+  }
   .schedule__search {
     @apply flex items-center;
     .date {
@@ -182,10 +187,13 @@
     }
   }
   .select {
-    height: 30px;
+    height: 32px;
     width: 120px;
     background: #fff;
     margin-left: auto;
+    &.ml-2 {
+      margin-left: 0.5rem;
+    }
     select {
       border: 1px solid #d6d6d6;
       width: 100%;
@@ -210,7 +218,7 @@
     }
     span {
       cursor: pointer;
-      line-height: 30px;
+      line-height: 32px;
       width: 100%;
       display: block;
       font-size: 12px;
@@ -327,54 +335,6 @@
 .customer__review-item {
   border-top: 1px solid #222;
 
-  .customer__review-product {
-    display: block;
-    background: #fff;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 15px 60px;
-    padding-right: 0;
-
-    .wrap {
-      @apply items-center;
-    }
-
-    .thumb {
-      width: 80px;
-    }
-    .info {
-      margin-left: 1em;
-      flex: 1;
-
-      h2 {
-        font-size: 16px;
-        line-height: 1.25em;
-        margin-bottom: 10px;
-      }
-      div {
-        display: flex;
-        line-height: 10px;
-
-        .price {
-          padding-right: 10px;
-          border-right: 1px solid #ececec;
-          margin-right: 10px;
-        }
-      }
-    }
-    .state {
-      border-top: 1px solid #e5e5e5;
-      margin-top: 15px;
-      display: flex;
-      padding-top: 10px;
-      line-height: 14px;
-      font-size: 14px;
-      color: #999999;
-      span {
-        color: #159c65;
-        margin-right: 5px;
-      }
-    }
-  }
   .customer__review-info {
     padding: 15px 60px;
     background: #f6f6f6;
@@ -407,6 +367,59 @@
             margin-top: 5px;
           }
         }
+      }
+    }
+  }
+}
+
+.prod-info {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 60px;
+  padding-right: 0;
+
+  .wrap {
+    @apply items-start;
+  }
+
+  .thumb {
+    width: 80px;
+  }
+  .info {
+    margin-left: 1em;
+    flex: 1;
+
+    h2 {
+      font-size: 16px;
+      line-height: 1.25em;
+      margin-bottom: 10px;
+    }
+    div {
+      display: flex;
+      line-height: 10px;
+
+      .price {
+        padding-right: 10px;
+        border-right: 1px solid #ececec;
+        margin-right: 10px;
+      }
+    }
+  }
+  .state {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 15px;
+    display: flex;
+    padding-top: 10px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #999999;
+    span {
+      color: #159c65;
+      margin-right: 5px;
+
+      &.cancel {
+        @apply text-theme-red;
       }
     }
   }

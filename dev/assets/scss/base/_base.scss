@@ -38,3 +38,10 @@ table {
   table-layout: fixed;
   width: 100%;
 }
+
+.row {
+  @apply flex;
+}
+.col {
+  @apply flex-1;
+}

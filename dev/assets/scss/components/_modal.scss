@@ -21,7 +21,7 @@
       overflow: hidden;
       width: 20px;
       height: 20px;
-      background: url("../images/icons/modal-x.png") no-repeat center;
+      background: url('../images/icons/modal-x.png') no-repeat center;
     }
   }
 
@@ -36,6 +36,10 @@
   .modal__btnbox {
     @apply flex items-center justify-center pt-10 border-t;
     border-color: #e5e5e5;
+
+    &.border-none {
+      border: none;
+    }
     a {
       @apply bg-white text-black border border-black duration-300 text-center;
       line-height: 55px;
@@ -45,5 +49,85 @@
         @apply bg-black text-white ml-3;
       }
     }
+  }
+}
+
+.modal__form {
+  @apply border-b;
+  border-color: #e5e5e5;
+  max-width: 520px;
+
+  th,
+  td {
+    height: 60px;
+    padding: 15px 20px;
+    font-size: 12px;
+    border-bottom: 1px solid #f6f6f6;
+    text-align: left;
+    vertical-align: top;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  th {
+    background: #f6f6f6;
+  }
+  .input,
+  .select,
+  .btn {
+    height: 30px;
+  }
+
+  [readonly] {
+    background: #f2f2f2;
+  }
+  .btn {
+    padding: 0 1em;
+    height: 30px;
+    border: 1px solid #000;
+  }
+}
+
+.authmobile {
+  .top {
+    padding: 30px 0;
+
+    h3 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #222222;
+    }
+    p {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #999999;
+
+      strong {
+        color: #000;
+      }
+    }
+  }
+
+  .bottom {
+    background: #f6f6f6;
+    padding: 25px 75px;
+
+    .actions {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+      .btn {
+        padding: 0 1em;
+        line-height: 30px;
+        background: #fff;
+      }
+    }
+  }
+
+  & > p {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #999999;
+    margin-top: 0.5em;
   }
 }
