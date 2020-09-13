@@ -1,0 +1,109 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page goods-list">
+        <div class="goods-lnb">
+            <div class="wrap block">
+                <div class="title">
+                    <h2>채소</h2>
+                </div>
+                <div class="goods-category">
+                    <div class="category-items cateBig">
+                        <a href="" class="category-link">전체</a>
+                        <a href="" class="category-link active">오이/호박/고추/열매채소</a>
+                        <a href="" class="category-link">감자/양파/마늘/뿌리채소</a>
+                        <a href="" class="category-link">배추/상추/깻잎/잎채소</a>
+                        <a href="" class="category-link">버섯류</a>
+                        <a href="" class="category-link">나물류</a>
+                    </div>
+                    <div class="category-items cateMedium">
+                        <a href="" class="category-link">전체보기</a>
+                        <a href="" class="category-link active">오이</a>
+                        <a href="" class="category-link">호박</a>
+                        <a href="" class="category-link">고추</a>
+                        <a href="" class="category-link">피망</a>
+                        <a href="" class="category-link">파프리카</a>
+                        <a href="" class="category-link">가지</a>
+                    </div>
+                    <div class="category-items cateSmall">
+                        <a href="" class="category-link active">백다다기오이</a>
+                        <a href="" class="category-link">취정오이</a>
+                        <a href="" class="category-link">가시오이</a>
+                        <a href="" class="category-link">노각오이</a>
+                    </div>
+                </div>
+
+                <div class="goods-count"><strong class="text-theme-green">15</strong>개의 상품이 있습니다.</div>
+                <div class="goods-sort">
+                    <div class="form-row ml-auto">
+                        <div class="select">
+                            <select name="" id="" class="full">
+                                <option value="">등급선택</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="" class="active"><span>최근 등록순</span></a>
+                    <a href=""><span>인기순</span></a>
+                    <a href=""><span>많은 리뷰순</span></a>
+                    <a href=""><span>높은 평가순</span></a>
+                    <a href=""><span>낮은 가격순</span></a>
+                    <a href=""><span>높은 가격순</span></a>
+                </div>
+
+                <div class="goods-produtbox">
+                    <div class="product product-type1">
+                        {% for i in [1,2,3,4,5,1,2,3,4,5,1,2] %}
+                        <div class="product__item">
+                            <a href="" class="product__link">
+                                <div class="product__action">
+                                    <span class="product__mark new">
+                                        <img src="./assets/images/icons/new.png" alt="">
+                                    </span>
+                                    <button class="product__mark cart">
+                                        <img src="./assets/images/icons/cart-white.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="product__img">
+                                    <img src="./assets/images/dummy-product-type1.png" alt="">
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">
+                                            <span class="category">[특상급]</span>
+                                            성주 꿀참외
+                                        </h3>
+                                        <div class="product__quantity">1박스 10kg</div>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="sale">20%</div>
+                                        <div class="price">
+                                            38,000
+                                            <span class="currency">원</span>
+                                        </div>
+                                        <div class="price-origin">45,000원</div>
+                                        <div class="price-fluctuate">▲ 1,000</div>
+                                    </div>
+                                    <div class="score-area">
+                                        <span class="score">
+                                            <i class="active">★</i>
+                                            <i class="active">★</i>
+                                            <i class="active">★</i>
+                                            <i>★</i>
+                                            <i>★</i>
+                                        </span>
+                                        <span class="comment-cont">(11)</span>
+                                    </div>
+                                    <div class="product__date">
+                                        <span>등록일</span>
+                                        2020.07.22
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

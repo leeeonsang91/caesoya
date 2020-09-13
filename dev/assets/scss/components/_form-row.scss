@@ -6,6 +6,16 @@
   .row {
     @apply flex;
   }
+  .button {
+    height: 35px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #222;
+
+    &.black {
+      @apply bg-black text-white;
+    }
+  }
   .input {
     @apply flex-1 border flex;
     border-color: #999999;
@@ -77,6 +87,18 @@
   }
   p {
     @apply text-xs ml-1;
+  }
+
+  &.big {
+    span {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 600;
+    }
   }
 }
 

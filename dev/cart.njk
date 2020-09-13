@@ -1,0 +1,142 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage return">
+       <div class="wrap">
+          <div class="mypage__content">
+            <!-- mypage state -->
+            <div class="mypage-section ">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h2>장바구니</h2>
+                <div class="return__breadcrumb">
+                  <span class="active"><strong>01</strong>장바구니</span>
+                  <span><strong>02</strong>주문결제</span>
+                  <span><strong>03</strong>주문완료</span>
+                </div>
+              </header>
+              <div class="mypage-section__body">
+                <div class="ordertable">
+                  <table>
+                    <colgroup>
+                      <col width="50">
+                      <col>
+                      <col width="200">
+                      <col width="150">
+                      <col width="160">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>
+                          <label for="check-all" class="checkbox justify-center" style="margin:0;">
+                            <input type="checkbox" id="check-all" hidden>
+                            <span></span>
+                          </label>
+                        </th>
+                        <th>상품정보</th>
+                        <th>옵션</th>
+                        <th>상품금액</th>
+                        <th>배송비</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                          <label for="check" class="checkbox justify-center" style="margin:0;">
+                            <input type="checkbox" id="check" hidden>
+                            <span></span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="" class="ordertable__item pl-4">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                            </div>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="ordertable__item mb-2">
+                            <div class="options">
+                              <ul>
+                                <li>꿀고구마(중) 2kg / 1개</li>
+                                <li>꿀고구마(상) 2kg / 1개 (+1,000원)</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <a href="" class="btn">옵션/수량 변경</a>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                          <span>(1개)</span>
+                        </td>
+                        <td class="text-center">
+                          <p>
+                            <span>
+                              기본 - 고정배송비<br/>
+                              2,500원<br/>
+                              (택배-선결제)
+                            </span>
+                          </p>
+                          
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="actions flex mt-4">
+                  <a href="" class="btn w-32 mr-2">선택삭제</a>
+                  <a href="" class="btn w-32">품절상품 모두 삭제</a>
+                </div>
+
+                <form action="" class="block mt-10 ">
+                  <div class="return__info return__info--small">
+                    <div class="row">
+                      <div class="col">
+                        <div class="return__info-total">
+                          <ul class="orderpriceInfo__list large ">
+                            <li>
+                              <strong>주문금액</strong>
+                              <h3>36,500<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="return__info-total">
+                          <ul class="orderpriceInfo__list large ">
+                            <li>
+                              <strong>배송비</strong>
+                              <h3>2,500<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="return__info-total">
+                          <ul class="orderpriceInfo__list large ">
+                            <li>
+                              <strong>총 주문금액</strong>
+                              <h3>39,000<span>원</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="default-btnbox mt-8">
+                    <div class="wrap" style="justify-content: flex-end;">
+                      <a href="" class="btn white">선택 상품 주문</a>
+                      <button class="btn black">전체주문</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+       </div>
+    </div>
+{% endblock %}

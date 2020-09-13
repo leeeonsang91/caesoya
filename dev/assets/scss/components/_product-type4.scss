@@ -1,0 +1,89 @@
+.product-type4 {
+    @apply flex justify-between flex-wrap;
+
+    .product__item {
+        width: 49%;
+        border: 1px solid #ebebeb;
+
+        &:nth-child(n+3) {
+            margin-top: 20px;
+        }
+
+        .product__link {
+            @apply flex;
+            @apply relative;
+
+            .product__img {
+                margin-bottom: 0;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .product__info {
+                padding: 40px 20px;
+
+                .product__tit {
+                    margin-bottom: 15px;
+
+                    .product__name {
+                        @apply flex items-center;
+                        color: #202020;
+                        font-weight : 700;
+
+                        .category {
+                            font-size: 16px;
+                            @apply text-theme-green;
+                            margin-right: 5px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .product__quantity {
+                        font-size: 15px;
+                        color: #666;
+                    }
+                }
+
+                .product__price {
+                    @apply flex items-center;
+                    margin-bottom: 20px;
+
+                    .sale {
+                        font-size: 18px;
+                        @apply text-theme-red;
+                        font-weight: 700;
+                    }
+                    .price {
+                        @apply flex items-end;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #202020;
+                        margin: 0 5px;
+
+                        .currency {
+                            font-weight: 400;
+                        }
+                    }
+                    .price-origin {
+                        font-size: 13px;
+                        color: #666;
+                        text-decoration: line-through;
+                    }
+                    .price-fluctuate {
+                        width: 61px;
+                        height: 18px;
+                        line-height: 18px;
+                        border-radius: 5px;
+                        font-size: 9px;
+                        color: #fff;
+                        @apply bg-theme-green text-center;
+                        margin-left: 5px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

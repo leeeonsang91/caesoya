@@ -1,0 +1,79 @@
+.billCase {
+  border: 2px solid #000;
+  background: #f1fef5 !important;
+  padding: 3px 5px;
+  th,
+  td {
+    padding: 5px !important;
+
+    background: #f1fef5 !important;
+  }
+  .select {
+    background: #fff !important;
+  }
+  tr:first-child {
+    & > * {
+      border-bottom: 1px solid #d8e1de !important;
+    }
+  }
+}
+
+.ordercomplete {
+  background: #f6f6f6;
+  border-top: 1px solid #000;
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 15px;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.orderResultbox {
+  height: 258px;
+  border: 1px solid #e5e5e5;
+  border-top: 1px solid #000;
+  padding: 20px;
+
+  .orderResultbox__content {
+    background: #f2f2f4;
+    height: 100%;
+    padding: 30px 20px;
+  }
+
+  ul {
+    background: #fff;
+    padding: 15px 20px;
+    li {
+      @apply flex text-xs justify-between;
+
+      &:first-child {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .orderResultbox__price {
+    @apply flex justify-between items-baseline;
+    margin-bottom: 25px;
+    h3 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 35px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}

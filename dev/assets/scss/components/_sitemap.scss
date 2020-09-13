@@ -1,0 +1,42 @@
+.sitemap {
+  width: 1200px;
+  background: #fff;
+  @apply absolute  shadow-lg;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 1px solid #e2e2e2;
+  border-top: 0;
+  padding: 20px;
+  display: none;
+
+  .wrap {
+    @apply flex flex-wrap;
+  }
+  .sitemap__item {
+    width: 20%;
+    padding: 20px;
+
+    &:nth-child(n + 6) {
+      margin-top: 10px;
+    }
+  }
+  .sitemap__item-title {
+    font-size: 12px;
+    @apply text-black block;
+    border-bottom: 1px solid #ececec;
+    line-height: 28px;
+  }
+  .sitemap__links {
+    margin-top: 2px;
+    a {
+      line-height: 26px;
+      font-size: 11px;
+      display: block;
+
+      &.active {
+        @apply text-theme-green;
+      }
+    }
+  }
+}

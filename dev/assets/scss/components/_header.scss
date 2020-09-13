@@ -85,12 +85,16 @@
   }
 
   .hamburger {
-    @apply border-l border-r;
+    @apply border-l border-r relative;
     border-color: #e2e2e2;
     width: 55px;
     height: 55px;
     @include hideText;
-    background: url("../images/icons/hamburger.png") no-repeat center;
+    background: url('../images/icons/hamburger.png') no-repeat center;
+
+    &.active {
+      background: url('../images/icons/hamburger-x.png') no-repeat center;
+    }
   }
 
   .header__searchform {
@@ -103,7 +107,7 @@
       button {
         width: 40px;
         @include hideText;
-        background: url("../images/icons/search.png") no-repeat center;
+        background: url('../images/icons/search.png') no-repeat center;
       }
       input {
         @apply text-sm;

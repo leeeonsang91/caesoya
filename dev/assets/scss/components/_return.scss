@@ -33,6 +33,28 @@
   }
 
   .return__info {
+    &.return__info--small {
+      .col {
+        padding: 15px 30px;
+        .return__info-total {
+          border: none;
+        }
+        &:nth-child(2) {
+          .return__info-total:after {
+            bottom: auto;
+            top: 20px;
+            left: -45px;
+          }
+        }
+        &:nth-child(3) {
+          .return__info-total:after {
+            bottom: auto;
+            top: 20px;
+            left: -45px;
+          }
+        }
+      }
+    }
     .col {
       padding: 15px;
       background: #f6f6f6;

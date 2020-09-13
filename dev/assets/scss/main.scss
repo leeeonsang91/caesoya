@@ -27,6 +27,16 @@
 @import 'components/return';
 @import 'components/intable';
 @import 'components/coupon';
+@import 'components/sitemap';
+
+@import 'components/product';
+@import 'components/product-type1';
+@import 'components/product-type2';
+@import 'components/product-type3';
+@import 'components/product-type4';
+@import 'components/product-form';
+@import 'components/score';
+@import 'components/tab-type1';
 
 // pages
 @import 'pages/index';
@@ -34,3 +44,6 @@
 @import 'pages/terms';
 @import 'pages/customer';
 @import 'pages/mypage';
+@import 'pages/goods-list';
+@import 'pages/detail';
+@import 'pages/order';

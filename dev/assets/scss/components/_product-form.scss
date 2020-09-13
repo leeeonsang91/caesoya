@@ -1,0 +1,26 @@
+.product-form {
+    
+    &.check {
+
+        label {
+            @apply flex items-center;
+            font-size: 16px;
+            color: #202020;
+            font-weight: 600;
+
+            input {
+                display: none;
+
+                & + span {
+                    @apply inline-block border-theme-green border;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+                &:checked + span {
+                    @apply bg-theme-green;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.product-type1 {
+  @apply flex-wrap;
+
+  .product__item {
+    width: 288px;
+
+    &:nth-child(n + 5) {
+      margin-top: 60px;
+    }
+
+    .product__link {
+      @apply block;
+      @apply relative;
+
+      .product__action {
+        @apply absolute flex flex-col;
+        right: 0;
+        top: 0;
+
+        .product__mark {
+          @apply flex items-center justify-center;
+          width: 40px;
+          height: 40px;
+
+          &.new {
+            @apply bg-theme-red;
+          }
+          &.cart {
+            @apply .bg-theme-lightblue;
+          }
+        }
+      }
+
+      .product__info {
+        .product__tit {
+          margin-bottom: 15px;
+
+          .product__name {
+            @apply flex items-center;
+            color: #202020;
+            font-weight: 700;
+
+            .category {
+              font-size: 16px;
+              @apply text-theme-green;
+              margin-right: 5px;
+              font-weight: 400;
+            }
+          }
+
+          .product__quantity {
+            font-size: 15px;
+            color: #666;
+          }
+        }
+
+        .product__price {
+          @apply flex items-center;
+          margin-bottom: 20px;
+
+          .sale {
+            font-size: 18px;
+            @apply text-theme-red;
+            font-weight: 700;
+          }
+          .price {
+            @apply flex items-end;
+            font-size: 18px;
+            font-weight: 700;
+            color: #202020;
+            margin: 0 5px;
+
+            .currency {
+              font-weight: 400;
+            }
+          }
+          .price-origin {
+            font-size: 13px;
+            color: #666;
+            text-decoration: line-through;
+          }
+          .price-fluctuate {
+            width: 61px;
+            height: 18px;
+            line-height: 18px;
+            border-radius: 5px;
+            font-size: 9px;
+            color: #fff;
+            @apply bg-theme-green text-center;
+            margin-left: 5px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

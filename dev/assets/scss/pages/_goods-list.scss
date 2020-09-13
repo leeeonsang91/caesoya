@@ -1,0 +1,126 @@
+.goods-list {
+  padding: 50px 0;
+
+  // goods category
+  .goods-lnb {
+    .wrap {
+      .title {
+        @apply text-center;
+        margin-bottom: 40px;
+        h2 {
+          font-size: 30px;
+          color: #222;
+          font-weight: 600;
+        }
+      }
+
+      .goods-category {
+        .category-items {
+          @apply flex items-center flex-wrap;
+
+          &.cateBig {
+            border-bottom: 1px solid #ddd;
+            .category-link {
+              width: 200px;
+              height: 57px;
+              font-size: 16px;
+              color: #666;
+              border: 1px solid #ddd;
+              border-right: none;
+              border-bottom: none;
+
+              &.active {
+                border: 1px solid #0b9a63;
+                color: #0b9a63;
+                background: #f1fff8;
+              }
+
+              &:last-child {
+                border-right: 1px solid #ddd;
+              }
+            }
+          }
+          &.cateMedium {
+            border-bottom: 1px solid #ddd;
+            .category-link {
+              height: 45px;
+              font-size: 14px;
+              color: #666;
+              padding: 0 15px;
+
+              &.active {
+                color: #0b9a63;
+                border-bottom: 1px solid #0b9a63;
+              }
+            }
+          }
+          &.cateSmall {
+            background: #fafafa;
+            .category-link {
+              height: 40px;
+              font-size: 12px;
+              color: #666;
+              padding: 0 15px;
+
+              &.active {
+                color: #0b9a63;
+              }
+            }
+          }
+
+          .category-link {
+            @apply flex justify-center items-center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.goods-count {
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.goods-sort {
+  height: 55px;
+  @apply flex items-center;
+  padding: 0 20px;
+  border-top: 1px solid #b7b7b7;
+  border-bottom: 1px solid #e6e6e6;
+
+  .form-row {
+    margin-bottom: 0;
+    order: 5;
+  }
+  .select {
+    height: 35px;
+    width: 150px;
+  }
+  span {
+    font-size: 14px;
+    color: #666666;
+  }
+
+  a {
+    @apply flex items-center;
+    &.active {
+      span {
+        @apply text-black;
+        font-weight: 600;
+      }
+    }
+    &:after {
+      content: '·';
+      margin: 0 5px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+.goods-produtbox {
+  margin-top: 40px;
+}

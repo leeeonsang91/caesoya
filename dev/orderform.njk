@@ -1,0 +1,340 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="page mypage return">
+       <div class="wrap">
+          <div class="mypage__content">
+            <!-- mypage state -->
+            <div class="mypage-section ">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h2>주문/결제</h2>
+
+                <div class="return__breadcrumb">
+                  <span ><strong>01</strong>장바구니</span>
+                  <span class="active"><strong>02</strong>주문결제</span>
+                  <span><strong>03</strong>주문완료</span>
+                </div>
+              </header>
+              <div class="mypage-section__body">
+                <div class="ordertable">
+                  <table>
+                    <colgroup>
+                      <col>
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>상품정보</th>
+                        <th>배송비</th>
+                        <th>수량</th>
+                        <th>할인</th>
+                        <th>상품금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="" class="ordertable__item px-8">
+                            <div class="thumb"><img src="//via.placeholder.com/80x80" alt=""></div>
+                            <div class="info">
+                              <h2 class="name">국내산 산지직송 완숙 찰 토마토</h2>
+                              <p class="case">1박스 15kg</p>
+                              <div class="options">
+                                <strong>옵션</strong>
+                                <ul>
+                                  <li>꿀고구마(중) 2kg / 1개</li>
+                                  <li>꿀고구마(상) 2kg / 1개 (+1,000원)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <td class="text-center">
+                          <span>2500원</span>
+                        </td>
+                        <td class="text-center">
+                          <span>1개</span>
+                        </td>
+                        <td class="text-center">
+                          <span>1개</span>
+                        </td>
+                        <td class="text-center">
+                          <h3 class="price">36,000원</h3>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+           
+
+
+              </div>
+            </div>
+
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h3>주문자정보</h3>
+              </header>
+              <div class="mypage-section__body">
+                <div class="customer__form mt-6">
+                  <div class=" ">
+                    <div class="form__table">
+                      <table>
+                        <colgroup>
+                          <col width="185">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>이름</th>
+                            <td>
+                              고길홍
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>이메일</th>
+                            <td>
+                              hongildong23@naver.com
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>휴대폰번호</th>
+                            <td>
+                              <div class="form-row flex">
+                                <div class="input w-200">
+                                  <input type="text">
+                                  
+                                </div>
+                                <button class="button ml-2">수정</button>
+                              </div>
+                              <p class="required info-text">
+                                인증 번호를 못 받았다면, 1577-7011 번호 차단 및 스팸 설정을 확인해 주세요.
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h3>배송지정보</h3>
+              </header>
+              <div class="mypage-section__body">
+                <div class="customer__form mt-6">
+                  <div class=" ">
+                    <div class="form__table">
+                      <table>
+                        <colgroup>
+                          <col width="185">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>이름</th>
+                            <td>
+                              고길홍
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>배송주소</th>
+                            <td>
+                                <div class="form-row flex items-center">
+                                  <p>서울특별시 송파구 양산로2길 38</p>
+                                  <button class="button black ml-2">배송지 변경</button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>연락처</th>
+                            <td>
+                              010-2222-3333
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="text-right">배송 요청사항</th>
+                            <td>
+                                <div class="form-row flex items-center">
+                                  <p>직접 받고 부재 시 문 앞</p>
+                                  <button class="button ml-2">변경</button>
+                                </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mypage-section mt-12">
+              <header class="mypage-section__header flex items-end justify-between">
+                <h3>결제정보</h3>
+              </header>
+              <div class="mypage-section__body">
+                <div class="customer__form mt-6">
+                  <div class=" ">
+                    <div class="form__table">
+                      <table>
+                        <colgroup>
+                          <col width="185">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>총 상품가격</th>
+                            <td>
+                              36,000원
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>할인쿠폰</th>
+                            <td>
+                                <div class="form-row flex items-center">
+                                  <p class="w-100 text-theme-red">0원</p>
+                                  <button class="button black ml-2">배송지 변경</button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>qothdql</th>
+                            <td>
+                              2,500원
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>총 결제금액</th>
+                            <td>
+                              <strong class="text-base">36,000원</strong>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="text-right">결제수단</th>
+                            <td>
+                              <div class="flex">
+                                <label for="case1" class="radio">
+                                  <input type="radio" name="case" id="case1" checked>
+                                  <span></span>
+                                  <p>계좌이체</p>
+                                </label> 
+                                <label for="case2" class="radio">
+                                  <input type="radio" name="case" id="case2">
+                                  <span></span>
+                                  <p>신용/체크카드</p>
+                                </label> 
+                                <label for="case3" class="radio">
+                                  <input type="radio" name="case" id="case3">
+                                  <span></span>
+                                  <p>휴대폰</p>
+                                </label> 
+                                <label for="case4" class="radio">
+                                  <input type="radio" name="case" id="case4">
+                                  <span></span>
+                                  <p>무통장입금(가상계좌)</p>
+                                </label> 
+                              </div>  
+
+
+                              <div class="actions flex mt-4">
+                                <a href="" class="btn w-40">카드 할인 및 무이자할부 안내</a>
+                              </div>
+
+
+                              <div class="intable mt-2 billCase">
+                                <table>
+                                  <colgroup>
+                                    <col width="70">
+                                    <col>
+                                  </colgroup>
+                                  <tbody>
+                                    <tr>
+                                      <th>카드선택</th>
+                                      <td>
+                                       <div class="form-row">
+                                          <div class="select w-200">
+                                            <select name="" id="" class="full">
+                                              <option value="">BC카드</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th>할부기간</th>
+                                      <td>
+                                        <div class="form-row flex items-center">
+                                          <div class="select w-200">
+                                            <select name="" id="" class="full">
+                                              <option value="">일시불</option>
+                                            </select>
+                                          </div>
+                                          <p class="info-text ml-10">
+                                            * 할부는 50,000원 이상만 가능합니다
+                                          </p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+
+                              <label for="agree-total" class="checkbox mt-2">
+                                  <input type="checkbox" id="agree-total" hidden>
+                                  <span></span>
+                                  <p>
+                                      선택한 결제수단으로 향후 결제 이용에 동의합니다. 
+                                  </p>
+                              </label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center flex-col mt-16">
+              <div>
+                <label for="a-check" class="checkbox big">
+                  <input type="checkbox" id="a-check">
+                  <span></span>
+                  <p>전체 동의하기</p>
+                </label>
+              </div>
+               <div class="mt-6">
+                  <label for="check1" class="checkbox">
+                    <input type="checkbox" id="check1">
+                    <span></span>
+                    <p>쇼핑몰 구매 약관에 동의합니다.</p>
+                  </label>
+                  <label for="check2" class="checkbox mt-2">
+                    <input type="checkbox" id="check2">
+                    <span></span>
+                    <p>위 주문 내용을 확인 하였으며, 회원 본인은 결제에 동의합니다.</p>
+                  </label>
+                </div>
+            </div>
+            <div class="default-btnbox mt-16">
+              <div class="wrap">
+                <a href="" class="btn white">취소</a>
+                <button class="btn green">결제하기</button>
+              </div>
+            </div>
+
+          </div>
+       </div>
+    </div>
+{% endblock %}
