@@ -1,0 +1,86 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page accounts">
+    <div class="accounts__item">
+        <div class="login">
+            <div class="wrap">
+                <div class="login__container">
+                    <div class="login__header">
+                        <a href="" class="login__link active">회원 로그인</a>
+                        <a href="" class="login__link">비회원 로그인</a>
+                    </div>
+                    <div class="login__body">
+                        <div class="item">
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row">
+                                        <div class="input id">
+                                            <input type="text" placeholder="아이디">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input pw">
+                                            <input type="password" placeholder="비밀번호">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__btnbox">
+                                    <button type="submit" class="btn bg-green color-white">로그인</button>
+                                </div>
+                                <div class="login__etc">
+                                    <label for="maintain" class="checkbox">
+                                        <input type="checkbox" id="maintain">
+                                        <span></span>
+                                        <p>로그인 상태 유지</p>
+                                    </label>
+                                    <label for="save" class="checkbox">
+                                        <input type="checkbox" id="save">
+                                        <span></span>
+                                        <p>아이디 저장</p>
+                                    </label>
+                                </div>
+                                <div class="login__links">
+                                    <a href="">아이디 찾기</a>
+                                    <span class="bar">|</span>
+                                    <a href="">비밀번호 찾기</a>
+                                    <span class="bar">|</span>
+                                    <a href="">회원가입</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item">
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row">
+                                        <div class="input buyNumber">
+                                            <input type="text" placeholder="구매번호">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input phoneNumber">
+                                            <input type="text" placeholder="주문 시 사용한 휴대폰 번호">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__btnbox">
+                                    <button type="submit" class="btn bg-green color-white">조회하기</button>
+                                </div>
+                                <div class="login__desc">
+                                    <p>
+                                        구매번호는 발송된 이메일에서 확실 하실 수 있습니다.<br/>
+                                        구매번호가 생각나지 않는 경우, 고객센터로 문의 부탁드립니다.
+                                    </p>
+                                </div>
+                                <div class="login__btnbox join-link">
+                                    <button type="submit" class="btn border-gray color-gray">회원가입</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

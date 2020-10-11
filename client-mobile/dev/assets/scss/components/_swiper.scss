@@ -1,0 +1,28 @@
+.swiper-wrapper {
+    background: #ddd;
+}
+
+.swiper {
+    @apply flex items-center flex-no-wrap;
+    white-space: nowrap;
+    
+    .swiper-slide {
+        width: 70px;
+        height: 30px;
+        border: 1px solid #adadad;
+        font-size: 11px;
+        color: #999;
+        @apply text-center;
+        line-height: 30px;
+        background: #fff;
+
+        &.active {
+            background: #222;
+            color: #fff;
+        }
+
+        & ~ .swiper-slide {
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.login {
+    padding-top: 40px;
+
+    .wrap {
+        background: #fff;
+        
+        .login__container {
+            .login__header {
+                @apply flex;
+                margin-bottom: 13px;
+                
+                .login__link {
+                    @apply flex justify-center items-center;
+                    width: 50%;
+                    height: 33px;
+                    font-size: 12px;
+                    color: #999;
+                    background: #f6f6f6;
+                    border: 1px solid #e5e5e5;
+
+                    &.active {
+                        color: #222;
+                        border: 1px solid #21a16d;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

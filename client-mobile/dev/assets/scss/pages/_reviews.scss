@@ -1,0 +1,128 @@
+.review {
+    background: #f6f6f6;
+    .tab__head {
+        background: #fff;
+        margin-bottom: 0;
+        .tab__link {
+            width: 50%;
+            &.active {
+                border: 1px solid #0b9a63;
+            }
+        }
+    }
+    .prodItem {
+        padding-bottom: 0;
+        .btnBox {
+            .btn {
+                background: #ddd;
+                width: 40px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 12px;
+                & ~ .btn {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .infoList {
+        margin-bottom: 15px;
+    }
+    .reviewBtn {
+        @apply flex items-center justify-between;
+        border-top: 2px solid #e5e5e5;
+        .txt {
+            font-size: 11px;
+            color: #666666;
+        }
+        .btn {
+            width: 120px;
+            height: 30px;
+        }
+    }
+
+    .score-area {
+        .score {
+            i {
+                font-size: 18px;
+            }
+        }
+        .comment-cont {
+            color: #ea475c;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    }
+    .review__details {
+        border-top: 2px solid #e5e5e5;
+        .txtArea {
+            margin-top: 5px;
+            p {
+                font-size: 13px;
+                color: #222;
+                line-height: 1rem;
+                margin-bottom: 10px;
+            }
+            .photo {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.review-writing {
+    .prodItem {
+        margin-bottom: 0;
+    }
+    .score-area {
+        .title {
+            @apply text-center;
+            font-size: 16px;
+            color: #222;
+            font-weight: 700;
+        }
+        .radiobox {
+            @apply justify-center;
+            margin: 10px 0;
+        }
+        .comment-cont {
+            font-size: 12px;
+            color: #ea475c;
+            @apply text-center;
+        }
+    }
+    .bottom-btnBox {
+        .btn {
+            width: 100%;
+        }
+        p {
+            @apply text-theme-red;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
+.topInfo {
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    .wrap {
+        @apply flex items-center justify-between;
+        .tit {
+            @apply flex items-center;
+            font-size: 12px;
+            color: #222;
+            font-weight: 700;
+            span {
+                margin-left: 5px;
+            }
+        }
+        .txt {
+            @apply flex items-center;
+            font-size: 10px;
+            color: #666;
+            span{
+                margin: 0 3px;
+            }
+        }
+    }
+}

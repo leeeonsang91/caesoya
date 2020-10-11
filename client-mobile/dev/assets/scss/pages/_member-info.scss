@@ -1,0 +1,152 @@
+.member-info {
+    padding-top: 13px;
+
+    .member-info__section {
+        .member-info__header {
+            border-top: 2px solid #e5e5e5;
+            border-bottom: 2px solid #e5e5e5;
+            margin-bottom: 10px;
+
+            .wrap {
+                .inner {
+                    @apply flex justify-between items-center;
+                    padding: 10px 0;
+                    h3 {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    button {
+                        font-size: 10px;
+                        width: 90px;
+                        height: 25px;
+                    }
+                    
+                    &.arrow {
+                        background: url('../images/icons/arrow-bottom.png') no-repeat right center;
+                        background-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .login__header {
+        margin-bottom: 10px;
+        h3 {
+            font-size: 12px;
+            color: #222;
+            font-weight: 600;
+        }
+        p {
+            font-size: 10px;
+            color: #999;
+        }
+    }
+
+    .login__body {
+        .login__form {
+            margin-bottom: 20px;
+
+            .form-row {
+                .row {
+                    button {
+                        font-size: 10px;
+                    }
+                    .gender {
+                        @apply flex items-center justify-between;
+                        .tit {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                    }
+                }
+                
+
+                .desc {
+                    margin-bottom: 15px;
+                    p {
+                        font-size: 10px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+        .login__btnbox {
+            margin-bottom: 17px;
+        }
+        .login__desc {
+            padding: 15px 5px;
+            background: #eee;
+            border: 1px solid #eaeaea;
+            p {
+                font-size: 10px;
+                color: #999;
+            }
+        }
+    }
+
+    .agreement {
+        border: none;
+        .wrap {
+            .agreement__total {
+                border: 1px solid #eaeaea;
+            }
+            .agreement__item {
+                border: 1px solid #eaeaea;
+                border-top: none;
+
+                .agreement__row {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .membership-withdrawal {
+        background: #e7e7e7;
+        padding: 15px 0;
+        .wrap {
+            @apply flex justify-between items-center;
+            p {
+                font-size: 10px;
+                color: #666;
+            }
+            a {
+                font-size: 10px;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+// address
+.address {
+    border-bottom: 1px solid #e5e5e5;
+
+    .address__item {
+        @apply relative;
+        padding-bottom: 10px;
+        .name {
+            font-size: 14px;
+            color: #222;
+            font-weight: 600;
+        }
+        .phone-number {
+            font-size: 14px;
+            color: #999;
+        }
+        .address__details {
+            font-size: 14px;
+            color: #222;
+            line-height: 18px;
+            font-weight: 600;
+        }
+        .address__link {
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.customer__form {            
+    .form__table {
+        border-bottom: 2px solid #e5e5e5;
+        padding: 10px 0;
+
+        &.bn {
+            border-bottom: none;
+        }
+        th {
+            @apply text-left;
+            font-size: 14px;
+            color: #666;
+            padding: 10px 0 10px 10px;
+            font-weight: 500;
+            box-sizing: border-box;
+            &.essential {
+                &::after {
+                    content: '*';
+                    color: #f32e66;
+                }
+            }
+        }
+        td {
+            padding-right: 10px;
+            .link {
+                width: 60px;
+                font-size: 10px;
+                margin-left: 5px;
+            }
+
+            .phoneNumber-area {
+                .inner {
+                    @apply flex items-center justify-between;
+                    .hyphen {
+                        font-size: 12px;
+                        color: #d7d5d5;
+                        margin: 0 3px;
+                    }
+                }
+            }
+        }
+        textarea {
+            border: 1px solid #e6e6e6;
+            width: 100%;
+            min-height: 80px;
+            padding: 5px;
+            font-size: 12px;
+            color: #222;
+            line-height: 14px;
+        }
+    }
+
+    .btnBox {
+        a {
+            width: 49%;
+        }
+    }
+}

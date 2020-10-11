@@ -1,0 +1,118 @@
+// product
+.product {
+    .product__link {
+        @apply block;
+
+        .product__img {
+            @apply text-center;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.product__info {
+    .product__tit {
+        @apply text-center;
+
+        .product__name {
+            font-size: 12px;
+            color: #202020;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        .product__quantity {
+            font-size: 12px;
+            color: #666;
+        }
+    }
+}
+
+.product__price {
+    @apply text-center;                                              
+    .price-origin {
+        font-size: 12px;
+        color: #666;
+        text-decoration: line-through;
+    }
+    .price-sale {
+        @apply flex justify-center;
+        .sale {
+            @apply text-theme-red;
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        .price {
+            @apply flex;
+            font-size: 15px;
+            color: #202020;
+            font-weight: 600;
+
+            .currency {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+// product type1
+.product-type1 {
+    .product__item {
+        padding: 0 3px;
+        .product__link {
+
+            .product__img {
+
+                img {
+                    @apply inline;
+                }
+            }
+        }
+    }
+}
+
+// product type2
+.product-type2 {
+    .product__item {
+        background: #f6f6f6;
+        border: 1px solid #e5e5e5;
+        .product__link {
+            @apply flex;
+
+            .product__img {
+                width: 35%;
+                margin-bottom: 0;
+            }
+            .product__info {
+                @apply flex items-center justify-between;
+                width: 65%;
+                padding: 0 30px;
+                .product__tit {
+                    @apply text-left;
+                }
+                .product__price {
+                    @apply text-right;
+                }
+            }
+        }
+    }
+}
+
+// product type3
+.product-type3 {
+    @apply flex justify-between;
+    .product__item {
+        width: 32%;
+        .product__link {
+            .product__img {
+                border: 1px solid #ececec;
+            }
+            .product__name {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

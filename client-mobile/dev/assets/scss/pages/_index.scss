@@ -1,0 +1,131 @@
+.main__section {
+    margin-bottom: 35px;
+
+    .main__tit {
+        @apply text-center;
+        margin-bottom: 15px;
+
+        h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #222;
+        }
+        p {
+            font-size: 12px;
+            color: #222;
+        }
+    }
+
+    .main__body {
+        .more-btn {
+            margin-top: 25px;
+        }
+    }
+}
+
+
+// 모바일 main visual
+.main__visual {
+    margin-bottom: 20px;
+    .slide {
+        @apply relative;
+
+        .slick-dots {
+            @apply flex;
+            @apply absolute;
+            left : 50%;
+            bottom : 20px;
+            transform: translateX(-50%);
+
+            li {
+                width: 7px;
+                height: 7px;
+                background: rgba(255,255,255,.5);
+                margin: 0 3px;
+                text-indent: -9999px;
+                @apply overflow-hidden;
+                @apply rounded-full;
+
+                &.slick-active {
+                    width: 18px;
+                    background: rgba(255,255,255,1);
+                }
+            }
+        }
+    }
+
+    .slide__link {
+       @apply block;
+
+       img {
+           @apply w-full;
+       }
+    }
+}
+
+// best main product 
+.main__bestProduct {
+    .wrap {
+        padding: 0;
+    }
+    .product__item {
+        margin: 0 5px;
+    }
+}
+
+// main product list
+.main__productLIst {
+    .wrap {
+        padding: 0;
+    }
+}
+
+// main recommend 
+.main__recommend {
+    .product {
+        @apply justify-between;
+        flex-wrap: wrap;
+        .product__item {
+            width: 49%;
+
+            &:nth-child(n+3) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// main sns
+.main__sns {
+    background: #f6f6f6;
+    padding: 20px 0;
+    margin-bottom: 0;
+    .main__tit {
+        h3 {
+            @apply inline-block;
+            padding-left: 20px;
+            background: url('../images/icons/instagram.png') no-repeat left center;
+        }
+    }
+    
+    .main__body {
+        .wrap {
+            padding: 0;
+            .sns__item {
+                padding: 0 2px;
+                .sns__link {
+                    img {
+                        @apply inline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// main event 
+.main__event {
+    .wrap {
+        padding: 0;
+    }
+}

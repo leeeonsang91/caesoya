@@ -1,0 +1,77 @@
+.goods-list {
+    .goods-category {
+        .category-items {
+            @apply flex justify-between;
+            flex-wrap: wrap;
+
+            .category-link {
+                @apply flex justify-center items-center;
+                width: 24%;
+                height: 30px;
+                font-size: 13px;
+                color: #666;
+                border: 1px solid #e7e7e7;
+                margin-bottom: 10px;
+
+                &.active {
+                    @apply text-theme-green;
+                    border: 1px solid #9f9f9f;
+                }
+            }
+        }
+    }
+
+    .goods-sort {
+        background: #f6f6f6;
+        padding: 10px 0;
+        margin-bottom: 15px;
+        .wrap {
+            @apply flex justify-between items-center;
+
+            .user-sort {
+                @apply flex items-center;
+
+                .card-type {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #d1d1d1;
+
+                    & ~ button {
+                        margin-left: 5px;
+                    }
+
+                    &.card-type1 {
+                        background: url('../images/icons/card-type1.png') no-repeat center;
+                    }
+                    &.card-type2 {
+                        background: url('../images/icons/card-type2.png') no-repeat center;
+                    }
+                    &.card-type3 {
+                        background: url('../images/icons/card-type3.png') no-repeat center;
+                    }
+
+                    &.card-type1.on {
+                        background: url('../images/icons/card-type1_on.png') no-repeat center;
+                    }
+                    &.card-type2.on {
+                        background: url('../images/icons/card-type2_on.png') no-repeat center;
+                    }
+                    &.card-type3.on {
+                        background: url('../images/icons/card-type3_on.png') no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+
+    .list {
+        .product {
+            @apply justify-between;
+            flex-wrap: wrap;
+            .product__item {
+                width: 49%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,217 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page accounts">
+    <div class="accounts__item">
+        <div class="member-info join">
+            <div class="login__container">
+                <div class="member-info__section">
+                    <div class="member-info__header">
+                        <div class="wrap">
+                            <div class="inner">
+                                <h3>기본정보</h3>
+                                <button class="btn btn--wAuto btn--hAuto border-light-gray color-light-gray">가려진 정보 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login__body">
+                        <div class="item">
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="wrap">
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="input type2">
+                                                    <input type="text" placeholder="010-****-6789">
+                                                </div>
+                                                <button class="btn bg-gray color-white" type="button">인증번호 발송</button>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    번호가 변경되었다면 수정 후 인증을 진행해 주세요.<br/>
+                                                    인증 성공 시 회원정보내 **표시가 해제됩니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="input userName">
+                                                    <input type="text" placeholder="고길*">
+                                                </div>
+                                                <button class="btn bg-gray color-white" type="button">이름변경</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="input email">
+                                                    <input type="text" placeholder="gusl******@naver.com">
+                                                </div>
+                                                <button class="btn bg-gray color-white" type="button">메일변경</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="input phoneNumber">
+                                                    <input type="text" placeholder="010-****-6789">
+                                                </div>
+                                                <button class="btn bg-gray color-white" type="button">번호변경</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="input calendar">
+                                                    <input type="text" placeholder="19890219">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="input gender">
+                                                    <div class="tit">성별</div>
+                                                    <div class="radiobox">
+                                                        <label for="gender1" class="radio">
+                                                            <input type="radio" name="gender" id="gender1" hidden>
+                                                            <span></span>
+                                                            <p>남자</p>
+                                                        </label> 
+                                                        <label for="gender2" class="radio">
+                                                            <input type="radio" name="gender" id="gender2" hidden>
+                                                            <span></span>
+                                                            <p>여자</p>
+                                                        </label> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__form">
+                                    <div class="member-info__header">
+                                        <div class="wrap">
+                                            <div class="inner arrow">
+                                                <h3>기본배송지</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <div class="wrap">
+                                            <div class="address__item">
+                                                <div class="name">고길홍</div>
+                                                <div class="phone-number">010-1234-5678</div>
+                                                <div class="address__details">
+                                                    서울특별시 송파구 양산로2길 38<br/>
+                                                    12층 1205호 (22132)
+                                                </div>
+
+                                                <a href="" class="address__link btn btn--wAuto btn--hAuto bg-gray color-white">변경</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item">
+                            <form action="">
+                                <div class="member-info__header">
+                                    <div class="wrap">
+                                        <div class="inner arrow">
+                                            <h3>개인정보 수집 및 이용안내</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="agreement">
+                                    <div class="wrap">
+                                        <div class="agreement__total">
+                                            <div class="agreement__check">
+                                                <label for="agree-total" class="checkbox">
+                                                    <input type="checkbox" id="agree-total" hidden>
+                                                    <span></span>
+                                                    <p>
+                                                        전체 약관동의
+                                                    </p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="agreement__item">
+                                            <div class="agreement__row">
+                                                <div class="agreement__check">
+                                                    <label for="agree1" class="checkbox">
+                                                        <input type="checkbox" id="agree1" hidden>
+                                                        <span></span>
+                                                        <p>
+                                                            이용약관 <em class="">(필수)</em>
+                                                            <a href="">전체보기</a>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                                <div class="agreement__description">
+                                                    <p>
+                                                        <span>
+                                                            본 약관에는 마케팅 정보 수신에 대한 동의에 관한 내용이 포함
+                                                        </span>
+                                                        되어 있으며, 회원은
+                                                        언제든지 정보 메시지 수신 설정 메뉴에서 수신거부로 변경할 수 있습니다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="agreement__row">
+                                                <div class="agreement__check">
+                                                    <label for="agree2" class="checkbox">
+                                                        <input type="checkbox" id="agree2" hidden>
+                                                        <span></span>
+                                                        <p>
+                                                            이메일 수신 <em class="">(선택)</em>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="agreement__row">
+                                                <div class="agreement__check">
+                                                    <label for="agree3" class="checkbox">
+                                                        <input type="checkbox" id="agree3" hidden>
+                                                        <span></span>
+                                                        <p>
+                                                            SMS 수신 <em class="">(선택)</em>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="agreement__row">
+                                                <div class="agreement__description">
+                                                    <p>
+                                                        이메일, SMS 등의 여부 변경 시 24시간 이후부터 적용됩니다.<br/>
+                                                        이메일, SMS 수신동의 시 채소야의 특가상품, 할인쿠폰, 이벤트 소식을 받을 수 있
+                                                        습니다.
+                                                        회원정보, 구매, 배송 정보 및 중요 공지사항은 수신 동의 여부와 관계없이 발송됩
+                                                        니다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="login__btnbox">
+                            <div class="wrap">
+                                <button type="submit" class="btn bg-green color-white">수정</button>
+                            </div>
+                        </div>
+
+                        <div class="membership-withdrawal">
+                            <div class="wrap">
+                                <p>
+                                    채소야를 더 이상 이용하지 않을 경우,<br/>
+                                    회원탈퇴를 진행해 주세요.
+                                </p>
+                                <a href="" class="btn btn--wAuto btn--hAuto border-gray color-light-gray bg-white">회원탈퇴</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

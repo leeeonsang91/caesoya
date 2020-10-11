@@ -1,0 +1,135 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page accounts">
+    <div class="accounts__item">
+        <div class="login find-accounts">
+            <div class="wrap">
+                <div class="login__container">
+                    <div class="login__header">
+                        <a href="" class="login__link active">아이디 찾기</a>
+                        <a href="" class="login__link">비밀번호 찾기</a>
+                    </div>
+                    <div class="login__body">
+                        <div class="item">
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row m-type">
+                                        <div class="row">
+                                            <div class="radiobox">
+                                                <label for="p" class="radio">
+                                                    <input type="radio" name="" id="p" hidden>
+                                                    <span></span>
+                                                    <h3>
+                                                        등록된 휴대폰 번호로 찾기
+                                                        <p>
+                                                            가입 당시 입력한 휴대폰 번호를 통해 아이디를 찾을 수 있습니다.
+                                                        </p>
+                                                    </h3>
+                                                </label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input userName">
+                                            <input type="text" placeholder="이름">
+                                        </div>
+                                    </div>
+                                    <div class="form-row m-type">
+                                        <div class="row">
+                                            <div class="input phoneNumber">
+                                                <input type="text" placeholder="휴대폰 번호 -없이 입력">
+                                            </div>
+                                            <button class="btn bg-gray color-white" type="button">인증</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__form">
+                                    <div class="form-row b-type">
+                                        <div class="row">
+                                            <div class="radiobox">
+                                                <label for="p1" class="radio">
+                                                    <input type="radio" name="" id="p1" hidden>
+                                                    <span></span>
+                                                    <h3>
+                                                        본인명의 휴대폰으로 인증
+                                                        <p>
+                                                            회원님의 명의로 등록된 휴대폰으로 가입여부 및 본인여부를 확인합니다.
+                                                        </p>
+                                                    </h3>
+                                                </label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="btn color-gray border-gray customer-service">고객센터 1588-9223</div>
+                        </div>
+                        <div class="item">
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row m-type">
+                                        <div class="row">
+                                            <div class="radiobox">
+                                                <label for="p2" class="radio">
+                                                    <input type="radio" name="" id="p2" hidden>
+                                                    <span></span>
+                                                    <h3>
+                                                        등록된 휴대폰 번호로 찾기
+                                                        <p>
+                                                            가입 당시 입력한 휴대폰 번호를 통해 아이디를 찾을 수 있습니다.
+                                                        </p>
+                                                    </h3>
+                                                </label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input userName">
+                                            <input type="text" placeholder="이름">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input id">
+                                            <input type="text" placeholder="아이디">
+                                        </div>
+                                    </div>
+                                    <div class="form-row m-type">
+                                        <div class="row">
+                                            <div class="input phoneNumber">
+                                                <input type="text" placeholder="휴대폰 번호 -없이 입력">
+                                            </div>
+                                            <button class="btn bg-gray color-white" type="button">인증</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__form">
+                                    <div class="form-row b-type">
+                                        <div class="row">
+                                            <div class="radiobox">
+                                                <label for="p3" class="radio">
+                                                    <input type="radio" name="" id="p3" hidden>
+                                                    <span></span>
+                                                    <h3>
+                                                        등록된 이메일로 찾기
+                                                        <p>
+                                                            가입 당시 입력한 이메일로 비밀번호 재정설 메일을 발송합니다.
+                                                        </p>
+                                                    </h3>
+                                                </label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="btn color-gray border-gray customer-service">고객센터 1588-9223</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

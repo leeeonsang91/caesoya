@@ -1,0 +1,122 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page shipping deliveryTracking">
+    <div class="section">
+        <div class="info">
+            <div class="deliveryTracking__head">
+                <div class="wrap">
+                    <h2>기본정보</h2>
+                </div>
+            </div>
+            <div class="deliveryTracking__body">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="tit">택배사</div>
+                        <div class="txt">한진택배 (1588-0011)</div>
+                    </div>
+                    <div class="row">
+                        <div class="tit">송장번호</div>
+                        <div class="txt">4177968783256</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section">
+        <div class="info">
+            <div class="deliveryTracking__head">
+                <div class="wrap">
+                    <h2>배송상태 정보</h2>
+                </div>
+            </div>
+            <div class="deliveryTracking__body">
+                <div class="wrap">
+                    <div class="deliverState">
+                        <div class="deliverState__info">
+                            <div class="item state1 on">
+                                <div class="icon">결제완료</div>
+                            </div>
+                            <div class="arrow">
+                                <img src="./assets/images/icons/deliver-arrow.png" alt="">
+                            </div>
+                            <div class="item state2">
+                                <div class="icon">상품준비중</div>
+                            </div>
+                            <div class="arrow">
+                                <img src="./assets/images/icons/deliver-arrow.png" alt="">
+                            </div>
+                            <div class="item state3">
+                                <div class="icon">배송시작</div>
+                            </div>
+                            <div class="arrow">
+                                <img src="./assets/images/icons/deliver-arrow.png" alt="">
+                            </div>
+                            <div class="item state4">
+                                <div class="icon">배송중</div>
+                            </div>
+                            <div class="arrow">
+                                <img src="./assets/images/icons/deliver-arrow.png" alt="">
+                            </div>
+                            <div class="item state5">
+                                <div class="icon">배송완료</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section">
+        <div class="tracking__table">
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>처리일시</th>
+                        <th>현재위치</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="date">
+                            2020-09-05<br/>
+                            08:53:00
+                        </td>
+                        <td>
+                            인천구월(대)
+                        </td>
+                        <td class="complete">
+                            배송완료
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date">
+                            2020-09-05<br/>
+                            08:53:00
+                        </td>
+                        <td>
+                            인천구월(대)
+                        </td>
+                        <td class="">
+                            배송출발
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bottom-btnBox">
+            <div class="wrap">
+                <a href="">간락히보기</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+.find-accounts {
+    .login__header {
+        .login__link {
+            &.active {
+                border: 1px solid #666 !important;
+            }
+        }
+    }
+}

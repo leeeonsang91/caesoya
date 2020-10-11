@@ -1,0 +1,80 @@
+.shipping {
+    background: #f6f6f6;
+    .tab__head {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 0;
+        .tab__link {
+            width: 50%;
+            &.active {
+                @apply border-theme-green;
+            }
+        }
+    }
+    .infoList {
+        background: #fff;
+        border-top: 2px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 13px;
+        &:nth-child(1) {
+            border-top: none;
+        }
+    }
+    .deliveryInfos {
+        p {
+            font-size: 14px;
+            color: #222;
+            .mark {
+                margin-left: 5px;
+            }
+        }
+        .btnBox {
+            .btn {
+                background: #ddd;
+                width: 40px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 12px;
+                & ~ .btn {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .box {
+            padding: 10px 0;
+        }
+        .top {
+            @apply flex justify-between items-center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .bottom {
+            .address {
+                border-bottom: none;
+                em {
+                    font-style: normal;
+                }
+            }
+            .row {
+                @apply items-center;
+                p {
+                    color: #999;
+                }
+                .bar {
+                    font-size: 10px;
+                    margin: 0 5px;
+                    color: #f6f6f6;
+                }
+            }
+
+        }
+    }
+    .defaultShipping {
+        border-bottom: 1px solid #e5e5e5;
+        p {
+            font-size: 14px;
+            color: #222;
+            font-weight: 700;
+        }
+
+    }
+}

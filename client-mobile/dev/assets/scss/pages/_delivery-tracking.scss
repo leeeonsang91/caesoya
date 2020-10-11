@@ -1,0 +1,160 @@
+.deliveryTracking {
+    .section {
+        margin-bottom: 13px;
+        border-top: 2px solid #e5e5e5;
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+
+    }
+    .deliveryTracking__head {
+        padding: 10px 0;
+        border-bottom: 1px solid #e5e5e5;
+        h2 {
+            font-size: 14px;
+            color: #222;
+            font-weight: 700;
+        }
+    }
+    .deliveryTracking__body {
+        padding: 20px 0;
+        .row {
+            @apply flex items-center;
+            .tit {
+                width: 70px;
+                font-size: 14px;
+                color: #999999;
+            }
+            .txt {
+                font-size: 14px;
+                color: #222;
+            }
+        }
+    }
+
+    .deliverState {
+        .deliverState__info {
+            @apply flex justify-between items-center;
+            .item {
+                .icon {
+                    text-indent: -9999px;
+                    overflow: hidden;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    line-height: 50px;
+                    margin: 0 auto;
+                }
+                &.state1 {
+                    .icon {
+                        background: url('../images/icons/deliver-1.png') no-repeat center #e5e5e5;
+                        background-size: auto 18px;
+                    }
+                }
+                &.state2 {
+                    .icon {
+                        background: url('../images/icons/deliver-2.png') no-repeat center #e5e5e5;
+                        background-size: auto 25px;
+                    }
+                }
+                &.state3 {
+                    .icon {
+                        background: url('../images/icons/deliver-3.png') no-repeat center #e5e5e5;
+                        background-size: auto 25px;
+                    }
+                }
+                &.state4 {
+                    .icon {
+                        background: url('../images/icons/deliver-4.png') no-repeat center #e5e5e5;
+                        background-size: auto 18px;
+                    }
+                }
+                &.state5 {
+                    .icon {
+                        background: url('../images/icons/deliver-5.png') no-repeat center #e5e5e5;
+                        background-size: auto 25px;
+                    }
+                }
+            }
+            .item.on {
+                &.state1 {
+                    .icon {
+                        background: url('../images/icons/deliver-1-active.png') no-repeat center #159c65;
+                        background-size: auto 18px;
+                    }
+                }
+                &.state2 {
+                    .icon {
+                        background: url('../images/icons/deliver-2-active.png') no-repeat center #159c65;
+                        background-size: auto 25px;
+                    }
+                }
+                &.state3 {
+                    .icon {
+                        background: url('../images/icons/deliver-3-active.png') no-repeat center #159c65;
+                        background-size: auto 25px;
+                    }
+                }
+                &.state4 {
+                    .icon {
+                        background: url('../images/icons/deliver-4-active.png') no-repeat center #159c65;
+                        background-size: auto 18px;
+                    }
+                }
+                &.state5 {
+                    .icon {
+                        background: url('../images/icons/deliver-5-active.png') no-repeat center #159c65;
+                        background-size: auto 25px;
+                    }
+                }
+            }
+            .arrow {
+                img {
+                    height: 13px;
+                }
+            }
+        }
+    }
+
+    .tracking__table {
+        thead {
+            th {
+                padding: 10px 0;
+                border-bottom: 1px solid #e5e5e5;
+                font-size: 12px;
+                color: #999999;
+                font-weight: 500;
+            }
+        }
+        tr {
+            td {
+                padding: 10px 0;
+                font-size: 12px;
+                color: #666666;
+                border-bottom: 1px solid #e5e5e5;
+                text-align: center;
+                font-weight: 700;
+                &.date {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+                &.complete {
+                    color: #159c65;
+                }
+            }
+        }
+    }
+
+    .bottom-btnBox {
+        border-top: 1px solid #e5e5e5;
+        a {
+            @apply flex justify-center;
+            font-size: 14px;
+            color: #222;
+            padding: 10px 0;
+            background: url('../images/icons/arrow-top.png') no-repeat right center;
+            background-size: auto 7px;
+            padding-right: 15px;
+            font-weight: 700;
+        }
+    }
+}

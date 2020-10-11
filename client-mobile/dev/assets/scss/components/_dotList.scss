@@ -1,0 +1,40 @@
+.dotList {
+    background: #e7e7e7;
+    padding: 10px 0;
+    p {
+        font-size: 10px;
+        color: #999;
+        line-height: 15px;
+        position: relative;
+        padding-left: 5px;;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 2px;
+            height: 2px;
+            background: #999;
+            left: 0;
+            top: 7px;
+            position: absolute;
+        }
+    }
+
+    &.type2 {
+        background: #fff;
+        padding: 0;
+        p {
+            font-size: 11px;
+            color: #222;
+            line-height: 18px;
+            
+            &::before {
+                background: #222;
+            }
+        }
+    }
+}
+
+.page {
+    background: #f6f6f6;
+}

@@ -1,0 +1,102 @@
+.point {
+    .section {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .sec1 {
+        .btnBox {
+            .wrap {
+                @apply flex justify-between;
+                .btn {
+                    width: 49%;
+                }
+            }
+        }
+    }
+    .point__state {
+        @apply flex justify-between;
+        .col {
+            width: 50%;
+            @apply text-center;
+
+            &:nth-child(1) {
+                border-right: 1px solid #e5e5e5;
+            }
+            .title {
+                font-size: 14px;
+                color: #222;
+                font-weight: 700;
+                margin-bottom: 13px;
+            }
+            .point-total {
+                margin-bottom: 13px;
+                @apply flex items-baseline justify-center;
+                font-size: 34px;
+                color: #222;
+                font-weight: 700;
+                span {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+            }
+            p {
+                font-size: 13px;
+                color: #666;
+            }
+        }
+    }
+    .sec__head {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        .wrap {
+            @apply flex items-center justify-between;
+            h2 {
+                font-size: 14px;
+                color: #222;
+            }
+            .close {
+                @apply inline-block;
+                width: 25px;
+                height: 25px;
+                background: url('../images/icons/close.png') no-repeat center;
+                background-size: 12px;
+                border: 1px solid #222;
+                text-indent: -9999px;
+                overflow: hidden;
+            }
+        }
+        &.type2 {
+            background: url('../images/icons/arrow-bottom.png') no-repeat calc(100% - 10px) center #fff;
+            background-size: auto 6px;
+        }
+    }
+    .dateBox {
+        background: #e5e5e5;
+        padding: 10px 20px;
+        @apply flex items-center justify-between;
+        span {
+            font-size: 11px;
+            color: #222;
+            font-weight: 700;
+        }
+    }
+    .pointListWrapper {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        &:nth-child(1) {
+            border-top: none;
+        }
+    }
+    .pointList {
+        .row {
+            @apply flex justify-between;
+            padding: 0 10px;
+            span {
+                font-size: 12px;
+                color: #222;
+                line-height: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+}

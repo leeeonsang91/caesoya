@@ -1,0 +1,45 @@
+// tab type1 
+.tab {
+
+}
+.tab-type1 {
+    .tab__head {
+        @apply flex justify-between;
+        margin-bottom: 10px;
+        .tab__link {
+            @apply text-center;
+            width: calc(100% / 3);
+            height: 35px;
+            background: #f6f6f6;
+            border: 1px solid #c3c3c3;
+            font-size: 14px;
+            color: #999;
+            line-height: 35px;
+
+            & ~ .tab__link {
+                border-left: none;
+            }
+
+            &.active {
+                background: #fff;
+                color: #222;
+            }
+        }
+    }
+}
+.tab-type2 {
+    @apply flex justify-between;
+    .tab__link {
+        @apply inline-block text-center;
+        background: #fff;
+        width: 50%;
+        height: 45px;
+        line-height: 45px;
+        font-size: 12px;
+        color: #222;
+        border-bottom: 1px solid #e5e5e5;
+        &.active {
+            border-bottom: 2px solid #0b9a63;
+        }
+    }
+}

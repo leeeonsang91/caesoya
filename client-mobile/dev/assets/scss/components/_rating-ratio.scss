@@ -1,0 +1,40 @@
+.rating-ratio {
+    .rating-ratio__item {
+        margin-bottom: 5px;
+        @apply flex justify-between items-center;
+        .txt {
+            font-size: 11px;
+            color: #999;
+            @apply flex-none;
+        }
+        .percent-bar {
+            @apply flex-1;
+            height: 10px;
+            border-radius: 1.5em;
+            border: 1px solid #ababab;
+            background: #f6f6f6;
+            margin: 0 3px;
+
+            span {
+                @apply flex;
+                background: #0b9a63;
+                height: 100%;
+                &.percent-8 {
+                    width: 80%;
+                }
+                &.percent-6 {
+                    width: 60%;
+                }
+                &.percent-4 {
+                    width: 40%;
+                }
+                &.percent-2 {
+                    width: 20%;
+                }
+                &.percent-0 {
+                    width: 0;
+                }
+            }
+        }
+    }
+}

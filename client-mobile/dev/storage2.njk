@@ -1,0 +1,111 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page storage cart mypage">
+    <div class="check-all">
+        <div class="wrap">
+            <div class="goodsAll-check">
+                <label for="goodsAll" class="checkbox">
+                    <input type="checkbox" id="goodsAll" hidden>
+                    <span></span>
+                    <p>
+                        전체 선택
+                    </p>
+                </label>
+            </div>
+            <button class="btn border-gray color-gray btn--small">선택 상품 삭제</button>
+        </div>
+    </div>
+    <div class="productGroup py-3 bg-white">
+        <div class="box">
+            <div class="prodItem">
+                <div class="wrap">
+                    <div class="flex">
+                        <div class="prod__select-area">
+                            <label for="prod1" class="checkbox">
+                                <input type="checkbox" id="prod1" hidden>
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="prod__desc-area">
+                            <div class="prod__desciption">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/dummy-potato.png" alt="">
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">
+                                            국내산 산지직송 완숙 찰토마토
+                                        </h3>
+                                        <div class="product__quantity">1박스 10kg</div>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="price-sale">
+                                            <div class="price">
+                                                38,000
+                                                <span class="currency">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <p class="sellerName flex justify-between items-center w-full">
+                                            <span>토마토닷컴</span>
+                                            <a href="" class="btn btn--small border-gray color-gray bg-white">장바구니</a>
+                                        </p>
+                                </div>
+                                <button class="prod-close">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prodItem">
+                <div class="wrap">
+                    <div class="flex">
+                        <div class="prod__select-area">
+                            <label for="prod1" class="checkbox">
+                                <input type="checkbox" id="prod1" hidden>
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="prod__desc-area">
+                            <div class="prod__desciption">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/dummy-potato.png" alt="">
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">
+                                            국내산 산지직송 완숙 찰토마토
+                                        </h3>
+                                        <div class="product__quantity">1박스 10kg</div>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="price-sale">
+                                            <div class="price">
+                                                38,000
+                                                <span class="currency">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <p class="sellerName flex justify-between items-center w-full">
+                                            <span>토마토닷컴</span>
+                                            <a href="" class="btn btn--small border-gray color-gray bg-white">장바구니</a>
+                                        </p>
+                                </div>
+                                <button class="prod-close">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-btnBox2 py-3">
+        <div class="wrap">
+            <a href="" class="btn bg-gray color-white">전체삭제</a>
+            <a href="" class="btn bg-green color-white">장바구니</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

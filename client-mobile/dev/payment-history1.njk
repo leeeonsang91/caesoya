@@ -1,0 +1,174 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page mypage history">
+    <div class="history__head">
+        <div class="wrap">
+            <div class="row period">
+                <a href="" class="active">1주일</a>
+                <a href="">1개월</a>
+                <a href="">9월</a>
+                <a href="">10월</a>
+                <a href="">이전내역</a>
+            </div>
+            <div class="row">
+                <label for="om1" class="mypage-select">
+                    <select name="" id="om1" class="full">
+                        <option value="">전체상태</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="history__body">
+        <div class="history__item">
+            <div class="history__state">
+                <div class="wrap">
+                    <h4 class="stateValue stateValue__delivery">배송중</h4>
+                    <a href="" class="btn btn--small border-gray color-gray">주문상세보기</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="prodItem">
+                    <div class="wrap">
+                        <div class="prod__desc-area">
+                            <div class="prod__desciption">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/dummy-potato.png" alt="">
+                                </div>
+                                <div class="product__info flex-1">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">
+                                            국내산 산지직송 완숙 찰토마토
+                                        </h3>
+                                        <div class="product__quantity">1박스 10kg</div>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="price-sale">
+                                            <div class="price">
+                                                38,000
+                                                <span class="currency">원</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-origin">45,000원</div>
+                                    </div>
+                                    <p class="sellerName type2 flex justify-between items-center">
+                                        토마토닷컴
+                                        <a href="" class="btn btn--small border-gray color-gray">판매자 문의</a>
+                                    </p>
+                                </div>
+                                <button class="prod-close">삭제</button>
+                            </div>
+                        </div>
+                        <div class="prod__btnBox">
+                            <a href="" class="btn border-green color-green btn--wAuto btn--hAuto">배송조회</a>
+                            <a href="" class="btn border-light-gray color-light-gray btn--wAuto btn--hAuto">주문취소</a>
+                            <a href="" class="btn border-light-gray color-light-gray btn--wAuto btn--hAuto">반품신청</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history__item">
+            <div class="history__state">
+                <div class="wrap">
+                    <h4 class="stateValue stateValue__complete">구매확정</h4>
+                    <a href="" class="btn btn--small border-gray color-gray">주문상세보기</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="prodItem">
+                    <div class="wrap">
+                        <div class="prod__desc-area">
+                            <div class="prod__desciption">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/dummy-potato.png" alt="">
+                                </div>
+                                <div class="product__info flex-1">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">
+                                            국내산 산지직송 완숙 찰토마토
+                                        </h3>
+                                        <div class="product__quantity">1박스 10kg</div>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="price-sale">
+                                            <div class="price">
+                                                38,000
+                                                <span class="currency">원</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-origin">45,000원</div>
+                                    </div>
+                                    <p class="sellerName type2 flex justify-between items-center">
+                                        토마토닷컴
+                                        <a href="" class="btn btn--small border-gray color-gray">판매자 문의</a>
+                                    </p>
+                                </div>
+                                <button class="prod-close">삭제</button>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <a href="" class="btn border-light-gray color-light-gray">재구매</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history__item">
+            <div class="history__state">
+                <div class="wrap">
+                    <h4 class="stateValue stateValue__cancel">취소완료</h4>
+                    <a href="" class="btn btn--small border-gray color-gray">주문상세보기</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="prodItem">
+                    <div class="wrap">
+                        <div class="prod__desc-area">
+                            <div class="prod__desciption">
+                                <div class="product__thumb">
+                                    <img src="./assets/images/dummy-potato.png" alt="">
+                                </div>
+                                <div class="product__info flex-1">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">
+                                            국내산 산지직송 완숙 찰토마토
+                                        </h3>
+                                        <div class="product__quantity">1박스 10kg</div>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="price-sale">
+                                            <div class="price">
+                                                38,000
+                                                <span class="currency">원</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-origin">45,000원</div>
+                                    </div>
+                                    <p class="sellerName type2 flex justify-between items-center">
+                                        토마토닷컴
+                                        <a href="" class="btn btn--small border-gray color-gray">판매자 문의</a>
+                                    </p>
+                                </div>
+                                <button class="prod-close">삭제</button>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <a href="" class="btn border-light-gray color-light-gray">재구매</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttonPrevList">
+        <button>
+            <span>이전내역 더보기</span>
+            <i>
+                <img src="./assets/images/icons/arrow-bottom.png" alt="">
+            </i>
+        </button>
+    </div>
+</div>
+{% endblock %}

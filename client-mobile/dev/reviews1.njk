@@ -1,0 +1,240 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page review mypage">
+    <div class="review__container">
+        <div class="tab tab-type1">
+            <div class="tab__head py-4">
+                <div class="wrap flex">
+                    <a href="" class="tab__link active">작성가능한 후기</a>
+                    <a href="" class="tab__link">내가 작성한 후기</a>
+                </div>
+            </div>
+            <div class="tab__body">
+                {# 작성가능한 후기 #}
+                <div class="item">
+                    <div class="topInfo py-2">
+                        <div class="wrap">
+                            <div class="tit">
+                                작성가능한 후기 
+                                <span class="text-theme-green">13</span>
+                            </div>
+                            <div class="txt">
+                                후기 작성은 
+                                <span class="text-theme-green">제품수령 후 30일</span>
+                                까지 가능
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="infoList">
+                            <div class="prodItem">
+                                <div class="wrap">
+                                    <div class="prod__desc-area mb-0">
+                                        <div class="prod__desciption">
+                                            <div class="product__thumb">
+                                                <img src="./assets/images/dummy-potato.png" alt="">
+                                            </div>
+                                            <div class="product__info flex-1">
+                                                <div class="product__tit">
+                                                    <h3 class="product__name">
+                                                        국내산 산지직송 완숙 찰토마토
+                                                    </h3>
+                                                    <div class="product__quantity">1박스 10kg</div>
+                                                </div>
+                                                <div class="product__price">
+                                                    <div class="price-sale">
+                                                        <div class="price">
+                                                            38,000
+                                                            <span class="currency">원</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="sellerName type2 flex justify-between items-center">
+                                                    토마토닷컴
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviewBtn mt-3 py-3">
+                                        <div class="txt">작성기한 20.09.29.(D-13)</div>
+                                        <a href="" class="btn border-green color-green btn--wAuto">후기작성</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infoList">
+                            <div class="prodItem">
+                                <div class="wrap">
+                                    <div class="prod__desc-area mb-0">
+                                        <div class="prod__desciption">
+                                            <div class="product__thumb">
+                                                <img src="./assets/images/dummy-potato.png" alt="">
+                                            </div>
+                                            <div class="product__info flex-1">
+                                                <div class="product__tit">
+                                                    <h3 class="product__name">
+                                                        국내산 산지직송 완숙 찰토마토
+                                                    </h3>
+                                                    <div class="product__quantity">1박스 10kg</div>
+                                                </div>
+                                                <div class="product__price">
+                                                    <div class="price-sale">
+                                                        <div class="price">
+                                                            38,000
+                                                            <span class="currency">원</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="sellerName type2 flex justify-between items-center">
+                                                    토마토닷컴
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviewBtn mt-3 py-3">
+                                        <div class="txt">작성기한 20.09.29.(D-13)</div>
+                                        <a href="" class="btn border-green color-green btn--wAuto">후기작성</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {# 내가 작성한 후기 #}
+                <div class="item">
+                    <div class="topInfo py-2">
+                        <div class="wrap">
+                            <div class="tit">
+                                내가 작성한 후기
+                                <span class="text-theme-green">13</span>
+                            </div>
+                            <div class="txt">
+                                <label for="sort1" class="select-type3">
+                                    <select name="" id="sort1" class="full">
+                                        <option value="">6개월</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="infoList">
+                            <div class="prodItem">
+                                <div class="wrap">
+                                    <div class="prod__desc-area mb-0">
+                                        <div class="prod__desciption">
+                                            <div class="product__thumb">
+                                                <img src="./assets/images/dummy-potato.png" alt="">
+                                            </div>
+                                            <div class="product__info flex-1">
+                                                <div class="product__tit">
+                                                    <h3 class="product__name">
+                                                        국내산 산지직송 완숙 찰토마토
+                                                    </h3>
+                                                    <div class="product__quantity">1박스 10kg</div>
+                                                </div>
+                                                <div class="product__price">
+                                                    <div class="price-sale">
+                                                        <div class="price">
+                                                            38,000
+                                                            <span class="currency">원</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="sellerName type2 flex justify-between items-center">
+                                                    토마토닷컴
+                                                </p>
+                                            </div>
+                                            <div class="btnBox flex mt-auto">
+                                                <a href="" class="btn color-gray btn--wAuto btn--hAuto">수정</a>
+                                                <a href="" class="btn color-gray btn--wAuto btn--hAuto">삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__details py-4 mt-3">
+                                        <div class="score-area">
+                                            <span class="score">
+                                                <i class="active">★</i>
+                                                <i class="active">★</i>
+                                                <i class="active">★</i>
+                                                <i>★</i>
+                                                <i>★</i>
+                                            </span>
+                                            <a href="" class="comment-cont">3점 (보통)</a>
+                                        </div>
+                                        <div class="txtArea">
+                                            <p>
+                                                잘받았습니다. 고맙습니다.
+                                            </p>
+                                            <div class="photo">
+                                                <img src="./assets/images/dummy-review.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infoList">
+                            <div class="prodItem">
+                                <div class="wrap">
+                                    <div class="prod__desc-area mb-0">
+                                        <div class="prod__desciption">
+                                            <div class="product__thumb">
+                                                <img src="./assets/images/dummy-potato.png" alt="">
+                                            </div>
+                                            <div class="product__info flex-1">
+                                                <div class="product__tit">
+                                                    <h3 class="product__name">
+                                                        국내산 산지직송 완숙 찰토마토
+                                                    </h3>
+                                                    <div class="product__quantity">1박스 10kg</div>
+                                                </div>
+                                                <div class="product__price">
+                                                    <div class="price-sale">
+                                                        <div class="price">
+                                                            38,000
+                                                            <span class="currency">원</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="sellerName type2 flex justify-between items-center">
+                                                    토마토닷컴
+                                                </p>
+                                            </div>
+                                            <div class="btnBox flex mt-auto">
+                                                <a href="" class="btn color-gray btn--wAuto btn--hAuto">수정</a>
+                                                <a href="" class="btn color-gray btn--wAuto btn--hAuto">삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__details py-4 mt-3">
+                                        <div class="score-area">
+                                            <span class="score">
+                                                <i class="active">★</i>
+                                                <i class="active">★</i>
+                                                <i class="active">★</i>
+                                                <i>★</i>
+                                                <i>★</i>
+                                            </span>
+                                            <a href="" class="comment-cont">3점 (보통)</a>
+                                        </div>
+                                        <div class="txtArea">
+                                            <p>
+                                                잘받았습니다. 고맙습니다.
+                                            </p>
+                                            <div class="photo">
+                                                <img src="./assets/images/dummy-review.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

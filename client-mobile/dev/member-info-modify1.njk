@@ -1,0 +1,46 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page accounts">
+    <div class="accounts__item">
+        <div class="member-info">
+            <div class="wrap">
+                <div class="login__container">
+                    <div class="login__header">
+                        <h3>비밀번호 확인</h3>
+                        <p>
+                            회원님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한번 확인합니다.
+                        </p>
+                    </div>
+                    <div class="login__body">
+                        <div class="item">
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="form-row">
+                                        <div class="input id">
+                                            <input type="text" placeholder="아이디">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input pw">
+                                            <input type="password" placeholder="비밀번호">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__btnbox">
+                                    <button type="submit" class="btn bg-green color-white">확인</button>
+                                </div>
+                                <div class="login__desc">
+                                    <p>
+                                        회원님의 개인정보를 신중히 취급하며, 회원님의 동의 없이는 기재하신 회원정보를 공개 및 변경하지 않습니다.
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page storage">
+    <div class="section">
+        <div class="topInfo py-2">
+            <div class="wrap">
+                <div class="tit">
+                    찜한 스토어
+                    <span class="text-theme-green">13</span>
+                </div>
+                <div class="txt">
+                    알림을 수신하여 스토어 소식을 빠르게 받아보세요.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg-white py-2 swiper-wrapper">
+        <div class="wrap">
+            <div class="swiper">
+                <div class="swiper-slide active">전체</div>
+                <div class="swiper-slide">스토어1</div>
+                <div class="swiper-slide">스토어2</div>
+                <div class="swiper-slide">스토어3</div>
+                <div class="swiper-slide">스토어4</div>
+                <div class="swiper-slide">스토어5</div>
+                <div class="swiper-slide">스토어6</div>
+                <div class="swiper-slide">스토어7</div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="storeList">
+            <div class="row py-3">
+                <div class="wrap">
+                    <div class="icon">
+                        <img src="./assets/images/icons/store-border.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>토마토닷컴</h3>
+                        <p>
+                            국내산 산지직송 찰토마토 직배송 전문 스토어
+                        </p>
+                        <div class="etc">
+                            스토어찜 15
+                        </div>
+                    </div>
+                    <button class="close ml-auto mb-auto">
+                        삭제
+                    </button>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="wrap">
+                    <div class="icon">
+                        <img src="./assets/images/icons/store-border.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>토마토닷컴</h3>
+                        <p>
+                            국내산 산지직송 찰토마토 직배송 전문 스토어
+                        </p>
+                        <div class="etc">
+                            스토어찜 15
+                        </div>
+                    </div>
+                    <button class="close ml-auto mb-auto">
+                        삭제
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-btnBox bg-white">
+        <div class="wrap">
+            <a href="" class="py-3">
+                더보기
+                <i>
+                    <img src="./assets/images/icons/arrow-bottom.png" alt="">
+                </i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

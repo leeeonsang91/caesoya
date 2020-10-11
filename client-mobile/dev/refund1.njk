@@ -1,0 +1,118 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page mypage refund history">
+    <div class="section">
+        <div class="history__state type2 flex">
+            <div class="wrap">
+                <div>
+                    <p class="date">2020.09.09</p>
+                    <p>2020090981918261</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="prodItem">
+                <div class="wrap">
+                    <div class="prod__desc-area mb-0">
+                        <div class="prod__desciption">
+                            <div class="product__thumb">
+                                <img src="./assets/images/dummy-potato.png" alt="">
+                            </div>
+                            <div class="product__info flex-1">
+                                <div class="product__tit">
+                                    <h3 class="product__name">
+                                        국내산 산지직송 완숙 찰토마토
+                                    </h3>
+                                    <div class="product__quantity">1박스 10kg</div>
+                                </div>
+                                <div class="product__price">
+                                    <div class="price-sale">
+                                        <div class="price">
+                                            38,000
+                                            <span class="currency">원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="sellerName type2 flex justify-between items-center">
+                                    토마토닷컴
+                                    <a href="" class="btn btn--small border-gray color-gray">판매자 문의</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="">
+            <div class="customer__form">
+                <div class="form__table">
+                    <table>
+                        <colgroup>
+                            <col width="80">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>사유선택</th>
+                            <td>
+                                <div class="form-row">
+                                    <label for="s1" class="mypage-select">
+                                        <select name="" id="s1" class="full">
+                                            <option value="">반품사유를 선택해 주세요.</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="align-top">사유입력</th>
+                            <td>
+                            <div class="form-row">
+                                <div class="textarea">
+                                    <textarea name="" id=""></textarea>
+                                </div>
+                            </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="file">
+                    <div class="title">
+                        <span>사진</span>
+                        <span class="txt">최대 3개</span>
+                    </div>
+                    <label for="file1" class="custom-file">
+                        <input type="file" id="file1" hidden>
+                        <span class="">첨부</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <div class="refund__txtList">
+            <div class="wrap">
+                <div class="title">
+                    주의사항
+                </div>
+                <div class="txt">
+                    <p>
+                        반품 요청을 하시기 전에 반드시 판매자에게 반품 가능 여부를 확인해 주세요.
+                    </p>
+                    <p>
+                        반품 사유를 확인할 수 있는 사진을 등록하시면 보다 신속하게 반품처리가 진행됩니다. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btnBox ">
+            <div class="wrap">
+                <a href="" class="btn bg-green color-white">수거정보 입력</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

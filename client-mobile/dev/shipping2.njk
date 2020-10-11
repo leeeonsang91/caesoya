@@ -1,0 +1,132 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page shipping">
+    <div class="shipping__container">
+        <div class="box">
+            <form action="">
+                <div class="customer__form">
+                    <div class="form__table">
+                        <table>
+                            <colgroup>
+                                <col width="80">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>배송지명</th>
+                                <td>
+                                    <div class="form-row">
+                                        <div class="input">
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="essential">수령인</th>
+                                <td>
+                                    <div class="form-row">
+                                        <div class="input">
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="essential">주소</th>
+                                <td>
+                                    <div class="form-row flex justify-between mb-1">
+                                        <div class="input flex-1">
+                                            <input type="text" placeholder="">
+                                        </div>
+                                        <a href="" class="btn bg-gray color-white btn--wAuto btn--hAuto link">주소검색</a>
+                                    </div>
+                                    <div class="form-row mb-1">
+                                        <div class="input">
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="input">
+                                            <input type="text" placeholder="상세 주소를 입력하세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="essential">연락처1</th>
+                                <td>
+                                    <div class="form-row phoneNumber-area">
+                                        <div class="inner">
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="">연락처2</th>
+                                <td>
+                                    <div class="form-row phoneNumber-area">
+                                        <div class="inner">
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                            <span class="hyphen">-</span>
+                                            <div class="input">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-row py-3 defaultShipping bg-white">
+                        <div class="wrap">
+                            <div class="input">
+                                <div class="radiobox type2">
+                                    <label for="s1" class="radio">
+                                        <input type="radio" name="" id="s1" hidden>
+                                        <span></span>
+                                        <p class="">기본 배송지로 설정</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dotList my-3">
+                        <div class="wrap">
+                            <p>
+                                입력하신 배송지는 배송지 목록에 저장됩니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="btnBox2">
+                        <div class="wrap">
+                            <a href="" class="btn bg-green color-white">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

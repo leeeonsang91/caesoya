@@ -1,0 +1,145 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page mypage refund history orderStatus">
+    <div class="section">
+        <div class="history__state type2 flex">
+            <div class="wrap">
+                <div>
+                    <p class="date">2020.09.09</p>
+                    <p>2020090981918261</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="prodItem">
+                <div class="wrap">
+                    <div class="prod__desc-area mb-0">
+                        <div class="prod__desciption">
+                            <div class="product__thumb">
+                                <img src="./assets/images/dummy-potato.png" alt="">
+                            </div>
+                            <div class="product__info flex-1">
+                                <div class="product__tit">
+                                    <h3 class="product__name">
+                                        국내산 산지직송 완숙 찰토마토
+                                    </h3>
+                                    <div class="product__quantity">1박스 10kg</div>
+                                </div>
+                                <div class="product__price">
+                                    <div class="price-sale">
+                                        <div class="price">
+                                            38,000
+                                            <span class="currency">원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="sellerName type2 flex justify-between items-center">
+                                    토마토닷컴
+                                    <a href="" class="btn btn--small border-gray color-gray">판매자 문의</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="">
+            <div class="customer__form">
+                <div class="form__table bn">
+                    <table>
+                        <colgroup>
+                            <col width="120">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>반품비용 결제방법</th>
+                            <td>
+                                <div class="form-row">
+                                    <label for="s1" class="mypage-select">
+                                        <select name="" id="s1" class="full">
+                                            <option value="">환불금에서 차감</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btnBox pb-3">
+                    <div class="wrap flex justify-between">
+                        <a href="" class="btn color-gray border-gray btn--wAuto">나중에 결제</a>
+                        <a href="" class="btn color-white bg-gray btn--wAuto">반품비용 결제선택</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="box">
+            <div class="history__state">
+                <div class="wrap">
+                    <h4 class="stateValue">결제금액 정보</h4>
+                </div>
+            </div>
+            <div class="cont info-area prodItem payType bn">
+                <div class="wrap">
+                    <div class="inner">
+                        <div>신용카드</div>
+                        <div class="text-right">
+                            BC카드(페이북)<br/>
+                            일시불 (9200-****-****-****)
+                        </div>
+                    </div>
+                    <p>
+                        결제 영수증 및 거래명세서는 PC마이페이지 > 주문상세에서 확인할 수 있습니다.
+                    </p>
+                </div>
+                <div class="prod__totalPrice py-4 type2">
+                    <div class="wrap">
+                        <div class="row">
+                            <div class="tit">주문금액</div>
+                            <div class="desc">
+                                38,900<span>원</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="tit">환불금액 차감내역</div>
+                            <div class="desc">
+                                38,900<span>원</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="tit">배송비 추가금액</div>
+                            <div class="desc">
+                                0<span>원</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="tit">할인 변동금액</div>
+                            <div class="desc">
+                                0<span>원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="totalOrderAmount">
+                    <div class="wrap flex items-center justify-between">
+                        <div class="tit text-theme-green">환불 예정금액</div>
+                        <div class="desc">
+                            38,900<span>원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btnBox mt-4">
+            <div class="wrap">
+                <a href="" class="btn bg-green color-white">반품신청</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

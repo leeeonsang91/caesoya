@@ -1,0 +1,124 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page shipping">
+    <div class="shipping__container">
+        <div class="tab tab-type1">
+            <div class="tab__head py-4">
+                <div class="wrap flex">
+                    <a href="" class="tab__link active">배송지 목록</a>
+                    <a href="" class="tab__link">최근 배송지</a>
+                </div>
+            </div>
+            <div class="tab__body">
+                {# 배송지 목록 #}
+                <div class="item">
+                    <div class="infoList">
+                        <div class="deliveryInfos">
+                            <div class="wrap">
+                                <div class="box top">
+                                    <p class="name flex">
+                                        고길홍
+                                        <span class="mark border-green color-green btn btn--small">기본배송지</span>
+                                    </p>
+                                    <div class="btnBox flex">
+                                        <a href="" class="btn color-gray btn--wAuto btn--hAuto">수정</a>
+                                        <a href="" class="btn color-gray btn--wAuto btn--hAuto">삭제</a>
+                                    </div>
+                                </div>
+                                <div class="box bottom">
+                                    <p class="address">
+                                        서울특별시 송파구 양산로2길 38<br/>
+                                        12층 1205호 (<em>22132</em>)
+                                    </p>
+                                    <div class="flex row">
+                                        <p class="name">고길홍</p>
+                                        <span class="bar">|</span>
+                                        <p class="phoneNum">010-1234-5678</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoList">
+                        <div class="deliveryInfos">
+                            <div class="wrap">
+                                <div class="box top">
+                                    <p class="name flex">
+                                        회사
+                                    </p>
+                                    <div class="btnBox flex">
+                                        <a href="" class="btn color-gray btn--wAuto btn--hAuto">수정</a>
+                                        <a href="" class="btn color-gray btn--wAuto btn--hAuto">삭제</a>
+                                    </div>
+                                </div>
+                                <div class="box bottom">
+                                    <p class="address">
+                                        서울특별시 송파구 양산로2길 38<br/>
+                                        12층 1205호 (<em>22132</em>)
+                                    </p>
+                                    <div class="flex row">
+                                        <p class="name">고길홍</p>
+                                        <span class="bar">|</span>
+                                        <p class="phoneNum">010-1234-5678</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btnBox">
+                        <div class="wrap">
+                            <a href="" class="btn bg-green color-white">배송지 등록</a>
+                        </div>
+                    </div>
+                </div>
+                {# 최근 배송지 #}
+                <div class="item">
+                    <div class="infoList">
+                        <div class="deliveryInfos">
+                            <div class="wrap">
+                                <div class="box top">
+                                    <p class="name flex">
+                                        고길홍
+                                        <span class="mark border-green color-green btn btn--small">기본배송지</span>
+                                    </p>
+                                    <div class="btnBox flex">
+                                        <a href="" class="btn color-gray btn--wAuto btn--hAuto">수정</a>
+                                        <a href="" class="btn color-gray btn--wAuto btn--hAuto">삭제</a>
+                                    </div>
+                                </div>
+                                <div class="box bottom">
+                                    <p class="address">
+                                        서울특별시 송파구 양산로2길 38<br/>
+                                        12층 1205호 (<em>22132</em>)
+                                    </p>
+                                    <div class="flex row">
+                                        <p class="name">고길홍</p>
+                                        <span class="bar">|</span>
+                                        <p class="phoneNum">010-1234-5678</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dotList my-3">
+                        <div class="wrap">
+                            <p>
+                                각 주소 옆 저장 버튼 클릭 시 배송지 목록에 등록됩니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="btnBox">
+                        <div class="wrap">
+                            <a href="" class="btn bg-green color-white">배송지 등록</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

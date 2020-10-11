@@ -1,0 +1,154 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+<div class="page mypage history orderStatus">
+    <div class="section">
+        <div class="history__state type2 flex">
+            <div class="wrap">
+                <div>
+                    <p class="date">2020.09.09</p>
+                    <p>2020090981918261</p>
+                </div>
+
+                <a href="" class="btn btn--small border-gray color-gray">배송조회</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="prodItem">
+                <div class="wrap">
+                    <div class="prod__desc-area">
+                        <div class="prod__desciption">
+                            <div class="product__thumb">
+                                <img src="./assets/images/dummy-potato.png" alt="">
+                            </div>
+                            <div class="product__info flex-1">
+                                <div class="product__tit">
+                                    <h3 class="product__name">
+                                        <span class="mark">결제완료</span>
+                                        국내산 산지직송 완숙 찰토마토
+                                    </h3>
+                                    <div class="product__quantity">1박스 10kg</div>
+                                </div>
+                                <div class="product__price">
+                                    <div class="price">
+                                        할인 -900원
+                                    </div>
+                                    <span class="bar">|</span>
+                                    <div class="price">
+                                        41,000원 
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <p>주문수량 : 1개</p>
+                                    <p>옵션 : 꿀고구마(중) 2kg</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="sellerName flex justify-between items-center">
+                        <span>토마토닷컴</span>
+                        <a href="" class="btn btn--small border-gray color-gray bg-white">판매자 문의</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="history__state">
+            <div class="wrap">
+                <h4 class="stateValue">배송지 정보</h4>
+                <a href="" class="btn btn--small border-gray color-gray">배송지 변경</a>
+            </div>
+        </div>
+        <div class="cont info-area prodItem">
+            <div class="wrap">
+                <div class="row">
+                    <strong>수령인</strong>
+                    <span>고길홍</span>
+                </div>
+                <div class="row">
+                    <strong>연락처</strong>
+                    <span>010-1234-5678</span>
+                </div>
+                <div class="row">
+                    <strong>안심번호</strong>
+                    <span>0505-6171-5368</span>
+                </div>
+                <div class="row">
+                    <strong>배송지</strong>
+                    <span>
+                        서울특별시 송파구 양산로2길 38<br/>
+                        12층 1205호 (22132)
+                    </span>
+                </div>
+                <div class="row">
+                    <strong>배송메모</strong>
+                    <span>부재 시 문앞에 놓아주세요.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="history__state">
+            <div class="wrap">
+                <h4 class="stateValue">결제금액 정보</h4>
+            </div>
+        </div>
+        <div class="cont info-area prodItem payType">
+            <div class="wrap">
+                <div class="inner">
+                    <div>신용카드</div>
+                    <div class="text-right">
+                        BC카드(페이북)<br/>
+                        일시불 (9200-****-****-****)
+                    </div>
+                </div>
+                <p>
+                    결제 영수증 및 거래명세서는 PC마이페이지 > 주문상세에서 확인할 수 있습니다.
+                </p>
+            </div>
+            <div class="prod__totalPrice py-4 type2">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="tit">상품금액</div>
+                        <div class="desc">
+                            38,900<span>원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tit">배송비 (5만원 이상 무료)</div>
+                        <div class="desc">
+                            38,900<span>원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tit">쿠폰할인</div>
+                        <div class="desc">
+                            0<span>원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tit">적립포인트 사용</div>
+                        <div class="desc">
+                            -900<span>원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="totalOrderAmount">
+                <div class="wrap flex items-center justify-between">
+                    <div class="tit text-theme-green">결제금액</div>
+                    <div class="desc">
+                        38,900<span>원</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btnBox">
+        <div class="wrap">
+            <a href="" class="btn bg-green color-white">전체 재구매</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
