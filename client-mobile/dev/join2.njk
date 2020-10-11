@@ -1,7 +1,11 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page accounts">
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">회원가입</h2>
+    </div>
+<div class="page accounts pb-4" style="padding-top: 50px;">
     <div class="accounts__item">
         <div class="join">
             <div class="wrap">
@@ -55,11 +59,11 @@
                                             <span></span>
                                             <p>
                                                 이용약관 <em class="">(필수)</em>
-                                                <a href="">전체보기</a>
+                                                <a href="#//" onclick="$('#privacy1').toggle();">전체보기</a>
                                             </p>
                                         </label>
                                     </div>
-                                    <div class="agreement__description">
+                                    <div class="agreement__description" id="privacy1" style="display: none;">
                                         <p>
                                             <span>
                                                 본 약관에는 마케팅 정보 수신에 대한 동의에 관한 내용이 포함
@@ -76,13 +80,14 @@
                                             <span></span>
                                             <p>
                                                 이용약관 <em class="">(필수)</em>
-                                                <a href="">
-                                                    <img src="./assets/images/icons/arrow-bottom.png" alt="">
-                                                </a>
+{#                                                <a href="">#}
+{#                                                    <img src="./assets/images/icons/arrow-bottom.png" alt="">#}
+{#                                                </a>#}
+                                                <a href="#//" onclick="$('#privacy2').toggle();">전체보기</a>
                                             </p>
                                         </label>
                                     </div>
-                                    <div class="agreement__description">
+                                    <div class="agreement__description" id="privacy2" style="display: none;">
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur commodi debitis dolore earum eius esse et excepturi exercitationem expedita explicabo fuga hic ipsam ipsum laborum magni maiores modi natus nemo neque, nobis nulla odit officia pariatur placeat possimus provident quas quidem quo sequi sint sit soluta suscipit tenetur totam vero vitae. Aliquam impedit ipsam unde. Architecto excepturi iste veniam. Accusantium assumenda laborum nostrum officiis praesentium quos rem repellendus suscipit. Autem commodi debitis doloribus dolorum ducimus eos eveniet iure laboriosam laudantium magni maiores natus nihil, nobis provident quidem quis quod rem sequi velit veniam voluptatem voluptatibus voluptatum. Dolor in nobis quo! A aliquid aspernatur dignissimos distinctio ex, exercitationem facilis harum itaque libero maxime nisi obcaecati optio pariatur quasi reiciendis repellat saepe tempora tenetur veniam vero. Alias blanditiis consequatur consequuntur delectus, deleniti doloribus fugiat hic impedit iusto minus modi nam natus nihil non optio pariatur possimus, praesentium quasi qui quod repellat sunt ut vero. Beatae, distinctio doloremque magnam necessitatibus porro quos. Asperiores enim exercitationem quae repellendus sunt, veritatis voluptatem! A ab adipisci alias amet aperiam consequuntur culpa cumque, dignissimos eligendi error est eveniet in itaque laboriosam magni nisi, possimus quae quisquam recusandae rem repellat sed sit suscipit tempora tempore temporibus tenetur!
                                         </p>

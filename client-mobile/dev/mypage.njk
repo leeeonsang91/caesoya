@@ -1,0 +1,307 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="subHeader">
+        <button class="subHeader__back">뒤로가기</button>
+        <h2 class="subHeader__title">마이페이지</h2>
+    </div>
+
+    <div class="page  mypage history pb-4">
+        <div class="mepage">
+            <div class="mepage__section">
+                <div class="mepage__section-header">
+                    <div class="wrap">
+                        <strong>고길* <span>님 반갑습니다.</span></strong>
+                        <a href="" class="button">정보수정</a>
+                    </div>
+                </div>
+                <div class="mepage__state">
+                    <div class="row">
+                        <div class="col">
+                            <p>할인쿠폰</p>
+                            <h2><strong>1</strong>장</h2>
+                        </div>
+                        <div class="col">
+                            <p>포인트</p>
+                            <h2><strong>1</strong>P</h2>
+                        </div>
+                        <div class="col">
+                            <p>구매후기</p>
+                            <h2><strong>1</strong>건</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mepage__section">
+                <div class="mepage__section-header">
+                    <div class="wrap">
+                        <strong>최근 주문상품</strong>
+                        <span>최근 1개월</span>
+                    </div>
+                </div>
+                <div class="mepage__section-body border-b">
+                    <div class="order-total">
+                        <div>
+                            <strong>0</strong>
+                            <p>입금대기</p>
+                        </div>
+                        <div>
+                            <strong>0</strong>
+                            <p>결제완료</p>
+                        </div>
+                        <div>
+                            <strong>0</strong>
+                            <p>상품준비중</p>
+                        </div>
+                        <div>
+                            <strong>0</strong>
+                            <p>배송중</p>
+                        </div>
+                        <div>
+                            <strong class="text-theme-green">2</strong>
+                            <p>배송완료</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mepage__section-body">
+                    <div class="mb-4">
+                        <div class="prodItem" style="border: none;padding: 0;">
+                            <div class="prod__desc-area" style="margin: 0;">
+                                <div class="prod__desciption">
+                                    <div class="product__thumb">
+                                        <img src="./assets/images/dummy-potato.png" alt="">
+                                    </div>
+                                    <div class="product__info flex-1">
+                                        <div class="product__tit">
+                                            <h3 class="product__name">
+                                                <span class="mark">결제완료</span>
+                                                국내산 산지직송 완숙 찰토마토
+                                            </h3>
+                                        </div>
+                                        <div class="product__price">
+                                            <div class="price">
+                                                할인 -900원
+                                            </div>
+                                            <span class="bar">|</span>
+                                            <div class="price">
+                                                41,000원
+                                            </div>
+                                        </div>
+                                        <div class="option">
+                                            <p>주문수량 : 1개</p>
+                                            <p>옵션 : 꿀고구마(중) 2kg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prodItem mt-2" style="border: none;padding: 0;">
+                            <div class="prod__desc-area" style="margin: 0;">
+                                <div class="prod__desciption">
+                                    <div class="product__thumb">
+                                        <img src="./assets/images/dummy-potato.png" alt="">
+                                    </div>
+                                    <div class="product__info flex-1">
+                                        <div class="product__tit">
+                                            <h3 class="product__name">
+                                                <span class="mark">결제완료</span>
+                                                국내산 산지직송 완숙 찰토마토
+                                            </h3>
+                                        </div>
+                                        <div class="product__price">
+                                            <div class="price">
+                                                할인 -900원
+                                            </div>
+                                            <span class="bar">|</span>
+                                            <div class="price">
+                                                41,000원
+                                            </div>
+                                        </div>
+                                        <div class="option">
+                                            <p>주문수량 : 1개</p>
+                                            <p>옵션 : 꿀고구마(중) 2kg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="">
+                            주문/배송 내역 보기
+                            <i>
+                                <img src="./assets/images/icons/icon-nav-arrow-right.png" alt="">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mepage__section">
+                <div class="mepage__section-header">
+                    <div class="wrap">
+                        <strong>최근 취소/반품/교환 상품</strong>
+                        <span>최근 1개월</span>
+                    </div>
+                </div>
+                <div class="mepage__section-body">
+                    <div class="empy py-12 text-center">
+                        <p class="text-xs">최근 1개월 간 취소/반품/교환한 상품이 없습니다.</p>
+                    </div>
+                    <div class="action">
+                        <a href="">
+                            취소/반품/교환 내역 보기
+                            <i>
+                                <img src="./assets/images/icons/icon-nav-arrow-right.png" alt="">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mepage__section">
+                <div class="mepage__section-header">
+                    <div class="wrap">
+                        <strong>최근 본 상품 50</strong>
+                        <span>최근 2주간, 최대 50개까지 유지</span>
+                    </div>
+                </div>
+                <div class="mepage__section-body">
+                    <div class="list">
+                        <div class="flex">
+                            {% for i in [1,2,3,4,5,6,7,5] %}
+                                <div class="item">
+                                    <div class="product ">
+                                        <div class="product__item">
+                                            <a href="" class="product__link">
+                                                <div class="product__img">
+                                                    <img src="./assets/images/dummy-product-type3-1.png" alt="">
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__tit">
+                                                        <h3 class="product__name">
+                                                            킹스베리 여름딸기 2kg
+                                                        </h3>
+                                                    </div>
+                                                    <div class="product__price">
+                                                        <p class="">1박스 15kg</p>
+                                                        <div class="price">
+                                                            19,500
+                                                            <span class="currency">원</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="">
+                            최근 본 상품 내역 보기
+                            <i>
+                                <img src="./assets/images/icons/icon-nav-arrow-right.png" alt="">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mepage__section">
+                <div class="mepage__section-header">
+                    <div class="wrap">
+                        <strong>찜리스트</strong>
+                    </div>
+                </div>
+                <div class="mepage__section-body">
+                    <div class="list">
+                        <div class="flex">
+                            {% for i in [1,2,3,4,5,6,7,5] %}
+                                <div class="item">
+                                    <div class="product ">
+                                        <div class="product__item">
+                                            <a href="" class="product__link">
+                                                <div class="product__img">
+                                                    <img src="./assets/images/dummy-product-type3-1.png" alt="">
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__tit">
+                                                        <h3 class="product__name">
+                                                            킹스베리 여름딸기 2kg
+                                                        </h3>
+                                                    </div>
+                                                    <div class="product__price">
+                                                        <p class="">1박스 15kg</p>
+                                                        <div class="price">
+                                                            19,500
+                                                            <span class="currency">원</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="">
+                            찜 리스트 보기
+                            <i>
+                                <img src="./assets/images/icons/icon-nav-arrow-right.png" alt="">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mepage__section">
+                <div class="mepage__section-header">
+                    <div class="wrap">
+                        <strong>찜한 스토어</strong>
+                        <span>내가 찜한 스토어</span>
+                    </div>
+                </div>
+                <div class="mepage__section-body">
+
+                    <div class="mepage__store">
+                        <div class="list">
+                            <div class="flex">
+                                {% for i in [1,2,2,12,1,2,12,1,21,21,2,1] %}
+                                    <div class="item">
+                                        <a href="">
+                                            <div class="img">
+                                                <img src="./assets/images/icons/store-border.png" alt="">
+                                                <p>토마토닷컴</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="">
+                            찜한 스토어 보러가기
+                            <i>
+                                <img src="./assets/images/icons/icon-nav-arrow-right.png" alt="">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonPrevList">
+            <button>
+                <span>로그아웃</span>
+                <i>
+                    <img src="./assets/images/icons/icon-nav-arrow-right.png" alt="">
+                </i>
+            </button>
+        </div>
+    </div>
+{% endblock %}

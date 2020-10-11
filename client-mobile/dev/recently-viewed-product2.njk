@@ -1,7 +1,11 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page recentlyViewProd mypage history">
+    <div class="subHeader">
+        <button class="subHeader__close ">닫기</button>
+        <h2 class="subHeader__title">최근 본 상품</h2>
+    </div>
+<div class="page recentlyViewProd mypage history" style="padding-top: 50px;">
     <div class="recentlyViewProd__container">
         {# 최근 본 상품 #}
         <div class="item">

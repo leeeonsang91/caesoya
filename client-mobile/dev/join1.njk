@@ -1,7 +1,11 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page accounts">
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">회원가입</h2>
+    </div>
+<div class="page accounts" style="padding-top: 50px;">
     <div class="accounts__item">
         <div class="join">
             <div class="wrap">
@@ -31,7 +35,7 @@
                             <p>사업자등록증을 보유한 구매회원</p>
                         </div>
                         <div class="join__btnbox">
-                            <button type="submit" class="btn border-green color-green">사업자 회원가입</button>
+                            <button type="submit" class="btn border-green color-green bg-white">사업자 회원가입</button>
                         </div>
                     </div>
                 </div>

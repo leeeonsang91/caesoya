@@ -1,6 +1,10 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">주문/배송 상세정보</h2>
+    </div>
 <div class="page mypage history orderStatus">
     <div class="section">
         <div class="history__state type2 flex">
@@ -35,7 +39,7 @@
                                     </div>
                                     <span class="bar">|</span>
                                     <div class="price">
-                                        41,000원 
+                                        41,000원
                                     </div>
                                 </div>
                                 <div class="option">
@@ -145,7 +149,7 @@
             </div>
         </div>
     </div>
-    <div class="btnBox">
+    <div class="btnBox mt-4">
         <div class="wrap">
             <a href="" class="btn bg-green color-white">전체 재구매</a>
         </div>

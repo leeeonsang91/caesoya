@@ -1,7 +1,10 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page main">
+    <div class="header-layout">
+        {% include './layout/header.njk' %}
+    </div>
+<div class=" main">
     <div class="main__section main__visual">
         <div class="slide">
             <div class="slide__item">
@@ -237,7 +240,7 @@
                 </div>
             </div>
         </div>
-    
+
     </div>
     <div class="main__section main__newArrival">
         <div class="wrap block">

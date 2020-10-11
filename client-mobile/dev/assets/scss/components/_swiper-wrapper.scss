@@ -1,0 +1,12 @@
+.swiper-wrapper {
+  .wrap {
+    overflow: auto;
+  }
+  .swiper {
+    @apply flex;
+  }
+  .swiper-slide {
+    flex: none;
+    width: 80px;
+  }
+}

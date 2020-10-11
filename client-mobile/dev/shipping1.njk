@@ -1,18 +1,22 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page shipping">
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">배송지 관리</h2>
+    </div>
+<div class="page shipping pb-4">
     <div class="shipping__container">
         <div class="tab tab-type1">
             <div class="tab__head py-4">
                 <div class="wrap flex">
-                    <a href="" class="tab__link active">배송지 목록</a>
-                    <a href="" class="tab__link">최근 배송지</a>
+                    <a href="" class="tab__link active" data-tab="" data-target-id="tab1">배송지 목록</a>
+                    <a href="" class="tab__link" data-tab="" data-target-id="tab2">최근 배송지</a>
                 </div>
             </div>
             <div class="tab__body">
                 {# 배송지 목록 #}
-                <div class="item">
+                <div class="item tab-item" id="tab1">
                     <div class="infoList">
                         <div class="deliveryInfos">
                             <div class="wrap">
@@ -74,7 +78,7 @@
                     </div>
                 </div>
                 {# 최근 배송지 #}
-                <div class="item">
+                <div class="item tab-item" id="tab2" style="display: none;">
                     <div class="infoList">
                         <div class="deliveryInfos">
                             <div class="wrap">

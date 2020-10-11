@@ -1,6 +1,9 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
+<div class="header-layout">
+    {% include './layout/header.njk' %}
+</div>
 <div class="breadcrumb">
     <div class="wrap">
         <a href="" class="breadcrumb__item">Home</a>
@@ -14,9 +17,13 @@
         <a href="" class="breadcrumb__item">오이/호박/고추/열매채소</a>
     </div>
 </div>
-<div class="page goods-list">
+<div class="goods-list pb-12">
     {# page header #}
     <div class="section">
+        <div class="subHeader not-fix">
+            <button class="subHeader__back ">뒤로가기</button>
+            <h2 class="subHeader__title">오이</h2>
+        </div>
         <div class="goods-category">
             <div class="wrap">
                 <div class="category-items">

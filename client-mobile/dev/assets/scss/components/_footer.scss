@@ -1,0 +1,94 @@
+.footer {
+  border-top: 1px solid #222;
+}
+
+.footer__links {
+  border-bottom: 1px solid #e5e5e5;
+  a {
+    @apply text-center;
+    border-right: 1px solid #e5e5e5;
+    &:nth-child(4n) {
+      border-right: 0;
+    }
+    &:nth-child(n + 5) {
+      border-top: 1px solid #e5e5e5;
+    }
+    padding: 5px 0;
+    .img {
+      text-align: center;
+      line-height: 30px;
+    }
+    img {
+      @apply inline-block;
+      width: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+
+.footer__info {
+  .row {
+    @apply flex;
+  }
+  .col {
+    flex: 1;
+    padding: 20px 10px;
+    &:first-child {
+      border-right: 1px solid #e5e5e5;
+    }
+  }
+  h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  p {
+    color:#666;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height:1.5em;
+  }
+}
+
+.footer__buttons {
+  @apply flex;
+  a {
+    flex: 1;
+    line-height: 45px;
+    background: #222;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+    &:first-child {
+      border-right: 1px solid #fff;
+    }
+  }
+}
+
+.footer__description {
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 12px;
+  line-height:1.5em;
+  color:#666;
+}
+
+.footer__etc {
+  @apply flex;
+  background:#f6f6f6;
+  a {
+    line-height: 30px;
+    flex: 1;
+    font-size: 12px;
+    text-align: center;
+  }
+}

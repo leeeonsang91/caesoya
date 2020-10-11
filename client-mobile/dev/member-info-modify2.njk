@@ -1,12 +1,16 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page accounts">
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">회원정보 수정</h2>
+    </div>
+<div class="page accounts" style="padding-top: 50px;">
     <div class="accounts__item">
         <div class="member-info join">
             <div class="login__container">
                 <div class="member-info__section">
-                    <div class="member-info__header">
+                    <div class="member-info__header bg-white">
                         <div class="wrap">
                             <div class="inner">
                                 <h3>기본정보</h3>
@@ -64,7 +68,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-row">
+                                        <div class="form-row bg-white">
                                             <div class="row">
                                                 <div class="input gender">
                                                     <div class="tit">성별</div>
@@ -73,19 +77,19 @@
                                                             <input type="radio" name="gender" id="gender1" hidden>
                                                             <span></span>
                                                             <p>남자</p>
-                                                        </label> 
+                                                        </label>
                                                         <label for="gender2" class="radio">
                                                             <input type="radio" name="gender" id="gender2" hidden>
                                                             <span></span>
                                                             <p>여자</p>
-                                                        </label> 
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="login__form">
+                                <div class="login__form bg-white">
                                     <div class="member-info__header">
                                         <div class="wrap">
                                             <div class="inner arrow">
@@ -112,7 +116,7 @@
                         </div>
                         <div class="item">
                             <form action="">
-                                <div class="member-info__header">
+                                <div class="member-info__header bg-white">
                                     <div class="wrap">
                                         <div class="inner arrow">
                                             <h3>개인정보 수집 및 이용안내</h3>
@@ -132,7 +136,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="agreement__item">
+                                        <div class="agreement__item bg-white">
                                             <div class="agreement__row">
                                                 <div class="agreement__check">
                                                     <label for="agree1" class="checkbox">

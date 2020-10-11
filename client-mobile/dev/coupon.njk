@@ -1,0 +1,100 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="subHeader">
+        <button class="subHeader__close">닫기</button>
+        <h2 class="subHeader__title">할인쿠폰</h2>
+    </div>
+    <div class="page point history pb-4">
+        <div class="history__head bg-white">
+            <div class="wrap">
+                <div class="row">
+                    <label for="om1" class="mypage-select">
+                        <select name="" id="om1" class="full">
+                            <option value="">최근 발급순</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="coupon__content">
+            <div class="coupon__content-top">
+                <div class="wrap">
+                    사용 가능한 쿠폰 <strong>23</strong>장
+                </div>
+            </div>
+            <div class="coupon__content-body">
+                <div class="wrap">
+                    <div class="coupon__item type1">
+                        <div class="info">
+                            <h3>기본할인</h3>
+                            <h2>
+                                스토어 찜 쿠폰<br/>
+                                <strong>5</strong>% 할인 (최대 5,000원 할인)
+                            </h2>
+                            <p>
+                                50,000원 이상 구매 시<br/>
+                                2020.10.01~2020.10.30(D-29)
+                            </p>
+                        </div>
+                        <div class="img">
+                            <span class="icon"><img src="./assets/images/coupon-img1.png" alt=""></span>
+                            <div>
+                                <strong>토마토닷컴</strong>
+                                <p>상품중복할인</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coupon__item type2">
+                        <div class="info">
+                            <h3>장바구니</h3>
+                            <h2>
+                                장바구니 중복할인 쿠폰<br/>
+                                <strong>2,000</strong>원 할인
+                            </h2>
+                            <p>
+                                50,000원 이상 구매 시<br/>
+                                2020.10.01~2020.10.30(D-29)
+                            </p>
+                        </div>
+                        <div class="img">
+                            <span class="icon"><img src="./assets/images/coupon-img2.png" alt=""></span>
+                            <div>
+                                <strong>장바구니</strong>
+                                <p>중복할인</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coupon__item type3">
+                        <div class="info">
+                            <h3>추가할인</h3>
+                            <h2>
+                                [BC카드] 할인쿠폰<br/>
+                                <strong>15</strong>% 할인 (최대 10,000원 할인)
+                            </h2>
+                            <p>
+                                50,000원 이상 구매 시<br/>
+                                2020.10.01~2020.10.30(D-29)
+                            </p>
+                        </div>
+                        <div class="img">
+                            <span class="icon"><img src="./assets/images/coupon-img3.png" alt=""></span>
+                            <div>
+                                <strong>신용카드</strong>
+                                <p>추가할인</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonPrevList">
+            <button>
+                <span>더보기</span>
+                <i>
+                    <img src="./assets/images/icons/arrow-bottom.png" alt="">
+                </i>
+            </button>
+        </div>
+    </div>
+{% endblock %}

@@ -1,26 +1,30 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
+<div class="subHeader">
+    <button class="subHeader__back ">뒤로가기</button>
+    <h2 class="subHeader__title">구매후기</h2>
+</div>
 <div class="page review mypage">
     <div class="review__container">
         <div class="tab tab-type1">
             <div class="tab__head py-4">
                 <div class="wrap flex">
-                    <a href="" class="tab__link active">작성가능한 후기</a>
-                    <a href="" class="tab__link">내가 작성한 후기</a>
+                    <a href="#//" class="tab__link active" data-tab="" data-target-id="tab1">작성가능한 후기</a>
+                    <a href="#//" class="tab__link" data-tab="" data-target-id="tab2">내가 작성한 후기</a>
                 </div>
             </div>
             <div class="tab__body">
                 {# 작성가능한 후기 #}
-                <div class="item">
+                <div class="tab-item item" id="tab1">
                     <div class="topInfo py-2">
                         <div class="wrap">
                             <div class="tit">
-                                작성가능한 후기 
+                                작성가능한 후기
                                 <span class="text-theme-green">13</span>
                             </div>
                             <div class="txt">
-                                후기 작성은 
+                                후기 작성은
                                 <span class="text-theme-green">제품수령 후 30일</span>
                                 까지 가능
                             </div>
@@ -102,7 +106,7 @@
                     </div>
                 </div>
                 {# 내가 작성한 후기 #}
-                <div class="item">
+                <div class="tab-item item" id="tab2" style="display: none;">
                     <div class="topInfo py-2">
                         <div class="wrap">
                             <div class="tit">

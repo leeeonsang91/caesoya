@@ -1,17 +1,21 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">아이디/비밀번호 찾기</h2>
+    </div>
 <div class="page accounts">
     <div class="accounts__item">
-        <div class="login find-accounts">
-            <div class="wrap">
+        <div class="login find-accounts" style="padding-top: 0px;">
+            <div class="wrap" style="padding-top: 10px;">
                 <div class="login__container">
                     <div class="login__header">
-                        <a href="" class="login__link active">아이디 찾기</a>
-                        <a href="" class="login__link">비밀번호 찾기</a>
+                        <a href="" class="login__link active" data-tab="" data-target-id="tab1">아이디 찾기</a>
+                        <a href="" class="login__link" data-tab="" data-target-id="tab2">비밀번호 찾기</a>
                     </div>
                     <div class="login__body">
-                        <div class="item">
+                        <div class="item tab-item" id="tab1">
                             <form action="">
                                 <div class="login__form">
                                     <div class="form-row m-type">
@@ -26,7 +30,7 @@
                                                             가입 당시 입력한 휴대폰 번호를 통해 아이디를 찾을 수 있습니다.
                                                         </p>
                                                     </h3>
-                                                </label> 
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -57,7 +61,7 @@
                                                             회원님의 명의로 등록된 휴대폰으로 가입여부 및 본인여부를 확인합니다.
                                                         </p>
                                                     </h3>
-                                                </label> 
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -66,7 +70,7 @@
 
                             <div class="btn color-gray border-gray customer-service">고객센터 1588-9223</div>
                         </div>
-                        <div class="item">
+                        <div class="item tab-item" id="tab2" style="display: none;">
                             <form action="">
                                 <div class="login__form">
                                     <div class="form-row m-type">
@@ -81,7 +85,7 @@
                                                             가입 당시 입력한 휴대폰 번호를 통해 아이디를 찾을 수 있습니다.
                                                         </p>
                                                     </h3>
-                                                </label> 
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +121,7 @@
                                                             가입 당시 입력한 이메일로 비밀번호 재정설 메일을 발송합니다.
                                                         </p>
                                                     </h3>
-                                                </label> 
+                                                </label>
                                             </div>
                                         </div>
                                     </div>

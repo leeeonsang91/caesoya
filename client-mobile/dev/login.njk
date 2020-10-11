@@ -1,17 +1,21 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">로그인</h2>
+    </div>
 <div class="page accounts">
     <div class="accounts__item">
-        <div class="login">
-            <div class="wrap">
-                <div class="login__container">
+        <div class="login" style="padding-top: 0;">
+            <div class="wrap" style="padding-top: 10px;">
+                <div class="login__container pb-12">
                     <div class="login__header">
-                        <a href="" class="login__link active">회원 로그인</a>
-                        <a href="" class="login__link">비회원 로그인</a>
+                        <a href="" class="login__link active" data-tab="" data-target-id="tab1">회원 로그인</a>
+                        <a href="" class="login__link" data-tab="" data-target-id="tab2">비회원 로그인</a>
                     </div>
                     <div class="login__body">
-                        <div class="item">
+                        <div class="item tab-item" id="tab1">
                             <form action="">
                                 <div class="login__form">
                                     <div class="form-row">
@@ -49,7 +53,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="item">
+                        <div class="item tab-item" id="tab2" style="display: none;">
                             <form action="">
                                 <div class="login__form">
                                     <div class="form-row">

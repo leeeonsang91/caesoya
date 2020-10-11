@@ -1,4 +1,4 @@
-// mypage 
+// mypage
 .mypage {
     background: #f6f6f6;
 
@@ -6,7 +6,9 @@
         padding: 15px 0;
         border-top: 2px solid #e5e5e5;
         border-bottom: 1px solid #e5e5e5;
-        margin-bottom: 12px;
+        & + .prodItem {
+            margin-bottom: 12px;
+        }
         background: #fff;
         @apply relative;
         .prod__select-area {
@@ -174,7 +176,7 @@
     }
 }
 
-// cart 
+// cart
 .cart {
     .check-all {
         border-bottom: 1px solid #e5e5e5;
@@ -222,7 +224,7 @@
                     font-size: 14px;
                 }
             }
-            
+
             i {
                 img {
                     height: 6px;
@@ -411,6 +413,9 @@
                         font-size: 14px;
                         color: #159c65;
                         font-weight: 700;
+                        border: none;
+                        height: 38px;
+                        padding: 0 5px 0 0;
                     }
                     .close {
                         text-indent: -9999px;
@@ -704,7 +709,7 @@
                 font-size: 14px;
                 color: #222222;
                 font-weight: 700;
-                
+
                 i {
                     img {
                         height: 6px;
@@ -785,5 +790,148 @@
 
     .history__state {
         border-top: none;
+    }
+}
+
+.mepage {
+    .mepage__section {
+        margin-bottom: 1rem;
+        background:#fff;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .mepage__section-header {
+        @apply border-b;
+        .wrap {
+            @apply flex justify-between items-center;
+            height: 45px;
+        }
+        strong {
+            font-size: 16px;
+        }
+        span {
+            font-size: 12px;
+            color:#999999;
+            font-weight: 400;
+        }
+        .button {
+            font-size: 10px;
+            line-height: 20px;
+            padding:0 10px;
+            border: 1px solid #222;
+        }
+    }
+}
+
+.mepage__state {
+  background:#f1fef5;
+    .row {
+        padding: 1rem 0;
+        @apply flex;
+    }
+    .col {
+        flex: 1;
+        text-align: center;
+        & ~ .col {
+            border-left: 1px solid #e5e5e5;
+        }
+    }
+  p {
+    font-size: 14px;
+      color:#666666;
+  }
+    h2 {
+        margin-top: 5px;
+        font-size: 14px;
+        color:#222;
+        strong {
+            font-size: 20px;
+        }
+    }
+}
+
+.mepage__section-body {
+    background:#fff;
+    padding: 15px;
+
+    .action {
+        a {
+            @apply flex w-full items-center justify-center;
+          height: 35px;
+            background:#f6f6f6;
+            font-size: 14px;
+          img {
+              height: 12px;
+              margin-left: 5px;
+          }
+        }
+    }
+
+    .list {
+        padding-bottom: 15px;
+        overflow: auto;
+        .flex {
+
+        }
+        .item {
+            margin-right: 10px;
+            width: 150px;
+            flex: none;
+        }
+        .product__img {
+            margin-bottom: 0;
+            text-align: left;
+        }
+        .product__price {
+            text-align: left !important;
+            p {
+                color:#999999;
+                font-size: 12px;
+            }
+        }
+        .price {
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            span {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.order-total {
+    @apply flex items-center;
+    padding: 1rem 0;
+    background:#f6f6f6;
+    div {
+        flex: 1;
+        @apply text-center;
+
+        & ~ div {
+            border-left: 1px solid #e5e5e5;
+        }
+    }
+    strong {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+        color:#999999;
+      margin-top: 5px;
+    }
+}
+
+.mepage__store {
+    .item {
+        width: 80px !important;
+        flex: none !important;
+        margin-right: 20px !important;
+
+        p {
+            font-size: 12px;
+            margin-top: 5px;
+            text-align: center;
+        }
     }
 }

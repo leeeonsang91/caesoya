@@ -1,6 +1,10 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
+    <div class="subHeader">
+        <button class="subHeader__close">닫기</button>
+        <h2 class="subHeader__title">포인트</h2>
+    </div>
 <div class="page point history">
     <div class="section sec1 py-3 bg-white mb-4">
         <div class="point__state mb-3">
@@ -82,7 +86,7 @@
                         </div>
                         <div class="row">
                             <span>포인트</span>
-                            <span class="text-theme-red">-2,000</span>
+                            <span class="text-red-500" style="color:#f00;">-2,000</span>
                         </div>
                     </div>
                 </div>

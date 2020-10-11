@@ -1,7 +1,11 @@
 {% extends 'layout/base.njk' %}
 
 {% block content %}
-<div class="page recentlyViewProd mypage history">
+    <div class="subHeader">
+        <button class="subHeader__back ">뒤로가기</button>
+        <h2 class="subHeader__title">상품 검색</h2>
+    </div>
+<div class="page recentlyViewProd mypage history" style="padding-top: 50px;">
     <div class="recentlyViewProd__container">
         <div class="searchForm">
             <div class="input">
@@ -12,13 +16,13 @@
         <div class="tab tab-type1">
             <div class="tab__head py-4">
                 <div class="wrap flex">
-                    <a href="" class="tab__link active">최근 검색어</a>
-                    <a href="" class="tab__link">최근 본 상품</a>
+                    <a href="" class="tab__link active" data-tab="" data-target-id="tab1">최근 검색어</a>
+                    <a href="" class="tab__link" data-tab="" data-target-id="tab2">최근 본 상품</a>
                 </div>
             </div>
             <div class="tab__body">
                 {# 최근 검색어 #}
-                <div class="item">
+                <div class="item tab-item" id="tab1" style="">
                     <div class="list searchTxtList">
                         <div class="row bg-white">
                             <div class="wrap">
@@ -41,7 +45,7 @@
                     </div>
                 </div>
                 {# 최근 본 상품 #}
-                <div class="item">
+                <div class="item tab-item" id="tab2" style="display: none;">
                     <div class="list viewedProdList">
                         <div class="row bg-white">
                             <div class="history__state type2">

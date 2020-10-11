@@ -1,2 +1,41 @@
 # 채소야 모바일
 
+- 구매후기(내가작성한후기) - review1.html
+- 구매후기(작성가능후기) - review1.html
+- 구매후기작성 - review2.html
+- 로그인 - login.html
+- 리스트페이지 - goods-list.html
+- 마이페이지
+- 메인페이지_카테고리펼침 - index.html
+- 메인페이지 - index.html
+- 반품신청 - refund1.html
+- 반품신청(반품비용결제) - refund3.html
+- 반품신청(수거정보입력) - refund2.html
+- 배송조회 - shipping3.html
+- 배송지등록 - shipping2.html
+- 배송지목록 - shipping1.html
+- 아이디찾기 - find-accounts.html
+- 비밀번호찾기 - find-accounts.html
+- 비회원로그인 - login.html
+- 상세페이지_리뷰 - detail.html
+- 상세페이지_문의 - detail.html
+- 상세페이지_정보 - detail.html
+- 상품검색(최근검색어) - recently-viewed-product1.html
+- 상품검색(최근본상품) - recently-viewed-product1.html
+- 장바구니 - cart.html
+- 주문결제페이지 - order-sheet.html
+- 주문배송상세 - orderStatus-details.html
+- 주문배송조회 - payment-history1.html
+- 찜리스트 - storage2.html
+- 찜한스토어 - storage1.html
+- 최근배송지 - shipping1.html
+- 최근본상품 - recently-viewed-product2.html
+- 취소반품교환조회 - payment-history2.html
+- 판매자문의하기 - customer.html
+- 포인트 - point.html
+- 할인쿠폰
+- 회원가입01 - join1.html
+- 회원가입02 - join2.html
+- 회원정보수정01 - member-info-modify1.html
+- 회원정보수정02 - member-info-modify2.html
+
