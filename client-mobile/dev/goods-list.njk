@@ -38,15 +38,14 @@
         <div class="goods-sort">
             <div class="wrap">
                 <div class="form-row">
-                    <label for="sort" class="select">
-                        <select name="" id="sort" class="full">
+                    <label for="sort" class="select ">
+                        <select name="" id="sort" class="full bg-white">
                             <option value="">상품정렬</option>
                         </select>
                     </label>
                 </div>
                 <div class="user-sort">
                     <button class="card-type card-type1"></button>
-                    <button class="card-type card-type2"></button>
                     <button class="card-type card-type3 on"></button>
                 </div>
             </div>
@@ -56,7 +55,9 @@
             <div class="wrap">
                 <div class="item">
                     <div class="product product-type3">
+                        {% for i in [1,2,3,4] %}
                         <div class="product__item">
+                            <button class="action-cart">카트담기</button>
                             <a href="" class="product__link">
                                 <div class="product__img">
                                     <img src="./assets/images/dummy-product-type3-1.png" alt="">
@@ -64,90 +65,41 @@
                                 <div class="product__info">
                                     <div class="product__tit">
                                         <h3 class="product__name">
-                                            킹스베리 여름딸기 2kg
+                                            <span class="type">[특급]</span> 취청오이
                                         </h3>
+                                        <p>
+                                            1박스 10킬로그램 (kg)
+                                        </p>
                                     </div>
                                     <div class="product__price">
-                                        <div class="price-origin">25,000원</div>
                                         <div class="price-sale">
                                             <div class="price">
                                                 19,500
                                                 <span class="currency">원</span>
                                             </div>
+                                            <span class="price-state" style="background:#0b9a63;">
+                                                ▲ 1,000
+                                            </span>
                                         </div>
+                                    </div>
+                                    <div class="product-review-count">
+                                        <div>
+                                            <img src="./assets/images/icons/star-true.png" alt="">
+                                            <img src="./assets/images/icons/star-true.png" alt="">
+                                            <img src="./assets/images/icons/star-true.png" alt="">
+                                            <img src="./assets/images/icons/star-true.png" alt="">
+                                            <img src="./assets/images/icons/star-false.png" alt="">
+                                        </div>
+                                        <span>(11)</span>
+                                    </div>
+
+                                    <div class="product__register">
+                                        등록일 <span>2020.07.22</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="product__item">
-                            <a href="" class="product__link">
-                                <div class="product__img">
-                                    <img src="./assets/images/dummy-product-type3-1.png" alt="">
-                                </div>
-                                <div class="product__info">
-                                    <div class="product__tit">
-                                        <h3 class="product__name">
-                                            킹스베리 여름딸기 2kg
-                                        </h3>
-                                    </div>
-                                    <div class="product__price">
-                                        <div class="price-origin">25,000원</div>
-                                        <div class="price-sale">
-                                            <div class="price">
-                                                19,500
-                                                <span class="currency">원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product__item">
-                            <a href="" class="product__link">
-                                <div class="product__img">
-                                    <img src="./assets/images/dummy-product-type3-1.png" alt="">
-                                </div>
-                                <div class="product__info">
-                                    <div class="product__tit">
-                                        <h3 class="product__name">
-                                            킹스베리 여름딸기 2kg
-                                        </h3>
-                                    </div>
-                                    <div class="product__price">
-                                        <div class="price-origin">25,000원</div>
-                                        <div class="price-sale">
-                                            <div class="price">
-                                                19,500
-                                                <span class="currency">원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product__item">
-                            <a href="" class="product__link">
-                                <div class="product__img">
-                                    <img src="./assets/images/dummy-product-type3-1.png" alt="">
-                                </div>
-                                <div class="product__info">
-                                    <div class="product__tit">
-                                        <h3 class="product__name">
-                                            킹스베리 여름딸기 2kg
-                                        </h3>
-                                    </div>
-                                    <div class="product__price">
-                                        <div class="price-origin">25,000원</div>
-                                        <div class="price-sale">
-                                            <div class="price">
-                                                19,500
-                                                <span class="currency">원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        {% endfor %}
                     </div>
 
                     <button class="more-btn btn bg-light-gray color-white btn--wAuto btn--hAuto">더보기</button>

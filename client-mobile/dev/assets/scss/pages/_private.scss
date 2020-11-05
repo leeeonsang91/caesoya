@@ -1,0 +1,41 @@
+// 약관
+
+.terms {
+  .wrap {
+    padding: 5px 15px 15px;
+  }
+  .terms__content {
+    background:#fff;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+
+    & > * {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      word-break: keep-all;
+    }
+    h3 {
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+      padding-bottom: 10px;
+      padding-top: 15px;
+      font-weight: 600;
+    }
+    ul {
+      padding-left: 20px;
+      list-style: circle;
+    }
+    ol {
+      padding-left: 20px;
+      list-style: decimal;
+    }
+    li {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

@@ -79,5 +79,16 @@ $(document).ready(function () {
     $('.header-layout .left-nav').removeClass('active');
   });
 
+  $('.card-type').on('click', function(){
+    $(this).siblings('.card-type').removeClass('on');
+    $(this).addClass('on');
+    if($(this).hasClass('card-type1')) {
+      $('.list').addClass('type1');
+    }
+    if($(this).hasClass('card-type3')) {
+      $('.list').removeClass('type1');
+    }
+
+  })
 
 });
