@@ -1,0 +1,144 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="header-layout">
+        {% include './layout/header.njk' %}
+    </div>
+    <div class="goods-list pb-12 package">
+        {# page header #}
+        <div class="section">
+            <div class="package__banner">
+                <img src="./assets/images/package-banner.png" alt="">
+            </div>
+            <div class="tabBtn-area flex">
+                <a href="">전체</a>
+                <a href="">카테고리</a>
+                <a href="">카테고리</a>
+                <a href="">카테고리</a>
+                <a href="">카테고리</a>
+            </div>
+            <div class="goods-sort">
+                <div class="wrap">
+                    <div class="form-row">
+                        <label for="sort" class="select ">
+                            <select name="" id="sort" class="full bg-white">
+                                <option value="">상품정렬</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="user-sort">
+                        <button class="card-type card-type1"></button>
+                        <button class="card-type card-type3 on"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list ">
+                <div class="wrap">
+                    <div class="item">
+                        <div class="product product-type3">
+                            {% for i in[1, 2, 3, 4] %}
+                                <div class="product__item">
+                                    <a href="" class="product__link">
+                                        <div class="product__img">
+                                            <img src="./assets/images/package-img.png" alt="">
+                                        </div>
+                                        <div class="product__info">
+                                            <div class="product__tit">
+                                                <h3 class="product__name">취청오이</h3>
+                                                <p>
+                                                    150g 1개 [특상급]
+                                                </p>
+                                            </div>
+                                            <div class="product__price">
+                                                <div class="price-sale">
+                                                    <div class="price">
+                                                        400
+                                                        <span class="currency">원</span>
+                                                    </div>
+                                                    <span class="price-state">
+                                                        999개 남음
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="btnarea flex items-end">
+                                                <button href="" class="links">문의하기</button>
+                                                <div class="count ml-auto">
+                                                    <button class="countBtn minus"></button>
+                                                    <input type="text" value="1">
+                                                    <button class="countBtn plus"></button>
+                                                </div>
+                                            </div>
+                                            <button class="cartput">카트에 담기</button>
+                                        </div>
+                                    </a>
+                                    <div class="bottomBtn">
+                                        <a href="" class="qna">문의하기</a>
+                                        <a href="" class="cart">카트에 담기</a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="package__foot item1">
+            <div class="content">
+                <a href="#//" class="buy" onclick="$('.package__foot.item2').show();">바로구매</a>
+            </div>
+        </div>
+        <div class="package__foot item2" style="display:none;">
+            <div class="bg"  onclick="$('.package__foot.item2').hide();"></div>
+            <div class="content">
+                <div class="tit">꾸러미 CART</div>
+                <div class="inner">
+                    <div class="item-list">
+                        {% for i in[1, 2, 3] %}
+                            <div class="row flex">
+                                <a href="" class="close">
+                                    닫기
+                                </a>
+                                <div class="thumb">
+                                    <img src="./assets/images/package-img.png" alt="">
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__tit">
+                                        <h3 class="product__name">취청오이</h3>
+                                        <p>
+                                    150g 1개 [특상급]
+                                </p>
+                                    </div>
+                                    <div class="product__price">
+                                        <div class="price-sale">
+                                            <div class="price">
+                                                400
+                                                <span class="currency">원</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-state">
+                                            999개 남음
+                                        </div>
+                                    </div>
+                                    <div class="count ml-auto">
+                                        <button class="countBtn minus"></button>
+                                        <input type="text" value="1">
+                                        <button class="countBtn plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="payment flex">
+                    <h3>결제금액</h3>
+                    <p class="flex">
+                        77,800
+                        <span>원</span>
+                    </p>
+                </div>
+                <a href="" class="buy">33건 주문하기</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

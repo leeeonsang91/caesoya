@@ -1,0 +1,72 @@
+{% extends 'layout/base.njk' %}
+
+{% block content %}
+    <div class="subHeader">
+        <button class="subHeader__close">닫기</button>
+        <h2 class="subHeader__title">문의하기</h2>
+    </div>
+    <div class="page  mypage" style="padding-top: 50px;">
+        <div class="review__container">
+            <div class="box">
+                <form action="">
+                    <div class="customer__form">
+                        <div class="form__table">
+                            <table>
+                                <colgroup>
+                                    <col width="80">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="">문의상품</th>
+                                        <td class="font-medium">
+                                        백다다기 오이 150g 1개 [특상급]
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="">제목</th>
+                                        <td>
+                                            <div class="form-row">
+                                                <div class="input">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="align-top">문의내용</th>
+                                        <td>
+                                            <div class="form-row">
+                                                <div class="textarea">
+                                                    <textarea name="" id=""></textarea>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="file">
+                            <div class="title">
+                                <span>사진</span>
+                                <span class="txt">최대 3개</span>
+                            </div>
+                            <label for="file1" class="custom-file">
+                                <input type="file" id="file1" hidden>
+                                <span class="">첨부</span>
+                            </label>
+                        </div>
+
+                        <div class="bottom-btnBox my-4 pb-4">
+                            <div class="wrap">
+                                <a href="" class="btn bg-green color-white">등록</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
