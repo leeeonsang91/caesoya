@@ -94,9 +94,6 @@ const js = () => {
       })
     )
     .pipe(babel())
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
     .pipe(concat("ui.js"))
     .pipe(gulp.dest("dist/assets/js"));
 };

@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+  $(window).on('scroll', function(){
+    var t = $('html, body').scrollTop();
+    console.log(t);
+    if(t > 10) {
+      $('body').addClass('scrolled');
+    } else {
+      $('body').removeClass('scrolled');
+    }
+  })
+
   // main visual slide slick
   $('.main__visual .slide').slick({
     infinite: true,

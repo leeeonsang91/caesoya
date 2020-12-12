@@ -32,6 +32,11 @@
   .wrap {
     @apply flex justify-between items-center relative;
     height: 150px;
+    transition: all .3s;
+
+    .scrolled & {
+      height: 90px;
+    }
   }
 
   .logo {
