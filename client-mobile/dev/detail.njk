@@ -55,11 +55,56 @@
                     </div>
                 </div>
                 <div class="product__price">
+                    <a href="" class="mr-auto">
+                        단골등록하기
+                    </a>
                     <div class="price-origin">58,900원</div>
                     <div class="price-sale">
                         <div class="price">
                             38,900
                             <span class="currency">원</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__buyinfo">
+                    <div class="row">
+                        <h3>판매가</h3>
+                        <p>
+                            <strong>38,900</strong>원
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3>최대 적립포인트</h3>
+                        <p>
+                            <span>843</span>원 적립
+                        </p>
+                    </div>
+
+                    <div class="product__buyinfo-detail">
+                        <div class="row">
+                            <h3>최대 적립포인트</h3>
+                            <p>
+                                국내산
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h3>판매단위</h3>
+                            <p>
+                                1박스 15kg
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h3>배송방법</h3>
+                            <p>
+                                택배
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h3>배송비</h3>
+                            <p>
+                                3,000원
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -71,30 +116,6 @@
                 <button class="save">
                     <span>찜</span>
                 </button>
-            </div>
-
-            <div class="delivery_info">
-                <div class="wrap">
-                    <h3>배송정보</h3>
-                    <div class="listBox">
-                        <div class="list">
-                            <div class="tit">원산지</div>
-                            <div class="desc">
-                                <p>2,500원</p>
-                                <p>50,000원 이상 구매 시 무료</p>
-                                <p>제주, 도서 산간 지역 추가 3,000원</p>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="tit">배송기간</div>
-                            <div class="desc">
-                                <p>
-                                    평균 2일 이내
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -651,14 +672,63 @@
         </div>
     </div>
 
-    <div class="cartPut">
-        <div class="wrap">
+
+    <div class="detail__foot">
+        <button class="toggle-button"></button>
+        <div class="order-info">
+            <div class="row">
+                <h3>수량선택</h3>
+                <div class="count">
+                    <button class="countBtn minus">
+                        <img src="./assets/images/icons/minus.png" alt="">
+                    </button>
+                    <input type="text" name="" id="" value="1">
+                    <button class="countBtn plus">
+                        <img src="./assets/images/icons/plus.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <h3>총 수량 <strong>1</strong>개</h3>
+                <p>
+                    총 금액 <strong>38,900<span>원</span></strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="delevery-info">
+            <div class="row">
+                <h3>배송방법</h3>
+                <div class="col">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">택배</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>배송비</h3>
+                <div class="col">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">3,000원 주문시 결제</option>
+                        </select>
+                    </div>
+                    <p>
+                        제주, 도서지역 추가 3,000원
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cartPut">
             <div class="buyGroup">
                 <button class="btn bg-gray color-white btn--wAuto">장바구니</button>
                 <button class="btn bg-green color-white btn--wAuto">바로구매</button>
             </div>
         </div>
     </div>
+
 
 </div>
 {% endblock %}
